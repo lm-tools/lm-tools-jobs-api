@@ -6,5 +6,5 @@ class TestAdzunaLib(TestCase):
 
     def test_jobs_at_location(self):
         az = Adzuna()
-        x = az.jobs_at_loation('UK', 'London', 'South East London', 15)
+        x = az.jobs_at_location('UK', 'London', 'South East London', 15)
         self.assertEqual(len(x), 15)

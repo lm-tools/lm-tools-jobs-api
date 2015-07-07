@@ -38,7 +38,7 @@ class Adzuna(object):
             num_results = len(all_results)
         return all_results[:count]
 
-    def jobs_at_loation(self, location0, location1, location2, count=10):
+    def jobs_at_location(self, location0, location1, location2, count=10):
         endpoint = "jobs/gb/search/"
 
         params = {
