@@ -2,10 +2,12 @@
 # After the first "pip install -r", just run "pip freeze" and add the version
 # to each package in each requirements/*.txt.
 
-django
+Django>=1.8,<1.9
 
-django-model-utils
+django-model-utils==2.2
 
-psycopg2
+psycopg2==2.6.1
 
-Pillow
+
+
+djangorestframework==3.1.3
