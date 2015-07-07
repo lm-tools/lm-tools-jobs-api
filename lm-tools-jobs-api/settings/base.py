@@ -1,5 +1,7 @@
 import sys
 from os.path import join, abspath, dirname
+import os
+
 
 # PATH vars
 
@@ -157,6 +159,9 @@ LOGGING = {
         },
     }
 }
+
+ADZUNA_APP_ID = os.environ.get('ADZUNA_APP_ID')
+ADZUNA_APP_KEY = os.environ.get('ADZUNA_APP_KEY')
 
 
 # EMAILS
