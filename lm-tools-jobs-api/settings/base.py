@@ -123,7 +123,9 @@ INSTALLED_APPS = (
     'django.contrib.admin',
 )
 
-PROJECT_APPS = ()
+PROJECT_APPS = (
+    'rest_framework',
+)
 
 INSTALLED_APPS += PROJECT_APPS
 
