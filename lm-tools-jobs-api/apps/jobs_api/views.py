@@ -30,8 +30,7 @@ class LatestJobsInArea(APIView):
 
         all_results = []
         import json
-        for result in results.json()['results']:
-            # import ipdb; ipdb.set_trace()
+        for result in results:
             all_results.append({
                 "job_title": result['title'],
                 "company": {

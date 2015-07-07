@@ -15,8 +15,8 @@ class Adzuna(object):
         assert all((self.APP_ID, self.APP_KEY))
 
 
-    def base_request(self, endpoint, params):
-        URL = "{0}{1}".format(self.BASE_URL, endpoint)
+    def base_request(self, endpoint, params, page=1):
+        URL = "{0}{1}/{2}".format(self.BASE_URL, endpoint, page)
 
         params.update({
             "app_id": self.APP_ID,
@@ -26,8 +26,20 @@ class Adzuna(object):
         return requests.get(URL, params=params)
 
 
+    def unwrap_pagination(self, endpoint, params, count):
+        num_results = 0
+        all_results = []
+        page = 1
+
+        while num_results <= count:
+            results = self.base_request(endpoint, params, page)
+            all_results += results.json()['results']
+            page += 1
+            num_results = len(all_results)
+        return all_results[:count]
+
     def jobs_at_loation(self, location0, location1, location2, count=10):
-        endpoint = "jobs/gb/search/1"
+        endpoint = "jobs/gb/search/"
 
         params = {
             "location0": location0,
@@ -35,4 +47,4 @@ class Adzuna(object):
             "location2": location2,
         }
 
-        return self.base_request(endpoint, params)
+        return self.unwrap_pagination(endpoint, params, count)
