@@ -19,17 +19,16 @@ class DummyDashboardView(APIView):
 class LatestJobsInArea(APIView):
     def get(self, request):
 
-        #Hard code location for now
-        location0 = "UK"
-        location1 = "London"
-        location2 = "South East London"
+        location0 = request.GET.get("location0", "UK")
+        location1 = request.GET.get("location1", "London")
+        location2 = request.GET.get("location2", "South East London")
+        count =  int(request.GET.get("count", 10))
 
         az = Adzuna()
 
-        results = az.jobs_at_loation(location0, location1, location2)
+        results = az.jobs_at_location(location0, location1, location2, count)
 
         all_results = []
-        import json
         for result in results:
             all_results.append({
                 "job_title": result['title'],
