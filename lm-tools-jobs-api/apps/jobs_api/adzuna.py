@@ -45,6 +45,8 @@ class Adzuna(object):
             "location0": location0,
             "location1": location1,
             "location2": location2,
+            "sort_direction": "down",
+            "sort_by": "date",
         }
 
         return self.unwrap_pagination(endpoint, params, count)
