@@ -34,7 +34,7 @@ class LatestJobsInArea(APIView):
                 "job_title": result['title'],
                 "contract_time": result.get('contract_time', "full_time"),
                 "company": {
-                    "display_name": result['company']['display_name']
+                    "display_name": result.get('company', {}).get('display_name', 'Unknown')
                 },
                 "created": result['created'],
                 "job_category": result['category']['label'],
