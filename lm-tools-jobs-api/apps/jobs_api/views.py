@@ -32,6 +32,7 @@ class LatestJobsInArea(APIView):
         for result in results:
             all_results.append({
                 "job_title": result['title'],
+                "contract_time": result.get('contract_time', "full_time"),
                 "company": {
                     "display_name": result['company']['display_name']
                 },
