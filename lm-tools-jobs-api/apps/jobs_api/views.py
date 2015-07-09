@@ -8,6 +8,7 @@ from rest_framework.pagination import LimitOffsetPagination
 
 from .serializers import JobAdvertSerializer
 from jobs.models import JobAdvert
+from .adzuna import Adzuna
 
 
 class DummyDashboardView(APIView):
@@ -36,4 +37,23 @@ class TopCategoriesView(APIView):
         if 'job_centre_label' in request.GET:
             base_qs = base_qs.filter(job_centre_label=request.GET['job_centre_label'])
         ret = base_qs.values("category").annotate(count=Count("category")).order_by("-count")
-        return Response(ret) 
+        return Response(ret)
+
+
+class TopCompaniesView(APIView):
+     def get(self, request):
+        location0 = request.GET.get("location0", "UK")
+        location1 = request.GET.get("location1", "London")
+        location2 = request.GET.get("location2", "South East London")
+        count =  int(request.GET.get("count", 10))
+
+        az = Adzuna()
+        results = az.top_companies(location0, location1, location2, count)
+
+        all_results = []
+        for result in results:
+            all_results.append({
+                "company_name": result['canonical_name'],
+            })
+
+        return Response(all_results)
