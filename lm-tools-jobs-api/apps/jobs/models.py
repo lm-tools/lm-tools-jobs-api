@@ -1,5 +1,7 @@
 from django.db import models
 
+import requests
+
 from jobs_api.adzuna import Adzuna
 
 
@@ -25,6 +27,8 @@ class JobAdvert(models.Model):
     created = models.DateTimeField(blank=True, null=True)
     category = models.CharField(blank=True, max_length=255, null=True)
     job_centre_label = models.CharField(blank=True, max_length=255)
+    location_text = models.CharField(blank=True, max_length=500)
+    travelling_time = models.CharField(blank=True, max_length=100)
 
     objects = JobAdvertManager()
 
@@ -37,13 +41,39 @@ class JobAdvert(models.Model):
 
     @classmethod
     def get_or_create_from_adzuna(cls, job_centre, job):
-        obj = cls.objects.get_or_create(
+        def _mk_location_text(job):
+            area = job['location']['area']
+            area.reverse()
+            return ", ".join(area)
+
+        obj, created = cls.objects.get_or_create(
                 job_centre_label=job_centre,
                 title=job['title'],
                 created=job['created'],
                 defaults={
-                    "category": job['category']['label']
+                    "category": job['category']['label'],
                 }
             )
+        obj.location_text = _mk_location_text(job)
+        obj.calculate_travelling_time()
+        obj.save()
 
-    
+
+    def calculate_travelling_time(self, force=False):
+        if self.travelling_time != "" and not force:
+            return self.travelling_time
+
+        params = {
+            "origin":  "jobcentre plus, {0}, London, UK".format(self.job_centre_label),
+            "destination":  self.location_text,
+            "mode":  "transit",
+        }
+        try:
+            results = requests.get("https://maps.googleapis.com/maps/api/directions/json",
+                params=params).json()
+
+            self.travelling_time = results['routes'][0]['legs'][0]['duration']['text']
+            self.save()
+        except:
+            return "Unknown"
+        return self.travelling_time

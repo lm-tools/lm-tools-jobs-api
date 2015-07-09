@@ -165,6 +165,7 @@ LOGGING = {
 
 ADZUNA_APP_ID = os.environ.get('ADZUNA_APP_ID')
 ADZUNA_APP_KEY = os.environ.get('ADZUNA_APP_KEY')
+GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY')
 
 
 # EMAILS
