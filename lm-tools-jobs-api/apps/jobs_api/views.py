@@ -1,3 +1,5 @@
+from django.db.models import Count
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import viewsets
@@ -26,3 +28,12 @@ class JobAdvertViewSet(viewsets.ReadOnlyModelViewSet):
     filter_backends = (filters.DjangoFilterBackend,)
     filter_fields = ('job_centre_label',)
     pagination_class = LimitOffsetPagination
+
+
+class TopCategoriesView(APIView):
+    def get(self, request):
+        base_qs = JobAdvert.objects.all()
+        if 'job_centre_label' in request.GET:
+            base_qs = base_qs.filter(job_centre_label=request.GET['job_centre_label'])
+        ret = base_qs.values("category").annotate(count=Count("category")).order_by("-count")
+        return Response(ret) 
