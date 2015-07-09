@@ -72,7 +72,9 @@ class JobAdvert(models.Model):
             results = requests.get("https://maps.googleapis.com/maps/api/directions/json",
                 params=params).json()
 
-            self.travelling_time = results['routes'][0]['legs'][0]['duration']['text']
+            travelling_time = results['routes'][0]['legs'][0]['duration']['text']
+            travelling_time = travelling_time.replace('mins', 'minutes')
+            self.travelling_time = travelling_time
             self.save()
         except:
             return "Unknown"
