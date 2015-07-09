@@ -2,6 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import viewsets
 from rest_framework import filters
+from rest_framework.pagination import LimitOffsetPagination
 
 from .serializers import JobAdvertSerializer
 from jobs.models import JobAdvert
@@ -24,3 +25,4 @@ class JobAdvertViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = JobAdvertSerializer
     filter_backends = (filters.DjangoFilterBackend,)
     filter_fields = ('job_centre_label',)
+    pagination_class = LimitOffsetPagination
