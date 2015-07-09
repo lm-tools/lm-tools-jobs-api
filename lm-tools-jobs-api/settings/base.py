@@ -127,6 +127,9 @@ INSTALLED_APPS = (
 
 PROJECT_APPS = (
     'rest_framework',
+    'jobs',
+    'jobs_api'
+
 )
 
 INSTALLED_APPS += PROJECT_APPS

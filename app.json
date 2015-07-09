@@ -1,0 +1,20 @@
+{
+  "name":"lm-tools-jobs-api",
+  "scripts":{
+      "postdeploy": "python manage.py migrate"
+  },
+  "env":{
+    "ADZUNA_APP_ID":{
+      "required":true
+    },
+    "ADZUNA_APP_KEY":{
+      "required":true
+    },
+    "DJANGO_SETTINGS_MODULE":{
+      "required":true
+    }
+  },
+  "addons":[
+    "heroku-postgresql"
+  ]
+}

@@ -1,7 +1,10 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework import viewsets
+from rest_framework import filters
 
-from .adzuna import Adzuna
+from .serializers import JobAdvertSerializer
+from jobs.models import JobAdvert
 
 
 class DummyDashboardView(APIView):
@@ -16,28 +19,8 @@ class DummyDashboardView(APIView):
         return Response(dummy_data)
 
 
-class LatestJobsInArea(APIView):
-    def get(self, request):
-
-        location0 = request.GET.get("location0", "UK")
-        location1 = request.GET.get("location1", "London")
-        location2 = request.GET.get("location2", "South East London")
-        count =  int(request.GET.get("count", 10))
-
-        az = Adzuna()
-
-        results = az.jobs_at_location(location0, location1, location2, count)
-
-        all_results = []
-        for result in results:
-            all_results.append({
-                "job_title": result['title'],
-                "contract_time": result.get('contract_time', "full_time"),
-                "company": {
-                    "display_name": result.get('company', {}).get('display_name', 'Unknown')
-                },
-                "created": result['created'],
-                "job_category": result['category']['label'],
-            })
-
-        return Response(all_results)
+class JobAdvertViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = JobAdvert.objects.all().order_by("-created")
+    serializer_class = JobAdvertSerializer
+    filter_backends = (filters.DjangoFilterBackend,)
+    filter_fields = ('job_centre_label',)
