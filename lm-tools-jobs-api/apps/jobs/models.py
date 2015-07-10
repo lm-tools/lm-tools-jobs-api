@@ -6,11 +6,11 @@ from jobs_api.adzuna import Adzuna
 
 
 class JobAdvertManager(models.Manager):
-    def import_from_adzuna(self, job_centre, count):
+    def import_from_adzuna(self, job_centre, location_str, count):
         """
         Method to import jobs from the Adzuna API
         """
-        args = getattr(settings, 'LOCATION_LABELS')[job_centre]['locations']
+        args = location_str.split(',')
         args.append(count)
 
         az = Adzuna()

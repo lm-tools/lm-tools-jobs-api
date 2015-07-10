@@ -51,14 +51,16 @@ class Adzuna(object):
 
         return self.unwrap_pagination(endpoint, params, count)
 
-    def top_companies(self, job_centre_label, count=10):
+    def top_companies(self, location0, location1, location2, count=10):
         endpoint = "jobs/gb/top_companies/"
 
-        params = getattr(settings, 'LOCATION_LABELS')[job_centre_label]['locations']
-        params.update({
+        params = {
+            "location0": location0,
+            "location1": location1,
+            "location2": location2,
             "app_id": self.APP_ID,
             "app_key": self.APP_KEY,
-        })
+        }
 
         URL = "{0}{1}".format(self.BASE_URL, endpoint)
         results = requests.get(URL, params=params)
