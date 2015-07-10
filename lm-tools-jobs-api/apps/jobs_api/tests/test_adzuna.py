@@ -11,5 +11,5 @@ class TestAdzunaLib(TestCase):
 
     def test_top_companies(self):
          az = Adzuna()
-         x = az.top_companies('UK', 'London', 'South East London', 2)
+         x = az.top_companies('sutton', 2)
          self.assertEqual(len(x), 2)
