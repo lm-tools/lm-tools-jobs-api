@@ -27,3 +27,13 @@ The `jobs_import_from_adzuna` command imports jobs from Adzuna and takes the fol
 
 * Limit by adding `limit=n`.
 * Filter by job centre by adding `job_centre_label=foo`.
+
+
+## Recalculating travelling times
+
+Sometimes it's useful to recalculate travelling times.  Do this by opening a django shell (`./manage.py shell`) and running:
+
+```
+from jobs.models import JobAdvert
+[j.calculate_travelling_time(force=True) for j in JobAdvert.objects.all()]
+```
