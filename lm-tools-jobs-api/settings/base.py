@@ -173,14 +173,16 @@ LOCATION_LABELS = {
             'location0': 'UK',
             'location1': 'London',
             'location2': 'South East London'
-        }
+        },
+        'postcode': "SM1 1PX",
     },
     'croydon': {
         'locations': {
             'location0': 'UK',
             'location1': 'London',
             'location2': 'Croydon'
-        }
+        },
+        'postcode': "CR9 2TN",
     }
 }
 

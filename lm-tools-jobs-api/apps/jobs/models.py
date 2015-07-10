@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 
 import requests
 
@@ -28,7 +29,7 @@ class JobAdvert(models.Model):
     category = models.CharField(blank=True, max_length=255, null=True)
     job_centre_label = models.CharField(blank=True, max_length=255)
     location_text = models.CharField(blank=True, max_length=500)
-    travelling_time = models.CharField(blank=True, max_length=100)
+    travelling_time = models.CharField(blank=True, max_length=100, null=True)
 
     objects = JobAdvertManager()
 
@@ -60,22 +61,20 @@ class JobAdvert(models.Model):
 
 
     def calculate_travelling_time(self, force=False):
-        if self.travelling_time != "" and not force:
+        if self.travelling_time and not force:
             return self.travelling_time
 
         params = {
-            "origin":  "jobcentre plus, {0}, London, UK".format(self.job_centre_label),
+            "origin":  settings.LOCATION_LABELS[self.job_centre_label]['postcode'],
             "destination":  self.location_text,
             "mode":  "transit",
         }
         try:
             results = requests.get("https://maps.googleapis.com/maps/api/directions/json",
                 params=params).json()
-
-            travelling_time = results['routes'][0]['legs'][0]['duration']['text']
-            travelling_time = travelling_time.replace('mins', 'minutes')
-            self.travelling_time = travelling_time
-            self.save()
+            travel_time_in_minutes = results['routes'][0]['legs'][0]['duration']['value'] / 60
+            self.travelling_time = travel_time_in_minutes
         except:
-            return "Unknown"
+            self.travelling_time = -1
+        self.save()
         return self.travelling_time
