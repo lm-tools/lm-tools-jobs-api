@@ -167,22 +167,6 @@ ADZUNA_APP_ID = os.environ.get('ADZUNA_APP_ID')
 ADZUNA_APP_KEY = os.environ.get('ADZUNA_APP_KEY')
 GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY')
 
-LOCATION_LABELS = {
-    'sutton': {
-        'locations': {
-            'location0': 'UK',
-            'location1': 'London',
-            'location2': 'South East London'
-        }
-    },
-    'croydon': {
-        'locations': {
-            'location0': 'UK',
-            'location1': 'London',
-            'location2': 'Croydon'
-        }
-    }
-}
 
 # EMAILS
 

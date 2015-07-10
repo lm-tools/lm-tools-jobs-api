@@ -42,11 +42,13 @@ class TopCategoriesView(APIView):
 
 class TopCompaniesView(APIView):
      def get(self, request):
-        job_centre_label = request.GET.get("job_centre_label", "sutton")
+        location0 = request.GET.get("location0", "UK")
+        location1 = request.GET.get("location1", "London")
+        location2 = request.GET.get("location2", "South East London")
         count =  int(request.GET.get("count", 10))
 
         az = Adzuna()
-        results = az.top_companies(job_centre_label, count)
+        results = az.top_companies(location0, location1, location2, count)
 
         all_results = []
         for result in results:
