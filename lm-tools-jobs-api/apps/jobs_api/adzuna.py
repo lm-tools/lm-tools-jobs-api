@@ -15,8 +15,10 @@ class Adzuna(object):
         assert all((self.APP_ID, self.APP_KEY))
 
 
-    def base_request(self, endpoint, params, page=1):
-        URL = "{0}{1}/{2}".format(self.BASE_URL, endpoint, page)
+    def base_request(self, endpoint, params, page=None):
+        URL = "{0}{1}".format(self.BASE_URL, endpoint)
+        if page:
+            URL = "{0}/{1}".format(URL, page)
 
         params.update({
             "app_id": self.APP_ID,
@@ -51,15 +53,13 @@ class Adzuna(object):
 
         return self.unwrap_pagination(endpoint, params, count)
 
-    def top_companies(self, job_centre_label, count=10):
+    def top_companies(self, location0, location1, location2, count=10):
         endpoint = "jobs/gb/top_companies/"
 
-        params = getattr(settings, 'LOCATION_LABELS')[job_centre_label]['locations']
-        params.update({
-            "app_id": self.APP_ID,
-            "app_key": self.APP_KEY,
-        })
-
-        URL = "{0}{1}".format(self.BASE_URL, endpoint)
-        results = requests.get(URL, params=params)
+        params = {
+            "location0": location0,
+            "location1": location1,
+            "location2": location2,
+        }
+        results = self.base_request(endpoint, params)
         return results.json()['leaderboard'][:count]

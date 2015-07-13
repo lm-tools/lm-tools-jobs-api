@@ -23,3 +23,17 @@ class TestViews(APITestCase):
         res = self.client.get(reverse('jobadvert-list'))
         self.assertEqual(len(res.data), 1)
         self.assertEqual(res.data[0]['title'], "test")
+
+    def test_top_companies(self):
+        res = self.client.get(reverse('top_companies_view'))
+        self.assertEqual(len(res.data), 5)
+        self.assertTrue('company_name' in res.data[0])
+
+
+    def test_top_categories(self):
+        ja = JobAdvert(title="test", category="Foo")
+        ja.save()
+        res = self.client.get(reverse('top_categories_view'))
+        self.assertEqual(len(res.data), 1)
+        self.assertEqual(res.data[0]['category'], "Foo")
+        self.assertEqual(res.data[0]['count'], 1)

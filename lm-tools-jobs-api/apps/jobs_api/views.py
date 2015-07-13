@@ -1,4 +1,5 @@
 from django.db.models import Count
+from django.conf import settings
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -43,10 +44,11 @@ class TopCategoriesView(APIView):
 class TopCompaniesView(APIView):
      def get(self, request):
         job_centre_label = request.GET.get("job_centre_label", "sutton")
-        count =  int(request.GET.get("count", 10))
+        args = getattr(settings, 'LOCATION_LABELS')[job_centre_label]['locations']
+        args.append(int(request.GET.get("count", 10)))
 
         az = Adzuna()
-        results = az.top_companies(job_centre_label, count)
+        results = az.top_companies(*args)
 
         all_results = []
         for result in results:
