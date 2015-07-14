@@ -29,6 +29,14 @@ class TestViews(APITestCase):
         self.assertEqual(len(res.data), 5)
         self.assertTrue('company_name' in res.data[0])
 
+    def test_top_companies_invalid_postcode(self):
+        res = self.client.get(reverse('top_companies_view'), {'postcode': 'invalid'})
+        self.assertEqual(res.data['error'], 'Invalid postcode')
+
+    def test_top_companies_valid_postcode(self):
+        res = self.client.get(reverse('top_companies_view'), {'postcode': 'SW1H0ET'})
+        self.assertEqual(len(res.data), 5)
+        self.assertTrue('company_name' in res.data[0])
 
     def test_top_categories(self):
         ja = JobAdvert(title="test", category="Foo")

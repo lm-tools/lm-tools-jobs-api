@@ -43,11 +43,19 @@ class TopCategoriesView(APIView):
 
 class TopCompaniesView(APIView):
      def get(self, request):
+        postcode = request.GET.get("postcode")
         job_centre_label = request.GET.get("job_centre_label", "sutton")
-        args = getattr(settings, 'LOCATION_LABELS')[job_centre_label]['locations'][:]
+        az = Adzuna()
+        if postcode:
+            try:
+                args = az.locations_for_postcode(postcode)
+            except AssertionError:
+                return Response({"error": "Invalid postcode"})
+            args = az.locations_for_postcode(postcode)
+        elif job_centre_label:
+            args = getattr(settings, 'LOCATION_LABELS')[job_centre_label]['locations'][:]
         args.append(int(request.GET.get("count", 10)))
 
-        az = Adzuna()
         results = az.top_companies(*args)
 
         all_results = []

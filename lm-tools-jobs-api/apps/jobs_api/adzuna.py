@@ -40,6 +40,16 @@ class Adzuna(object):
             num_results = len(all_results)
         return all_results[:count]
 
+    def locations_for_postcode(self, postcode):
+        endpoint = "jobs/gb/geodata/"
+        params = {
+            "where": postcode,
+        }
+        results = self.base_request(endpoint, params)
+        area = results.json()['location']['area']
+        assert (len(area) >= 3)
+        return area[:3]
+
     def jobs_at_location(self, location0, location1, location2, count=10):
         endpoint = "jobs/gb/search/"
 
