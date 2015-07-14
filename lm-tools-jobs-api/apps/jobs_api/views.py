@@ -44,7 +44,7 @@ class TopCategoriesView(APIView):
 class TopCompaniesView(APIView):
      def get(self, request):
         job_centre_label = request.GET.get("job_centre_label", "sutton")
-        args = getattr(settings, 'LOCATION_LABELS')[job_centre_label]['locations']
+        args = getattr(settings, 'LOCATION_LABELS')[job_centre_label]['locations'][:]
         args.append(int(request.GET.get("count", 10)))
 
         az = Adzuna()
