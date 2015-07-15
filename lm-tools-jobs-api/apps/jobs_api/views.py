@@ -3,7 +3,6 @@ from django.conf import settings
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .serializers import JobAdvertSerializer
 from jobs.models import JobAdvert, JobArea, UnknownJobCentreError, PostcodeNotFoundError
 from .adzuna import Adzuna
 
@@ -21,67 +20,53 @@ class DummyDashboardView(APIView):
 
 class JobAdvertsView(APIView):
     def get(self, request):
-        serializer_class = JobAdvertSerializer
         base_qs = JobAdvert.objects.all()
-        # This is a duplicate
-        job_area = None
-        if 'job_centre_label' in request.GET:
-            try:
-                job_area = JobArea.objects.import_area_and_jobs_for_job_centre(request.GET['job_centre_label'])
-            except UnknownJobCentreError:
-                return Response({"error": "Unknown job centre label"})
-        if 'postcode' in request.GET:
-            try:
-                job_area = JobArea.objects.import_area_and_jobs_for_postcode(request.GET['postcode'])
-            except PostcodeNotFoundError:
-                return Response({"error": "Invalid postcode"})
-        # End of duplicate
+        try:
+            job_area = JobArea.objects.import_area_and_jobs(request.GET.get('job_centre_label'), request.GET.get('postcode'))
+        except UnknownJobCentreError:
+            return Response({"error": "Unknown job centre label"})
+        except PostcodeNotFoundError:
+            return Response({"error": "Invalid postcode"})
         if job_area:
             base_qs = base_qs.filter(job_area=job_area)
-        limit = request.GET.get('limit', 5)
+        limit = int(request.GET.get('limit', 5))
         ret = base_qs[:limit]
-        return Response(ret)
+
+        serialized_jobs = [{
+            "title": job.title,
+            "contract_time": job.contract_time,
+            "company_name": job.company_name,
+            "created": job.created,
+            "category": job.category,
+            "travelling_time": job.travelling_time
+        } for job in ret]
+        return Response(serialized_jobs)
 
 
 class TopCategoriesView(APIView):
     def get(self, request):
         base_qs = JobAdvert.objects.all()
-        # This is a duplicate
-        job_area = None
-        if 'job_centre_label' in request.GET:
-            try:
-                job_area = JobArea.objects.import_area_and_jobs_for_job_centre(request.GET['job_centre_label'])
-            except UnknownJobCentreError:
-                return Response({"error": "Unknown job centre label"})
-        if 'postcode' in request.GET:
-            try:
-                job_area = JobArea.objects.import_area_and_jobs_for_postcode(request.GET['postcode'])
-            except PostcodeNotFoundError:
-                return Response({"error": "Invalid postcode"})
-        # End of duplicate
+        try:
+            job_area = JobArea.objects.import_area_and_jobs(request.GET.get('job_centre_label'), request.GET.get('postcode'))
+        except UnknownJobCentreError:
+            return Response({"error": "Unknown job centre label"})
+        except PostcodeNotFoundError:
+            return Response({"error": "Invalid postcode"})
         if job_area:
             base_qs = base_qs.filter(job_area=job_area)
-        limit = request.GET.get('limit', 5)
+        limit = int(request.GET.get('limit', 5))
         ret = base_qs.values("category").annotate(count=Count("category")).order_by("-count")[:limit]
         return Response(ret)
 
 
 class TopCompaniesView(APIView):
      def get(self, request):
-        # This is a duplicate
-        job_area = None
-        if 'job_centre_label' in request.GET:
-            try:
-                job_area = JobArea.objects.import_area_and_jobs_for_job_centre(request.GET['job_centre_label'])
-            except UnknownJobCentreError:
-                return Response({"error": "Unknown job centre label"})
-        if 'postcode' in request.GET:
-            try:
-                job_area = JobArea.objects.import_area_and_jobs_for_postcode(request.GET['postcode'])
-            except PostcodeNotFoundError:
-                return Response({"error": "Invalid postcode"})
-        # End of duplicate
-
+        try:
+            job_area = JobArea.objects.import_area_and_jobs(request.GET.get('job_centre_label'), request.GET.get('postcode'))
+        except UnknownJobCentreError:
+            return Response({"error": "Unknown job centre label"})
+        except PostcodeNotFoundError:
+            return Response({"error": "Invalid postcode"})
         all_results = []
         az = Adzuna()
         if job_area:

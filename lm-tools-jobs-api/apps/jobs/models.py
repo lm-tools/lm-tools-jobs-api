@@ -14,6 +14,15 @@ class PostcodeNotFoundError(Exception):
     pass
 
 class JobAreaManager(models.Manager):
+
+    def import_area_and_jobs(self, job_centre_label, postcode):
+        if job_centre_label:
+            return JobArea.objects.import_area_and_jobs_for_job_centre(job_centre_label)
+        elif postcode:
+            return JobArea.objects.import_area_and_jobs_for_postcode(postcode)
+        else:
+            return None;
+
     def import_area_and_jobs_for_postcode(self, postcode):
         try:
             job_area, new_area = JobArea.get_or_create_from_postcode(postcode)
