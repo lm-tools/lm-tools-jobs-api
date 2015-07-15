@@ -6,7 +6,6 @@ import requests
 
 from django.conf import settings
 
-
 class Adzuna(object):
     def __init__(self):
         self.APP_ID = getattr(settings, 'ADZUNA_APP_ID')
@@ -36,7 +35,7 @@ class Adzuna(object):
 
         while num_results <= count:
             results = self.base_request(endpoint, params, page)
-            all_results += results.json()['results']
+            all_results += results.json().get('results', [])
             page += 1
             num_results = len(all_results)
         return all_results[:count]
@@ -51,7 +50,6 @@ class Adzuna(object):
         area = results.json()['location']['area']
         assert (len(area) >= 3)
         locations = area[:3]
-        JobArea.objects.get_or_create(locations=locations)
         return locations
 
     def jobs_at_location(self, location0, location1, location2, count=10):
