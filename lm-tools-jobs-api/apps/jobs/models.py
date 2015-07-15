@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from django.contrib.postgres.fields import ArrayField
 
 import requests
 
@@ -78,3 +79,6 @@ class JobAdvert(models.Model):
             self.travelling_time = -1
         self.save()
         return self.travelling_time
+
+class JobArea(models.Model):
+    locations = ArrayField(models.TextField(blank=True), size=3)

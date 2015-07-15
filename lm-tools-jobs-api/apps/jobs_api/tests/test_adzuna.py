@@ -1,6 +1,7 @@
 from django.test import TestCase
 
 from jobs_api.adzuna import Adzuna
+from jobs.models import JobArea
 
 class TestAdzunaLib(TestCase):
 
@@ -22,3 +23,14 @@ class TestAdzunaLib(TestCase):
         az = Adzuna()
         x = az.locations_for_postcode('SW1H0ET')
         self.assertEqual(len(x), 3)
+
+    def test_locations_stores_areas(self):
+        az = Adzuna()
+        # Edinburgh
+        az.locations_for_postcode('EH1 2NG')
+        # Edinburgh
+        az.locations_for_postcode('EH1 1JF')
+        # Manchester
+        az.locations_for_postcode('M40 2EP')
+        job_areas = JobArea.objects.all()
+        self.assertEqual(len(job_areas), 2)

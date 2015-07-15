@@ -6,6 +6,7 @@ import requests
 
 from django.conf import settings
 
+
 class Adzuna(object):
     def __init__(self):
         self.APP_ID = getattr(settings, 'ADZUNA_APP_ID')
@@ -41,6 +42,7 @@ class Adzuna(object):
         return all_results[:count]
 
     def locations_for_postcode(self, postcode):
+        from jobs.models import JobArea
         endpoint = "jobs/gb/geodata/"
         params = {
             "where": postcode,
@@ -48,7 +50,9 @@ class Adzuna(object):
         results = self.base_request(endpoint, params)
         area = results.json()['location']['area']
         assert (len(area) >= 3)
-        return area[:3]
+        locations = area[:3]
+        JobArea.objects.get_or_create(locations=locations)
+        return locations
 
     def jobs_at_location(self, location0, location1, location2, count=10):
         endpoint = "jobs/gb/search/"
