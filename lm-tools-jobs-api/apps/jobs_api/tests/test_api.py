@@ -1,10 +1,30 @@
+import os
+from functools import wraps
+
 from django.core.urlresolvers import reverse
+from django.conf import settings
 
 from rest_framework.test import APITestCase
 
 from jobs.models import JobAdvert
 from jobs.models import JobArea
-import vcr
+
+
+def adzuna_api_cassette_request(func):
+    @wraps(func)
+    def innner(*args, **kwargs):
+        filter_args = [
+            'api_key',
+            'app_id',
+        ]
+
+        # TODO This need to be more clever, as right now it will always
+        #      save cassettes relative to this file.
+        path = os.path.join(os.path.dirname(__file__), func.__name__)
+        with settings.VCR.use_cassette(path, filter_query_parameters=filter_args):
+            func(*args, **kwargs)
+    return innner
+
 
 
 class TestViews(APITestCase):
@@ -32,7 +52,7 @@ class TestViews(APITestCase):
         res = self.client.get(reverse('job_adverts_view'), {'job_centre_label': 'not-a-valid-job-centre'})
         self.assertEqual(res.data['error'], 'Unknown job centre label')
 
-    @vcr.use_cassette()
+    @adzuna_api_cassette_request
     def test_latest_jobs_by_job_centre_label(self):
         area = JobArea(locations=["UK", "London", "South East London"], job_centre_label="sutton")
         area.save()
@@ -42,7 +62,7 @@ class TestViews(APITestCase):
         self.assertEqual(len(res.data), 1)
         self.assertEqual(res.data[0]['title'], "test")
 
-    @vcr.use_cassette()
+    @adzuna_api_cassette_request
     def test_latest_jobs_by_new_job_centre_label(self):
         res = self.client.get(reverse('job_adverts_view'), {'job_centre_label': 'sutton', 'limit': 3})
         areas = JobArea.objects.all()
@@ -51,7 +71,7 @@ class TestViews(APITestCase):
         self.assertEqual(areas[0].job_centre_label, "sutton")
         self.assertEqual(len(res.data), 3)
 
-    @vcr.use_cassette()
+    @adzuna_api_cassette_request
     def test_latest_jobs_by_postcode_new_location(self):
         res = self.client.get(reverse('job_adverts_view'), {'postcode': 'EH1 2NG', 'limit': 3})
         areas = JobArea.objects.all()
@@ -60,7 +80,7 @@ class TestViews(APITestCase):
         self.assertEqual(areas[0].job_centre_label, None)
         self.assertEqual(len(res.data), 3)
 
-    @vcr.use_cassette()
+    @adzuna_api_cassette_request
     def test_latest_jobs_by_postcode_new_location_matching_a_job_centre(self):
         res = self.client.get(reverse('job_adverts_view'), {'postcode': 'CR9 2TN', 'limit': 3})
         areas = JobArea.objects.all()
@@ -69,7 +89,7 @@ class TestViews(APITestCase):
         self.assertEqual(areas[0].job_centre_label, "croydon")
         self.assertEqual(len(res.data), 3)
 
-    @vcr.use_cassette()
+    @adzuna_api_cassette_request
     def test_latest_jobs_by_postcode_existing_location(self):
         res = self.client.get(reverse('job_adverts_view'), {'postcode': 'CR9 2TN', 'limit': 3})
         res2 = self.client.get(reverse('job_adverts_view'), {'postcode': 'CR0 1LP', 'limit': 3})
@@ -85,7 +105,7 @@ class TestViews(APITestCase):
         res = self.client.get(reverse('top_companies_view'), {'postcode': 'invalid'})
         self.assertEqual(res.data['error'], 'Invalid postcode')
 
-    @vcr.use_cassette()
+    @adzuna_api_cassette_request
     def test_top_companies_valid_postcode(self):
         res = self.client.get(reverse('top_companies_view'), {'postcode': 'SW1H0ET'})
         self.assertEqual(len(res.data), 5)
@@ -105,7 +125,7 @@ class TestViews(APITestCase):
         res = self.client.get(reverse('top_categories_view'), {'job_centre_label': 'not-a-valid-job-centre'})
         self.assertEqual(res.data['error'], 'Unknown job centre label')
 
-    @vcr.use_cassette()
+    @adzuna_api_cassette_request
     def test_top_categories_by_job_centre_label(self):
         area = JobArea(locations=["UK", "London", "South East London"], job_centre_label="sutton")
         area.save()
@@ -116,7 +136,7 @@ class TestViews(APITestCase):
         self.assertEqual(res.data[0]['category'], "Foo")
         self.assertEqual(res.data[0]['count'], 1)
 
-    @vcr.use_cassette()
+    @adzuna_api_cassette_request
     def test_top_categories_by_postcode_new_location(self):
         res = self.client.get(reverse('top_categories_view'), {'postcode': 'EH1 2NG', 'limit': 3})
         areas = JobArea.objects.all()
@@ -125,7 +145,7 @@ class TestViews(APITestCase):
         self.assertEqual(areas[0].job_centre_label, None)
         self.assertEqual(len(res.data), 3)
 
-    @vcr.use_cassette()
+    @adzuna_api_cassette_request
     def test_top_categories_by_postcode_new_location_matching_a_job_centre(self):
         res = self.client.get(reverse('top_categories_view'), {'postcode': 'CR9 2TN', 'limit': 3})
         areas = JobArea.objects.all()
@@ -134,7 +154,7 @@ class TestViews(APITestCase):
         self.assertEqual(areas[0].job_centre_label, "croydon")
         self.assertEqual(len(res.data), 3)
 
-    @vcr.use_cassette()
+    @adzuna_api_cassette_request
     def test_top_categories_by_postcode_existing_location(self):
         res = self.client.get(reverse('top_categories_view'), {'postcode': 'CR9 2TN'})
         res2 = self.client.get(reverse('top_categories_view'), {'postcode': 'CR0 1LP', 'limit': 3})
