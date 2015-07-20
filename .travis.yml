@@ -4,7 +4,7 @@ env: RUNNER=travis
 python:
   - "3.4"
 install: pip install -r requirements/local.txt --download-cache $HOME/.pip-cache
-script: python manage.py test
+script: python manage.py test --noinput
 cache:
   directories:
     - /home/travis/virtualenv
