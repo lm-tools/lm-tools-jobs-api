@@ -25,7 +25,14 @@ class Adzuna(object):
             "app_key": self.APP_KEY,
         })
 
-        return requests.get(URL, params=params)
+
+        req = requests.get(URL, params=params)
+
+        if req.status_code != 200:
+            raise ValueError("Got a {0} from Adzuna: {1}".format(
+                req.status_code,
+                req.json()['display']))
+        return req
 
 
     def unwrap_pagination(self, endpoint, params, count):
