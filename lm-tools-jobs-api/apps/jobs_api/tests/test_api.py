@@ -1,3 +1,4 @@
+import inspect
 import os
 from functools import wraps
 
@@ -18,9 +19,10 @@ def adzuna_api_cassette_request(func):
             'app_id',
         ]
 
-        # TODO This need to be more clever, as right now it will always
-        #      save cassettes relative to this file.
-        path = os.path.join(os.path.dirname(__file__), func.__name__)
+        path = os.path.join(
+            os.path.dirname(inspect.getfile(func)),
+            func.__name__,
+            )
         with settings.VCR.use_cassette(path, filter_query_parameters=filter_args):
             func(*args, **kwargs)
     return innner
