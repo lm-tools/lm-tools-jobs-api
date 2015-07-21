@@ -14,7 +14,7 @@ def adzuna_api_cassette_request(func):
     @wraps(func)
     def innner(*args, **kwargs):
         filter_args = [
-            'api_key',
+            'app_key',
             'app_id',
         ]
 
