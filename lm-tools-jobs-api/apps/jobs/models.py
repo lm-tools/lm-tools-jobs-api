@@ -54,7 +54,7 @@ class JobArea(models.Model):
             raise PostcodeNotFoundError()
         job_centre_label = None
         for location_label in settings.LOCATION_LABELS:
-            if settings.LOCATION_LABELS[location_label]['locations'] == locations:
+            if list(settings.LOCATION_LABELS[location_label]['locations']) == locations:
                 job_centre_label = location_label
                 break
         obj, created = cls.objects.get_or_create(
@@ -67,7 +67,7 @@ class JobArea(models.Model):
     @classmethod
     def get_or_create_from_job_centre_label(cls, job_centre_label):
         try:
-            locations = settings.LOCATION_LABELS[job_centre_label]['locations']
+            locations = list(settings.LOCATION_LABELS[job_centre_label]['locations'])
         except KeyError:
             raise UnknownJobCentreError()
         obj, created = cls.objects.get_or_create(
@@ -84,7 +84,7 @@ class JobAdvertManager(models.Manager):
         Method to import jobs from the Adzuna API
         """
         locations = job_area.locations
-        args = locations+[count]
+        args = list(locations)+[count]
 
         az = Adzuna()
         all_jobs = az.jobs_at_location(*args)

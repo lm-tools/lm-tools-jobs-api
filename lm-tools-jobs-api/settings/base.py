@@ -169,19 +169,19 @@ GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY')
 
 LOCATION_LABELS = {
     'sutton': {
-        'locations': [
+        'locations': (
             'UK',
             'London',
             'South East London'
-        ],
+        ),
         'postcode': "SM1 1PX",
     },
     'croydon': {
-        'locations': [
+        'locations': (
             'UK',
             'London',
             'Croydon'
-        ],
+        ),
         'postcode': "CR9 2TN",
     }
 }

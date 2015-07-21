@@ -70,7 +70,7 @@ class TopCompaniesView(APIView):
         all_results = []
         az = Adzuna()
         if job_area:
-            args = job_area.locations
+            args = job_area.locations[:]
             args.append(int(request.GET.get("count", 10)))
             results = az.top_companies(*args)
             all_results = []
