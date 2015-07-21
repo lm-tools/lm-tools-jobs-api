@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='jobadvert',
             name='job_area',
-            field=models.ForeignKey(default=None, blank=True, to='jobs.JobArea'),
+            field=models.ForeignKey(default='', blank=True, to='jobs.JobArea'),
             preserve_default=False,
         ),
     ]
