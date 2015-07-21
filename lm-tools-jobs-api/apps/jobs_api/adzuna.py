@@ -25,7 +25,14 @@ class Adzuna(object):
             "app_key": self.APP_KEY,
         })
 
-        return requests.get(URL, params=params)
+
+        req = requests.get(URL, params=params)
+
+        if req.status_code != 200:
+            raise ValueError("Got a {0} from Adzuna: {1}".format(
+                req.status_code,
+                req.json()['display']))
+        return req
 
 
     def unwrap_pagination(self, endpoint, params, count):
@@ -35,10 +42,22 @@ class Adzuna(object):
 
         while num_results <= count:
             results = self.base_request(endpoint, params, page)
-            all_results += results.json()['results']
+            all_results += results.json().get('results', [])
             page += 1
             num_results = len(all_results)
         return all_results[:count]
+
+    def locations_for_postcode(self, postcode):
+        from jobs.models import JobArea
+        endpoint = "jobs/gb/geodata/"
+        params = {
+            "where": postcode,
+        }
+        results = self.base_request(endpoint, params)
+        area = results.json()['location']['area']
+        assert (len(area) >= 3)
+        locations = area[:3]
+        return locations
 
     def jobs_at_location(self, location0, location1, location2, count=10):
         endpoint = "jobs/gb/search/"
