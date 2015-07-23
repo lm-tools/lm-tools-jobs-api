@@ -20,7 +20,7 @@ class DummyDashboardView(APIView):
 
 class JobAdvertsView(APIView):
     def get(self, request):
-        base_qs = JobAdvert.objects.all()
+        base_qs = JobAdvert.objects.all().order_by('-created')
         try:
             job_area = JobArea.objects.import_area_and_jobs(request.GET.get('job_centre_label'), request.GET.get('postcode'))
         except UnknownJobCentreError:
