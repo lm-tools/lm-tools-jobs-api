@@ -35,15 +35,19 @@ class Adzuna(object):
 
     def unwrap_pagination(self, endpoint, params, count):
         num_results = 0
-        all_results = []
         page = 1
 
         while num_results <= count:
             results = self.base_request(endpoint, params, page)
-            all_results += results.json().get('results', [])
+            all_results = results.json().get('results', [])
+
+            for result in all_results:
+                if num_results < count:
+                    num_results += 1
+                    yield result
+                else:
+                    raise StopIteration
             page += 1
-            num_results = len(all_results)
-        return all_results[:count]
 
     def locations_for_postcode(self, postcode):
         from jobs.models import JobArea
@@ -58,7 +62,7 @@ class Adzuna(object):
         return locations
 
     def jobs_at_location(self, location0, location1, location2, count=10):
-        endpoint = "jobs/gb/search/"
+        endpoint = "jobs/gb/search"
 
         params = {
             "location0": location0,
