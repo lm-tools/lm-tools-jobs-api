@@ -18,7 +18,7 @@ class Adzuna(object):
     def base_request(self, endpoint, params, page=None):
         URL = "{0}{1}".format(self.BASE_URL, endpoint)
         if page:
-            URL = "{0}/{1}".format(URL, page)
+            URL = "{0}{1}".format(URL, page)
 
         params.update({
             "app_id": self.APP_ID,
@@ -62,7 +62,7 @@ class Adzuna(object):
         return locations
 
     def jobs_at_location(self, location0, location1, location2, count=10):
-        endpoint = "jobs/gb/search"
+        endpoint = "jobs/gb/search/"
 
         params = {
             "location0": location0,
