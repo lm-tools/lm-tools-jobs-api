@@ -95,7 +95,9 @@ class JobAdvertManager(models.Manager):
         az = Adzuna()
         all_jobs = az.jobs_at_location(*args)
         for job in all_jobs:
-            JobAdvert.get_or_create_from_adzuna(job_area, job)
+            obj, created = JobAdvert.get_or_create_from_adzuna(job_area, job)
+            if not created:
+                break
 
 
 class JobAdvert(models.Model):
@@ -136,6 +138,7 @@ class JobAdvert(models.Model):
         obj.location_text = _mk_location_text(job)
         obj.calculate_travelling_time()
         obj.save()
+        return (obj, created)
 
     def calculate_travelling_time(self, force=False):
         if self.travelling_time and not force:
