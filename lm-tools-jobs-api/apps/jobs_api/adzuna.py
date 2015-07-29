@@ -6,6 +6,7 @@ import requests
 
 from django.conf import settings
 
+
 class Adzuna(object):
     def __init__(self):
         self.APP_ID = getattr(settings, 'ADZUNA_APP_ID')
@@ -13,7 +14,6 @@ class Adzuna(object):
         self.BASE_URL = "http://api.adzuna.com:80/v1/api/"
 
         assert all((self.APP_ID, self.APP_KEY))
-
 
     def base_request(self, endpoint, params, page=None):
         URL = "{0}{1}".format(self.BASE_URL, endpoint)
@@ -25,7 +25,6 @@ class Adzuna(object):
             "app_key": self.APP_KEY,
         })
 
-
         req = requests.get(URL, params=params)
 
         if req.status_code != 200:
@@ -33,7 +32,6 @@ class Adzuna(object):
                 req.status_code,
                 req.json()['display']))
         return req
-
 
     def unwrap_pagination(self, endpoint, params, count):
         num_results = 0

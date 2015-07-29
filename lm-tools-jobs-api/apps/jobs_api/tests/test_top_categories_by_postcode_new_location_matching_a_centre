@@ -1,0 +1,163 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/geodata/?where=CR9+2TN
+  response:
+    body: {string: '{"location":{"area":["UK","London","Croydon","Beddington"],"__CLASS__":"Adzuna::API::Response::Location","display_name":"Beddington,
+        Croydon"},"locations":[{"__CLASS__":"Adzuna::API::Response::LocationJobs","count":1,"location":{"__CLASS__":"Adzuna::API::Response::Location","display_name":"Shortlands,
+        Bromley","area":["UK","London","South East London","Bromley","Shortlands"]}},{"location":{"display_name":"Hampton
+        Wick, Kingston Upon Thames","__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","South
+        West London","Kingston Upon Thames","Hampton Wick"]},"count":1,"__CLASS__":"Adzuna::API::Response::LocationJobs"}],"__CLASS__":"Adzuna::API::Response::JobGeoData"}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['683']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 13:47:19 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.90053']
+      X-Varnish: ['1198543834']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/search//1?location0=UK&location1=London&location2=Croydon&sort_by=date&sort_direction=down
+  response:
+    body: {string: '{"__CLASS__":"Adzuna::API::Response::JobSearchResults","count":3000,"mean":30988.14,"results":[{"salary_min":15798.65,"longitude":-0.100401,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Croydon"],"display_name":"Croydon,
+        London"},"salary_is_predicted":"1","description":"Care Assistant Allied Healthcare
+        are looking for caring and passionate individuals to join our team of Care
+        Assistants providing support to our clients in the comfort of their own home.
+        We are holding immediate interviews for the CR7 Postcode Area, including Thornton
+        Heath, Norbury, New Addington, Norwood. We''d love to hear from people who
+        want to begin or continue their career in care, as we offer an interactive
+        induction, care coaching as well as further training. This will work towards
+        your \u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T14:39:39Z","latitude":51.372398,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299209155?v=588E3CCBBA4C3B32698B40EF8A055EBFE4C93D28&se=Rwqarva9QvOD3AEltWX_CA&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299209155","title":"Care
+        Assistant / Worker","company":{"__CLASS__":"Adzuna::API::Response::Company","canonical_name":"Allied
+        Healthcare","display_name":"Allied Healthcare"},"salary_max":15798.65},{"salary_min":15494.15,"longitude":-0.100401,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Croydon"],"display_name":"Croydon,
+        London"},"salary_is_predicted":"1","description":"Care Assistant Allied Healthcare
+        are looking for caring and passionate individuals to join our team of Care
+        Assistants providing support to our clients in the comfort of their own home.
+        We are holding immediate interviews for the CR0 Postcode Area, including Croydon.
+        We''d love to hear from people who want to begin or continue their career
+        in care, as we offer an interactive induction, care coaching as well as further
+        training. This will work towards your QCF (NVQ) in Health and Social Care.
+        The\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T14:39:38Z","latitude":51.372398,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299209152?v=3CC4930645C0E9657FBA809847A75788C641395C&se=Rwqarva9QvOD3AEltWX_CA&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299209152","title":"Care
+        Assistant / Worker","company":{"__CLASS__":"Adzuna::API::Response::Company","canonical_name":"Allied
+        Healthcare","display_name":"Allied Healthcare"},"salary_max":15494.15},{"salary_min":16106.87,"longitude":-0.100401,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Croydon"],"display_name":"Croydon,
+        London"},"salary_is_predicted":"1","description":"Care Assistant Allied Healthcare
+        are looking for caring and passionate individuals to join our team of Care
+        Assistants providing support to our clients in the comfort of their own home.
+        We are holding immediate interviews for the CR8 Postcode area, including Purley
+        & Sanderstead. We''d love to hear from people who want to begin or continue
+        their career in care, as we offer an interactive induction, care coaching
+        as well as further training. This will work towards your QCF (NVQ) in Health
+        and Soc\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T14:39:38Z","latitude":51.372398,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299209153?v=0BD8FA6792913C29BB6DDF094CC5043CC8D6D790&se=Rwqarva9QvOD3AEltWX_CA&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299209153","title":"Care
+        Assistant / Worker","company":{"__CLASS__":"Adzuna::API::Response::Company","canonical_name":"Allied
+        Healthcare","display_name":"Allied Healthcare"},"salary_max":16106.87},{"salary_min":15510.48,"longitude":-0.100401,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Croydon"],"display_name":"Croydon,
+        London"},"salary_is_predicted":"1","description":"Care Assistant Allied Healthcare
+        are looking for caring and passionate individuals to join our team of Care
+        Assistants providing support to our clients in the comfort of their own home.
+        We are holding immediate interviews for CR5 Postcode Area including Coulsdon.
+        We''d love to hear from people who want to begin or continue their career
+        in care, as we offer an interactive induction, care coaching as well as further
+        training. This will work towards your QCF (NVQ) in Health and Social Care.
+        The dut\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T14:39:33Z","latitude":51.372398,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299209007?v=26686285700736CAE7942759CE6D27FF44F45D49&se=Rwqarva9QvOD3AEltWX_CA&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299209007","title":"Care
+        Assistant / Worker","company":{"__CLASS__":"Adzuna::API::Response::Company","canonical_name":"Allied
+        Healthcare","display_name":"Allied Healthcare"},"salary_max":15510.48},{"salary_min":15841.71,"longitude":-0.100401,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Croydon"],"display_name":"Croydon,
+        London"},"salary_is_predicted":"1","description":"Care Assistant Allied Healthcare
+        are looking for caring and passionate individuals to join our team of Care
+        Assistants providing support to our clients in the comfort of their own home.
+        We are holding immediate interviews for CR2 Postcode Area, including South
+        Croydon & Sanderstead. We''d love to hear from people who want to begin or
+        continue their career in care, as we offer an interactive induction, care
+        coaching as well as further training. This will work towards your QCF (NVQ)
+        in Health and \u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T14:39:32Z","latitude":51.372398,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299209001?v=3BDBB1493EDA902D184C758D945CACEADF53637E&se=Rwqarva9QvOD3AEltWX_CA&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299209001","title":"Care
+        Assistant / Worker","company":{"__CLASS__":"Adzuna::API::Response::Company","canonical_name":"Allied
+        Healthcare","display_name":"Allied Healthcare"},"salary_max":15841.71},{"salary_min":15779.63,"longitude":-0.100401,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Croydon"],"display_name":"Croydon,
+        London"},"salary_is_predicted":"1","description":"Care Assistant - Guaranteed
+        Hours Available - Apply Now Allied Healthcare are looking for caring and passionate
+        individuals to join our team of Care Assistants providing support to our clients
+        in the comfort of their own home. We are holding immediate interviews for
+        the following areas; Coulsdon, Thornton Heath, Norbury, Purley, South Croydon,
+        Croydon, New Addington, Sanderstead, Norwood. We''d love to hear from people
+        who want to begin or continue their career in care, as we offer an interactiv\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T14:39:28Z","latitude":51.372398,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299208883?v=193204FBCD4FA245375FCCE3128D117766AD967B&se=Rwqarva9QvOD3AEltWX_CA&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299208883","title":"Care
+        Assistant / Worker","company":{"__CLASS__":"Adzuna::API::Response::Company","canonical_name":"Allied
+        Healthcare","display_name":"Allied Healthcare"},"salary_max":15779.63},{"salary_min":24952.77,"longitude":-0.100401,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Croydon"],"display_name":"Croydon,
+        London"},"salary_is_predicted":"1","description":"Right now we are looking
+        for a full time Front of House Team Leader to join our Croydon Fitness and
+        Wellbeing Centre. About the RoleThe post holder will be responsible for delivering
+        and ensuring professional customer service whilst maintaining operational
+        standards. There will be a large focus on diary management and resource planning
+        within the role. As the welcoming face of our club, your job will be to meet
+        and greet all visitors. Importantly, you''ll ensure the smooth running of
+        reception b\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T14:39:12Z","latitude":51.372398,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299208477?v=F201EF547C31796D54DE57B5F0BD8E5F94F3EAC6&se=Rwqarva9QvOD3AEltWX_CA&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299208477","title":"Front
+        of House Team Leader","company":{"__CLASS__":"Adzuna::API::Response::Company","canonical_name":"Nuffield
+        Health","display_name":"Nuffield Health"},"salary_max":24952.77},{"salary_min":25313.78,"longitude":-0.100401,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Croydon"],"display_name":"Croydon,
+        London"},"salary_is_predicted":"1","description":"BMI Shirley Oaks Hospital
+        in Croydon has an excellent opportunity for a Fertility Nurse Specialist to
+        join our dedicated, supportive and professional Fertility Treatment Centre.
+        The unit was founded in 1995 and is staffed by an experienced team of medical,
+        nursing, scientific and counselling personnel. Our philosophy is to provide
+        each person/couple with a tailor-made investigative programme and management
+        package to suit their individual needs. This is a full-time post for 37.5
+        hours per week.\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T14:39:10Z","latitude":51.372398,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299208420?v=CD0BE51EAFF1B41DE2F17D2CA445CE4D5A36EBE0&se=Rwqarva9QvOD3AEltWX_CA&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299208420","title":"Fertility
+        Nurse Practitioner","company":{"__CLASS__":"Adzuna::API::Response::Company","canonical_name":"BMI
+        Healthcare","display_name":"BMI Healthcare"},"salary_max":25313.78},{"salary_min":18770.25,"longitude":-0.100401,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Croydon"],"display_name":"Croydon,
+        London"},"salary_is_predicted":"1","description":"We are seeking a part-time
+        NPLQ qualified Lifeguard to join our team in Nuffield Health Fitness and Wellbeing
+        centre in Whitgift, Croydon . Ideal candidate must hold a valid NPLQ certificate,
+        have excellent communications skills and have a high level of customer service.
+        At Nuffield Health we are all about great people - recruiting and nurturing
+        talent in a supportive, development-led, multidisciplinary setting where teamwork
+        means everything.If you are a team player who has bags of enthusiasm,\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T14:39:09Z","latitude":51.372398,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299208385?v=B33DF5B8A6E8DABE3F13A813810607D01E7AAF68&se=Rwqarva9QvOD3AEltWX_CA&utm_medium=api&utm_source=63a598e7","contract_time":"part_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299208385","title":"Lifeguard","company":{"__CLASS__":"Adzuna::API::Response::Company","canonical_name":"Nuffield
+        Health","display_name":"Nuffield Health"},"salary_max":18770.25},{"salary_min":16477.55,"longitude":-0.100401,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Croydon"],"display_name":"Croydon,
+        London"},"salary_is_predicted":"1","description":"At Fit4less Croydon we are
+        looking for a Fitness Instructor with a passion for excellent customer service,
+        to be able to create an inspirational environment where people matter, results
+        count and a passion for excellence drives everything we do. Duties will include
+        teaching group exercise classes, taking our Kickstart Inductions, member interaction
+        and maintaining clean and safe facilities. Our fitness team are also required
+        to take a pro-active role in reception, sales and retention activities\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T14:34:20Z","latitude":51.372398,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299207061?v=8F4932ED33A81B4DC576269A8D4FCD32E0E21171&se=Rwqarva9QvOD3AEltWX_CA&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Unknown","tag":"unknown"},"id":"299207061","title":"Crew
+        Member / Fitness Instructor","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"\u00e9nergie
+        group"},"salary_max":16477.55}]}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['13377']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 13:47:21 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.80033']
+      X-Varnish: ['1198543848']
+    status: {code: 200, message: OK}
+version: 1

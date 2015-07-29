@@ -3,6 +3,7 @@ from django.test import TestCase
 from jobs_api.adzuna import Adzuna
 from jobs.models import JobArea
 
+
 class TestAdzunaLib(TestCase):
 
     def test_jobs_at_location(self):
@@ -17,7 +18,10 @@ class TestAdzunaLib(TestCase):
 
     def test_locations_for_invalid_postcode(self):
         az = Adzuna()
-        self.assertRaises(AssertionError, az.locations_for_postcode, 'not a postcode')
+        self.assertRaises(
+            AssertionError,
+            az.locations_for_postcode, 'not a postcode'
+        )
 
     def test_locations_for_valid_postcode(self):
         az = Adzuna()

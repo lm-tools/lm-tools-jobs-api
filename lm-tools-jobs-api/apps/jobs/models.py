@@ -7,21 +7,25 @@ import requests
 
 from jobs_api.adzuna import Adzuna
 
+
 class UnknownJobCentreError(Exception):
     pass
 
+
 class PostcodeNotFoundError(Exception):
     pass
+
 
 class JobAreaManager(models.Manager):
 
     def import_area_and_jobs(self, job_centre_label, postcode):
         if job_centre_label:
-            return JobArea.objects.import_area_and_jobs_for_job_centre(job_centre_label)
+            return JobArea.objects.\
+                import_area_and_jobs_for_job_centre(job_centre_label)
         elif postcode:
             return JobArea.objects.import_area_and_jobs_for_postcode(postcode)
         else:
-            return None;
+            return None
 
     def import_area_and_jobs_for_postcode(self, postcode):
         try:
@@ -33,7 +37,8 @@ class JobAreaManager(models.Manager):
             raise PostcodeNotFoundError()
 
     def import_area_and_jobs_for_job_centre(self, job_centre_label):
-        job_area, new_area = JobArea.get_or_create_from_job_centre_label(job_centre_label)
+        job_area, new_area = JobArea.\
+            get_or_create_from_job_centre_label(job_centre_label)
         if new_area:
             JobAdvert.objects.import_from_adzuna(job_area, 100)
         return job_area
@@ -53,8 +58,8 @@ class JobArea(models.Model):
         except AssertionError:
             raise PostcodeNotFoundError()
         job_centre_label = None
-        for location_label in settings.LOCATION_LABELS:
-            if list(settings.LOCATION_LABELS[location_label]['locations']) == locations:
+        for location_label, location_list in settings.LOCATION_LABELS.items():
+            if list(location_list['locations']) == locations:
                 job_centre_label = location_label
                 break
         obj, created = cls.objects.get_or_create(
@@ -67,7 +72,8 @@ class JobArea(models.Model):
     @classmethod
     def get_or_create_from_job_centre_label(cls, job_centre_label):
         try:
-            locations = list(settings.LOCATION_LABELS[job_centre_label]['locations'])
+            locations = list(
+                settings.LOCATION_LABELS[job_centre_label]['locations'])
         except KeyError:
             raise UnknownJobCentreError()
         obj, created = cls.objects.get_or_create(
@@ -84,7 +90,7 @@ class JobAdvertManager(models.Manager):
         Method to import jobs from the Adzuna API
         """
         locations = job_area.locations
-        args = list(locations)+[count]
+        args = list(locations) + [count]
 
         az = Adzuna()
         all_jobs = az.jobs_at_location(*args)
@@ -106,7 +112,7 @@ class JobAdvert(models.Model):
     objects = JobAdvertManager()
 
     def __str__(self):
-        category = getattr(self, "category") or  "Unknown"
+        category = getattr(self, "category") or "Unknown"
         return "{category} ({title})".format(
             category=category,
             title=self.title,
@@ -120,31 +126,32 @@ class JobAdvert(models.Model):
             return ", ".join(area)
 
         obj, created = cls.objects.get_or_create(
-                job_area=job_area,
-                title=job['title'],
-                created=job['created'],
-                defaults={
-                    "category": job['category']['label'],
-                }
-            )
+            job_area=job_area,
+            title=job['title'],
+            created=job['created'],
+            defaults={
+                "category": job['category']['label'],
+            }
+        )
         obj.location_text = _mk_location_text(job)
         obj.calculate_travelling_time()
         obj.save()
-
 
     def calculate_travelling_time(self, force=False):
         if self.travelling_time and not force:
             return self.travelling_time
         if self.job_area.job_centre_label:
             params = {
-                "origin":  settings.LOCATION_LABELS[self.job_area.job_centre_label]['postcode'],
-                "destination":  self.location_text,
-                "mode":  "transit",
+                "origin": settings.LOCATION_LABELS[
+                    self.job_area.job_centre_label]['postcode'],
+                "destination": self.location_text,
+                "mode": "transit",
             }
             try:
-                results = requests.get("https://maps.googleapis.com/maps/api/directions/json",
-                    params=params).json()
-                travel_time_in_minutes = results['routes'][0]['legs'][0]['duration']['value'] / 60
+                url = "https://maps.googleapis.com/maps/api/directions/json"
+                results = requests.get(url, params=params).json()
+                travel_time_in_minutes = \
+                    results['routes'][0]['legs'][0]['duration']['value'] / 60
                 self.travelling_time = travel_time_in_minutes
             except:
                 self.travelling_time = -1

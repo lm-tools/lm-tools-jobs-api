@@ -2,6 +2,7 @@ from django.test import TestCase
 
 from jobs.models import JobAdvert, JobArea
 
+
 class ModelSmokeTests(TestCase):
 
     def test_str(self):
