@@ -1470,4 +1470,657 @@ interactions:
       X-Catalyst: ['5.80033']
       X-Varnish: ['774685063']
     status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/search/1?location0=UK&location1=London&location2=Central+London&sort_by=date&sort_direction=down
+  response:
+    body: {string: '{"__CLASS__":"Adzuna::API::Response::JobSearchResults","count":32486,"results":[{"longitude":-0.11126,"salary_min":22000,"__CLASS__":"Adzuna::API::Response::Job","title":"Multi-lingual
+        Inside Sales Executive, 28K OTE","category":{"__CLASS__":"Adzuna::API::Response::Category","tag":"graduate-jobs","label":"Graduate
+        Jobs"},"latitude":51.51985,"location":{"__CLASS__":"Adzuna::API::Response::Location","display_name":"Central
+        London, London","area":["UK","London","Central London"]},"description":"Multi-lingual
+        Inside Sales Executive, German Speaker Central London Salary: \u00a322,000
+        Basic - \u00a328,000 OTE REF: LONAW5134 We have a great opportunity for fresh
+        graduates to kick","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299226846?v=A46134FFB3087E02E164B6DE529305636A3BB316&se=cbkT5aa9TYKeEmjTeOuvNg&utm_medium=api&utm_source=63a598e7","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Pareto
+        Law Limited"},"salary_max":28000,"created":"2015-07-29T15:39:47Z","salary_is_predicted":"0","id":"299226846"},{"category":{"__CLASS__":"Adzuna::API::Response::Category","tag":"legal-jobs","label":"Legal
+        Jobs"},"location":{"area":["UK","London","Central London","The City"],"__CLASS__":"Adzuna::API::Response::Location","display_name":"The
+        City, Central London"},"salary_min":78835.4,"__CLASS__":"Adzuna::API::Response::Job","title":"Corporate
+        Tax 3 MID-TIER INTERNATIONAL FIRM","salary_max":78835.4,"created":"2015-07-29T15:37:54Z","salary_is_predicted":"1","id":"299226005","description":"This
+        international mid-market firm''s London office regularly advise on energy,
+        mining, tax, infrastructure, life sciences and banking and finance transactions
+        both domestically and internationally. The tax team are now looking for a
+        Corporate Tax Associate with 3PQE to join their growing and ambitious London
+        team. Working on a broad range of corporate tax matters, the successful candidate
+        will gain exposure to a wide range of work and benefit from excellent levels
+        of client contact within a com\u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299226005?v=11166AF0DB18029324C0465F024273DB01AB77F0&se=cbkT5aa9TYKeEmjTeOuvNg&utm_medium=api&utm_source=63a598e7","company":{"display_name":"Noble
+        Legal Limited","__CLASS__":"Adzuna::API::Response::Company"}},{"category":{"__CLASS__":"Adzuna::API::Response::Category","tag":"legal-jobs","label":"Legal
+        Jobs"},"location":{"__CLASS__":"Adzuna::API::Response::Location","display_name":"The
+        City, Central London","area":["UK","London","Central London","The City"]},"salary_min":66389.73,"__CLASS__":"Adzuna::API::Response::Job","title":"Corporate
+        TAX NQ-2 - MAGIC CIRCLE PRACTICE","salary_max":66389.73,"created":"2015-07-29T15:37:53Z","salary_is_predicted":"1","id":"299225991","description":"My
+        client is a Magic Circle firm based in the City of London, they are consistently
+        band 1 in legal editorials for tax, not just the team in general but also
+        the Partners who lead these teams. The successful candidate will have high
+        partner contact with partners across the team as associates are encouraged
+        to take on a broad range of workload. Associates and Partners in this team
+        are multi-specialists so you can expect exposure to a full range of tax issues,
+        predominantly in Corporate Tax. The \u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299225991?v=00EA0A154FA4BA187202D0557769554EFC77FD26&se=cbkT5aa9TYKeEmjTeOuvNg&utm_medium=api&utm_source=63a598e7","company":{"display_name":"Noble
+        Legal Limited","__CLASS__":"Adzuna::API::Response::Company"}},{"location":{"display_name":"The
+        City, Central London","__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","The City"]},"category":{"label":"Legal Jobs","tag":"legal-jobs","__CLASS__":"Adzuna::API::Response::Category"},"title":"Relaxed
+        Working Culture \u2013 1-4 PQE Commercial Litigation Associates \u2013 Join
+        this Emerging City Firm","__CLASS__":"Adzuna::API::Response::Job","salary_min":71944.56,"id":"299225526","salary_is_predicted":"1","salary_max":71944.56,"created":"2015-07-29T15:31:32Z","company":{"display_name":"Duke
+        and Rawson","__CLASS__":"Adzuna::API::Response::Company"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299225526?v=85B02183B95AA9CEF2FBF2D5BB852863BAE88A71&se=cbkT5aa9TYKeEmjTeOuvNg&utm_medium=api&utm_source=63a598e7","description":"We
+        are working closely with a fast-growing City firm looking to add talented
+        Commercial Litigation Associates who are interested in joining one of the
+        true success stories of the legal market in recent years. The firm\u2019s
+        disputes practice regularly work on high-stakes, complex international commercial
+        litigation and arbitration matters and have coverage in the energy, technology,
+        financial services and life sciences sectors. Suitable candidates for this
+        role will have already gained between 1-4 \u2026"},{"category":{"label":"Engineering
+        Jobs","__CLASS__":"Adzuna::API::Response::Category","tag":"engineering-jobs"},"latitude":51.51937,"location":{"__CLASS__":"Adzuna::API::Response::Location","display_name":"Barbican,
+        Central London","area":["UK","London","Central London","Barbican"]},"__CLASS__":"Adzuna::API::Response::Job","longitude":-0.0941,"salary_min":28000,"title":"Project
+        Manager: Construction Industry","contract_type":"permanent","created":"2015-07-29T15:31:04Z","salary_max":36000,"id":"299225336","salary_is_predicted":"0","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299225336?v=C7325D014BDAF3BA53EEF5BA8B0D62897ABD84DA&se=cbkT5aa9TYKeEmjTeOuvNg&utm_medium=api&utm_source=63a598e7","description":"Do
+        you have project management experience and a passion for doing things right
+        first time? We are looking for a project manager to identify and lead the
+        delivery of a range of activities to develop best practice, identify new approaches
+        and enable innovation within the construction industry. Focused on delivering
+        guidance and outcomes which improve practices across infrastructure and the
+        built environment, this is a key role within CIRIA\u2019s highly regarded
+        team. Working alongside colleagues who \u2026","company":{"canonical_name":"CIRIA","__CLASS__":"Adzuna::API::Response::Company","display_name":"Ciria"}},{"__CLASS__":"Adzuna::API::Response::Job","salary_min":43207.9,"title":"Underwriting
+        Controls & Compliance Co-Ordinator","category":{"label":"Unknown","tag":"unknown","__CLASS__":"Adzuna::API::Response::Category"},"location":{"area":["UK","London","Central
+        London","The City"],"__CLASS__":"Adzuna::API::Response::Location","display_name":"The
+        City, Central London"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299225269?v=E47F2F5905CF9B654239488070E1603E0452F1FF&se=cbkT5aa9TYKeEmjTeOuvNg&utm_medium=api&utm_source=63a598e7","description":"Underwriting
+        Controls & Compliance Co-Ordinator \u2013 6 Month Maternity Cover Contract
+        An exciting opportunity to join a Lloyds Syndicate underwriting platform based
+        in the Lloyds Building in Lime Street. They are seeking to recruit an Underwriting
+        Controls Co-ordinator to join a dedicated Underwriting Controls & Compliance
+        division, reporting to our Head of Underwriting Controls. This role is a Maternity
+        Cover replacement position. Requirements: \u00d8 Experience gained in an insurance
+        related control \u2026","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"MW
+        Appointments"},"salary_max":43207.9,"created":"2015-07-29T15:30:50Z","id":"299225269","salary_is_predicted":"1"},{"salary_min":28000,"__CLASS__":"Adzuna::API::Response::Job","title":"Field
+        Applicants Specialist","category":{"__CLASS__":"Adzuna::API::Response::Category","tag":"unknown","label":"Unknown"},"location":{"display_name":"The
+        City, Central London","__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","The City"]},"description":"Field Service Engineer Location: London
+        Salary: \u00a330,000 Permanent/Full-Time Sector: Engineering Ref: 1675 Do
+        you hold a degree in Electrical Engineering, Electronics or Computer Science
+        along with either Italian, French, German or Spanish language? Are you looking
+        for your next step on your career ladder? An industry leading lighting company
+        requires an Italian, French, German or Spanish speaking Field Service Engineer.
+        As the Field Service Engineer you will support the clients\u2019 commercial
+        and \u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299225253?v=207A93D86EDE70245FD0386B9B7230F90F0F3218&se=cbkT5aa9TYKeEmjTeOuvNg&utm_medium=api&utm_source=63a598e7","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Adore
+        Recruitment"},"created":"2015-07-29T15:30:45Z","salary_max":32000,"salary_is_predicted":"0","id":"299225253"},{"id":"299225160","salary_is_predicted":"0","created":"2015-07-29T15:30:31Z","salary_max":76000,"company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"DMJ
+        Legal"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299225160?v=31E64C8E26BA0694EA5BBE451F4C7BC4BB4F9FEF&se=cbkT5aa9TYKeEmjTeOuvNg&utm_medium=api&utm_source=63a598e7","description":"Leading
+        West End Firm are currently looking for a mid-level associate to join their
+        award winning Media Litigation team. The work will involve all aspects of
+        media law including defamation, privacy actions, Data Protection and Freedom
+        of Information litigation. Much of the work that you will be undertaking is
+        confidential as well as representing a number of well-known brands and FTSE
+        100 companies as well as high-profile individuals in the entertainment industry.
+        The ideal candidate will be 2PQ\u2026","location":{"display_name":"The City,
+        Central London","__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","The City"]},"category":{"label":"Legal Jobs","__CLASS__":"Adzuna::API::Response::Category","tag":"legal-jobs"},"title":"Media
+        Litigation 2-4PQE","__CLASS__":"Adzuna::API::Response::Job","salary_min":70000},{"company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Blayze
+        Consulting Group Ltd"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299225048?v=F6A0001BBB9506044438BE115E6A5A02D142EEC2&se=cbkT5aa9TYKeEmjTeOuvNg&utm_medium=api&utm_source=63a598e7","description":"Client
+        Famous for building homes and neighbourhoods throughout London and the South
+        East our FTSE 250 Developer client are made up of five autonomous companies
+        which set out to create award winning luxury homes that consistently exceed
+        expectations. Project A recently secured development in the West End undergoing
+        major regeneration which will result in over 600 high end residential units
+        &amp; a 35 storey luxury tower block over 85 metres high, office &amp; retail
+        space, a basement car park. T\u2026","id":"299225048","salary_is_predicted":"0","salary_max":80000,"created":"2015-07-29T15:30:15Z","title":"Senior
+        Quantity Surveyor (Major West End Regeneration Dev)","__CLASS__":"Adzuna::API::Response::Job","salary_min":70000,"longitude":-0.12845,"latitude":51.5114,"location":{"area":["UK","London","Central
+        London","Covent Garden"],"__CLASS__":"Adzuna::API::Response::Location","display_name":"Covent
+        Garden, Central London"},"category":{"tag":"unknown","__CLASS__":"Adzuna::API::Response::Category","label":"Unknown"}},{"location":{"__CLASS__":"Adzuna::API::Response::Location","display_name":"The
+        City, Central London","area":["UK","London","Central London","The City"]},"category":{"__CLASS__":"Adzuna::API::Response::Category","tag":"unknown","label":"Unknown"},"title":"Investment
+        Surveyor - Central London Focus","salary_min":60000,"__CLASS__":"Adzuna::API::Response::Job","salary_is_predicted":"0","id":"299225021","created":"2015-07-29T15:30:14Z","salary_max":70000,"company":{"display_name":"HAYS","__CLASS__":"Adzuna::API::Response::Company"},"description":"Investment
+        Surveyor - Central London Focus City of London Circa \u00a365,000 plus bonus
+        and benefits Are you an Investment Surveyor with a hankering to focus on prime
+        central London commercial property? My client is a City-based multi-disciplinary
+        consultancy with a purely central London focus who pride themselves on making
+        properties work harder for their clients. THE OPPORTUNITY The practice is
+        held in high regard with many clients coming to them for all of their property
+        needs, both landlords and\u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299225021?v=32C5384657CC9CD8E4E7428CC182D1DFD8CCB98D&se=cbkT5aa9TYKeEmjTeOuvNg&utm_medium=api&utm_source=63a598e7"}],"mean":45893.28}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['12456']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 14:47:24 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.90053']
+      X-Varnish: ['825127907']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/search/2?location0=UK&location1=London&location2=Central+London&sort_by=date&sort_direction=down
+  response:
+    body: {string: '{"__CLASS__":"Adzuna::API::Response::JobSearchResults","count":32486,"mean":45893.28,"results":[{"salary_min":50000,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","The City"],"display_name":"The City, Central London"},"salary_is_predicted":"0","description":"Rating
+        and Occupier Services City of London To \u00a360,000 plus bonus and benefits
+        How would you like to take over the \u00a3250K Rating section of a practice
+        that''s been in existence for 200 years? My client is a City-based multi-disciplinary
+        consultancy with a central London focus who pride themselves on making properties
+        work harder for their clients. THE OPPORTUNITY The practice is held in high
+        regard with many clients coming to them for all of their property needs, both
+        landlords and occupiers. Thi\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:30:13Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299225014?v=250AF53BBDF8CC84D8FF8672DD6E3F365D080218&se=b6ayzxBDQRK_YzKR3Al8rg&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Unknown","tag":"unknown"},"id":"299225014","title":"Chartered
+        Surveyor - Rating & Occupier Services","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"HAYS"},"salary_max":60000},{"latitude":51.514809,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Accounting
+        & Finance Jobs","tag":"accounting-finance-jobs"},"id":"299223747","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"GURU
+        CAREERS"},"salary_max":45000,"salary_min":40000,"longitude":-0.102633,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London"],"display_name":"Central London, London"},"salary_is_predicted":"0","description":"Research
+        Associate / Asset Management Research Analyst A Research Associate / Asset
+        Management Research Analyst is needed to join a global trade association representing
+        the hedge fund industry. Using qualitative and quantitative methodologies
+        you can expect to play a key role analysing data and conducting statistical
+        analysis to provide key insight. Operating since 1990 and with a corporate
+        membership in excess of 1,500 firms (with over 9000 individual contacts) in
+        more than 50 countries this \u2026","created":"2015-07-29T15:26:23Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223747?v=BD771C46B9A8F3ABE977A36324CF0FC48D25002B&se=b6ayzxBDQRK_YzKR3Al8rg&utm_medium=api&utm_source=63a598e7","title":"Research
+        Associate / Asset Management Research Analyst"},{"latitude":51.51985,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Charity
+        & Voluntary Jobs","tag":"charity-voluntary-jobs"},"id":"299223755","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"EARDLEY
+        WILMOT"},"salary_max":22500,"salary_min":19500,"longitude":-0.11126,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London"],"display_name":"Central London, London"},"salary_is_predicted":"0","description":"This
+        small and innovative NGO provides world-class health and educational support
+        to orphaned and vulnerable children, ensuring they can access higher education
+        and employment, believing your birthplace should not determine your future.
+        Join them and you will play an important part in raising essential funds to
+        place students on a pathway from cradle to career. The UK development office
+        aims to raise profile in the UK and mobilise Europe-based donors to support
+        the current \u00a316 million fundraisi\u2026","created":"2015-07-29T15:26:23Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223755?v=FC0EC4C27657B476D7AE54721E98092DE35C99FC&se=b6ayzxBDQRK_YzKR3Al8rg&utm_medium=api&utm_source=63a598e7","title":"PA"},{"latitude":51.51985,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Creative
+        & Design Jobs","tag":"creative-design-jobs"},"id":"299223754","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"REDWOOD
+        PUBLISHING RECRUITMENT"},"salary_max":39446.96,"salary_min":39446.96,"longitude":-0.11126,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London"],"display_name":"Central London, London"},"salary_is_predicted":"1","description":"We
+        have a wonderful opportunity for a switched on project manager with experience
+        of the arts and culture or literature sector to work for an inspirational
+        not for profit reading charity. The role of Arts Project Manager will be to
+        manage a range of existing literature projects on time and to budget; including
+        high-profile literary prizes, campaigns and other reading and writing activities.
+        This role will be responsible for designing and developing new projects in
+        line with the organisation\u2019s s\u2026","created":"2015-07-29T15:26:23Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223754?v=6AA1F5A28571C0D53CB8F80CD2441679052A6B42&se=b6ayzxBDQRK_YzKR3Al8rg&utm_medium=api&utm_source=63a598e7","title":"Arts
+        Project Manager - 9 Months Fixed Term Contract"},{"salary_min":70000,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","The City"],"display_name":"The City, Central London"},"salary_is_predicted":"0","description":"Project
+        Director (Digital) \u00a370,000 - \u00a380,000 Award-winning (Top 100) digital
+        agency Central London, London I currently have a great opportunity for a Project
+        Director to join an award-winning digital agency in London. This 150 strong
+        top 100 (NMA) agency has a client base to be reckoned with, with a lovely
+        blend of very well known media, automotive, restaurant, FMCG, and tech clients
+        (plus more). With an expanding client base (and an impressive trophy cabinet),
+        they are looking for a Project Di\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:26:23Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223760?v=00B91C29AA74E17D2690C17998C460E64A064B46&se=b6ayzxBDQRK_YzKR3Al8rg&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299223760","title":"Project Director (Digital)","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","canonical_name":"ASPIRE","display_name":"ASPIRE"},"salary_max":80000},{"salary_min":25000,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","The City"],"display_name":"The City, Central London"},"salary_is_predicted":"0","description":"A
+        successful, international architecture practice are looking for a Team Assistant
+        to provide secretarial and administrative support to Directors and teams of
+        interiors and architectural staff. Reporting to the Senior Secretary/Assistant
+        to Directors, the role involves working closely with the Directors and all
+        associated team members to ensure that the team and projects operate smoothly
+        and efficiently, and team / project activities and documents are coordinated
+        and presented at the highest st\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:26:22Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223730?v=5E6A1BC2107E0D1159997F9EE0B009DFD2957882&se=b6ayzxBDQRK_YzKR3Al8rg&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Energy,
+        Oil & Gas Jobs","tag":"energy-oil-gas-jobs"},"id":"299223730","title":"Team
+        Secretary for International Architecture Practice","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"ADREM
+        GROUP"},"salary_max":300000},{"latitude":51.51985,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Other/General
+        Jobs","tag":"other-general-jobs"},"id":"299223697","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"REDWOOD
+        PUBLISHING RECRUITMENT"},"salary_max":20275.69,"salary_min":20275.69,"longitude":-0.11126,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London"],"display_name":"Central London, London"},"salary_is_predicted":"1","description":"We
+        are looking to recruit a switched on and pro-active individual to work for
+        the publishing arm of a leading professional Society. Based in London this
+        role will be responsible for importing data by the BOA and other Associations/Consortia
+        sales agreements, and will also involve supplying the marketing department
+        with data as requested. You will also be the first point of contact for subscription
+        related queries. Main responsibilities of the role will include: Successfully
+        importing BOA suppli\u2026","created":"2015-07-29T15:26:21Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223697?v=D07992B907DD05EB2E73FBC468B4AECE319FF24A&se=b6ayzxBDQRK_YzKR3Al8rg&utm_medium=api&utm_source=63a598e7","title":"Subscriptions
+        & Data Executive - Publishing"},{"salary_min":19000,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","The City"],"display_name":"The City, Central London"},"salary_is_predicted":"0","description":"A
+        highly successful, aspirational architecture practice is looking for a Receptionist
+        to join their team. As the first point of contact, the Receptionist will be
+        responsible for ensuring an exceptionally professional approach to managing
+        all reception duties that reflect the company values. Reporting to the Senior
+        Secretary/Assistant to Directors (London), this person is responsible for
+        ensuring an efficient and effective reception service, including handling
+        a high volume of calls, and meeting\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:26:21Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223702?v=CA80228C91C25E12B883BAFE642179314075207C&se=b6ayzxBDQRK_YzKR3Al8rg&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Energy,
+        Oil & Gas Jobs","tag":"energy-oil-gas-jobs"},"id":"299223702","title":"Receptionist
+        for Aspirational Architecture Practice","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"ADREM
+        GROUP"},"salary_max":25000},{"latitude":51.51985,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Accounting
+        & Finance Jobs","tag":"accounting-finance-jobs"},"id":"299223670","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"OFFICE
+        CONCIERGE"},"salary_max":26000,"salary_min":21000,"longitude":-0.11126,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London"],"display_name":"Central London, London"},"salary_is_predicted":"0","description":"Office
+        Concierge is the number one leading provider of Reception Management Services
+        in Central London. Our front of house Operatives deliver an unsurpassed five
+        star hotel-style visitor experience to a large number of prestigious office
+        buildings in the West End, City and Canary Wharf. Our Receptionists are trained
+        to deliver an outstanding level of customer service that surpasses any other
+        you would receive within a 5 star hospitality environment. Their objective
+        and focus, is service; to be \u2026","created":"2015-07-29T15:26:20Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223670?v=0D59E508993C98D5ED2E2AB55073A630DA75558D&se=b6ayzxBDQRK_YzKR3Al8rg&utm_medium=api&utm_source=63a598e7","title":"Corporate
+        Receptionist - \u00a321,000-\u00a328,000 per annum"},{"latitude":51.51985,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299223675","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"ECOM
+        RECRUITMENT LTD"},"salary_max":50000,"salary_min":45000,"longitude":-0.11126,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London"],"display_name":"Central London, London"},"salary_is_predicted":"0","description":"London
+        3 month contract: \u00a345-50k pro-rata A leading telecommunications company
+        are looking for a UX Researcher to join their team. Working in their consumer-insight
+        driven innovation lab, you will be helping to deliver inspiring and relevant
+        solutions to make consumers\u2019 lives richer, easier, and better connected.
+        Conducting qualitative and quantitative research & leading the usability testing
+        process Working with the Creative Director to turn user insights into actionable
+        recommendations Presen\u2026","created":"2015-07-29T15:26:20Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223675?v=4EBC6B7A02178C10BE252C7E428F675FBF94B5F1&se=b6ayzxBDQRK_YzKR3Al8rg&utm_medium=api&utm_source=63a598e7","title":"UX
+        Researcher"}]}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['13387']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 14:47:27 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.80033']
+      X-Varnish: ['825127947']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/search/3?location0=UK&location1=London&location2=Central+London&sort_by=date&sort_direction=down
+  response:
+    body: {string: '{"__CLASS__":"Adzuna::API::Response::JobSearchResults","count":32486,"mean":45893.28,"results":[{"latitude":51.5114,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"PR,
+        Advertising & Marketing Jobs","tag":"pr-advertising-marketing-jobs"},"id":"299223541","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"E
+        J CHURCH"},"salary_max":24000,"salary_min":21000,"longitude":-0.12845,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","Covent Garden"],"display_name":"Covent Garden, Central London"},"salary_is_predicted":"0","description":"Account
+        Executive Central London Up to \u00a324k plus excellent career progression
+        An opportunity has arisen for a highly driven and organised Account Executive
+        to join our client''s fast-paced and successful promotional merchandise company,
+        handling two of its largest, most prestigious client accounts within the Health
+        and Beauty sector and becoming key members of a busy & thriving account management
+        team. Our client is the UK market leader with 6 offices globally and an absolutely
+        stellar reputatio\u2026","created":"2015-07-29T15:26:10Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223541?v=A20A66D83F49A883112C51B294D3B99104044378&se=27xHqBokQWSadmI85Q0XVg&utm_medium=api&utm_source=63a598e7","title":"Account
+        Executive"},{"salary_min":45000,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","The City"],"display_name":"The City, Central London"},"salary_is_predicted":"0","description":"A
+        rare opportunity has arisen with a very prestigious City Livery Company for
+        a professional individual to join as their Head of Secretariat. This is a
+        pivotal role in a small but fairly complex organisation, with wide-ranging
+        charitable and business interests. Three core functions are involved; the
+        organisation and management of the Company\u2019s committee system; acting
+        as the \u2018guardian\u2019 of the governance code for both the Company and
+        its charities; and the delivery of effective and efficient adm\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:26:09Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223511?v=9E4723602209C9ADAB4338C543E5E57ACA3A1C83&se=27xHqBokQWSadmI85Q0XVg&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Creative
+        & Design Jobs","tag":"creative-design-jobs"},"id":"299223511","title":"HEAD
+        OF SECRETARIAT - CITY LIVERY COMPANY","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"AMANDA
+        NEWELL LTD"},"salary_max":45000},{"latitude":51.51985,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299223517","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"ELLWOOD
+        ATFIELD"},"salary_max":140000,"salary_min":140000,"longitude":-0.11126,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London"],"display_name":"Central London, London"},"salary_is_predicted":"0","description":"This
+        global healthcare business has selected Ellwood Atfield to recruit a Director,
+        Public Affairs and Policy, UK and EU, to be based in Central London. The company
+        is one of the most entrepreneurial and dynamic organisations in its particular
+        market. Vision and flair have meant that it has grown exponentially in recent
+        years across many geographic markets. Now spanning Europe, America, and AsiaPac
+        its services are highly regulated and issues rich. It is therefore vital that
+        the company is able\u2026","created":"2015-07-29T15:26:09Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223517?v=0B883043F9F0CF30B1CF3EE8F7A356ADF8D1A691&se=27xHqBokQWSadmI85Q0XVg&utm_medium=api&utm_source=63a598e7","title":"Director,
+        Public Affairs and Policy, EU and UK"},{"salary_min":384000,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","The City"],"display_name":"The City, Central London"},"salary_is_predicted":"0","description":"THE
+        ROLE Working as part of a small in house Digital Design team Designing for
+        a range of Digital collateral, including; e-mails, banners and microsites
+        Working alongside developers to create responsive microsite designs UX experience
+        isn''t a must but would be hugely beneficial THE LIKE-MIND Will have a desire
+        to work as part of a small vibrant creative team Will have a strong ability
+        within the Adobe Creative Suite Will have previous travel/leisure experience
+        to show in their portfolio Be able\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:26:09Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223525?v=3F4A09A4AA615DA4F0068506481277107A5DC8B9&se=27xHqBokQWSadmI85Q0XVg&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Creative
+        & Design Jobs","tag":"creative-design-jobs"},"id":"299223525","title":"Senior
+        Digital Designer","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"GEMINI
+        PEOPLE"},"salary_max":441600},{"latitude":51.51985,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Charity
+        & Voluntary Jobs","tag":"charity-voluntary-jobs"},"id":"299223526","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"ECOM
+        RECRUITMENT LTD"},"salary_max":84000,"salary_min":72000,"longitude":-0.11126,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London"],"display_name":"Central London, London"},"salary_is_predicted":"0","description":"London
+        \u00a3300-350PD One of the UK\u2019s leading charities are looking for a freelance
+        Digital Analytics Manager to start immediately. You\u2019ll be helping to
+        implement online tagging and analytics solutions to provide accurate, actionable
+        data to the business. Your key responsibilities will be: Liasing with stakeholders
+        other teams to translate business requirements into technical solutions Developing
+        and implementing analytics solutions across multiple online properties Leading
+        the integration of multi\u2026","created":"2015-07-29T15:26:09Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223526?v=0B9A687201A595915B14EBD68FF3A3640EE3E8AA&se=27xHqBokQWSadmI85Q0XVg&utm_medium=api&utm_source=63a598e7","title":"Digital
+        Analytics Manager"},{"latitude":51.51985,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Creative
+        & Design Jobs","tag":"creative-design-jobs"},"id":"299223479","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"ATWOOD
+        TATE"},"salary_max":26415,"salary_min":26415,"longitude":-0.11126,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London"],"display_name":"Central London, London"},"salary_is_predicted":"1","description":"We
+        have an exciting opportunity for an experienced Publishing Sales Executive
+        to work for a prestigious STM society publisher in central London. You will
+        be responsible for the international sales of a journal archive package and
+        other products from across the Institute. Key duties: Responsible for international
+        sales of the journals archive package To meet and exceed sales revenue targets
+        Develop and proactively manage business relationships with new and existing
+        customers Follow up sales lead\u2026","created":"2015-07-29T15:26:07Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223479?v=6AFB0AF655D238D2651D987B9C7A921E3AE97A56&se=27xHqBokQWSadmI85Q0XVg&utm_medium=api&utm_source=63a598e7","title":"Publishing
+        Sales Executive"},{"latitude":51.51985,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Creative
+        & Design Jobs","tag":"creative-design-jobs"},"id":"299223480","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"ATWOOD
+        TATE"},"salary_max":25429.18,"salary_min":25429.18,"longitude":-0.11126,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London"],"display_name":"Central London, London"},"salary_is_predicted":"1","description":"A
+        leading independent financial publishing company based in Central London has
+        an excellent opportunity for a Sales Executive to generate digital and print
+        advertising revenue. Our client offers exciting products, ongoing training
+        and great career prospects. Key duties: Generating revenue through selling
+        advertising space in publications and online articles Account management Cold
+        calling and new business development Building and maintaining strong client
+        relationships within financial sector M\u2026","created":"2015-07-29T15:26:07Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223480?v=E2932FF1190F9D105E0CB3C3AFC745D57BD1F7A3&se=27xHqBokQWSadmI85Q0XVg&utm_medium=api&utm_source=63a598e7","title":"Sales
+        Executive (B2B)"},{"latitude":51.51985,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Charity
+        & Voluntary Jobs","tag":"charity-voluntary-jobs"},"id":"299223224","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"ECOM
+        RECRUITMENT LTD"},"salary_max":45000,"salary_min":40000,"longitude":-0.11126,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London"],"display_name":"Central London, London"},"salary_is_predicted":"0","description":"London
+        \u00a340-45k An exciting opportunity has arisen for a Digital Analytics Manager
+        to join one of the UK\u2019s leading charities. You\u2019ll be helping to
+        implement online tagging and analytics solutions to provide accurate, actionable
+        data to the business. Your key responsibilities will be: Liasing with stakeholders
+        other teams to translate business requirements into technical solutions Developing
+        and implementing analytics solutions across multiple online properties Leading
+        the integration of multiple\u2026","created":"2015-07-29T15:25:43Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223224?v=83F5902E5534DB6184991959037F51BD5068FB1D&se=27xHqBokQWSadmI85Q0XVg&utm_medium=api&utm_source=63a598e7","title":"Digital
+        Analytics Manager"},{"latitude":51.5114,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"PR,
+        Advertising & Marketing Jobs","tag":"pr-advertising-marketing-jobs"},"id":"299223210","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"REGAN
+        & DEAN"},"salary_max":70000,"salary_min":60000,"longitude":-0.12845,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","Covent Garden"],"display_name":"Covent Garden, Central London"},"salary_is_predicted":"0","description":"Based
+        in central London, my Client is one of the UK''s leading providers of investment/
+        wealth management with a long established heritage and highly prestigious
+        reputation. The Company This is your opportunity to work for one of the longest
+        established, highly reputable private client investment management and wealth
+        management firms in the UK across their portfolio. The Role Reporting to the
+        Marketing Director you''ll work across the portfolio executing strategic marketing
+        campaigns and develop\u2026","created":"2015-07-29T15:25:42Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223210?v=14CACCEDE84B3B06F6296B028B16541765492775&se=27xHqBokQWSadmI85Q0XVg&utm_medium=api&utm_source=63a598e7","title":"Marketing
+        Communications Manager - URGENTLY NEEDED"},{"salary_min":45000,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","The City"],"display_name":"The City, Central London"},"salary_is_predicted":"0","description":"PA
+        to busy and demanding Board Level Exec \u2013 with a wicked sense of humour
+        To \u00a345,000  benefits PA to busy, demanding yet appreciative board executive
+        of City based Insurance Company. You will be managing complex, busy and changing
+        diaries with frequent multi time-zone trips. You will need to ensure that
+        your Exec makes best use of his time by pro-active scheduling of trips and
+        meetings. You will conduct research to ensure that trips run smoothly and
+        will produce relevant documentation to suppor\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:25:42Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223214?v=C94827F047642E03AD3A32348678A22D23828A98&se=27xHqBokQWSadmI85Q0XVg&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Accounting
+        & Finance Jobs","tag":"accounting-finance-jobs"},"id":"299223214","title":"PA
+        to busy and demanding Board Level Exec \u2013 with a wicked sense of humour","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"NEXT
+        EMPLOYMENT"},"salary_max":45000}]}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['13578']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 14:47:29 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.80033']
+      X-Varnish: ['825127964']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/search/4?location0=UK&location1=London&location2=Central+London&sort_by=date&sort_direction=down
+  response:
+    body: {string: '{"__CLASS__":"Adzuna::API::Response::JobSearchResults","count":32486,"mean":45893.28,"results":[{"latitude":51.53093,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Creative
+        & Design Jobs","tag":"creative-design-jobs"},"id":"299223085","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"CHM"},"salary_max":22000,"salary_min":22000,"longitude":-0.12265,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","Kings Cross"],"display_name":"Kings Cross, Central London"},"salary_is_predicted":"0","description":"Our
+        client is the UK\u2019s national fundraising charity for art, offering millions
+        of pounds in grants to public museums and galleries each year thanks to the
+        support of their 117,000 members, individual donors, companies and trusts
+        and foundations, all of whom share their passion for great art. Events Assistant
+        Location: King''s Cross, London Contract: Full time (12 month fixed term contract)
+        Start date: Immediate Salary: \u00a322,000 p.a. They are looking for a proactive
+        and hardworking Events Assistan\u2026","created":"2015-07-29T15:25:32Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223085?v=95D7755B7E21DFC43E4594C0B8BF3F3A6DB22FEB&se=cciYkFD2RgmtBpxemLYVRQ&utm_medium=api&utm_source=63a598e7","title":"Events
+        Assistant \u2013 Art Charity"},{"latitude":51.50996,"contract_time":"part_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Charity
+        & Voluntary Jobs","tag":"charity-voluntary-jobs"},"id":"299223083","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"EASYWEBRECRUITMENT.COM"},"salary_max":17960,"salary_min":17960,"longitude":-0.07654,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","Tower Hill"],"display_name":"Tower Hill, Central London"},"salary_is_predicted":"0","description":"Volunteering
+        Support Administrator (Charity / Adult Care) Our client is a support and research
+        charity for people with dementia, their families and carers. There are 850,000
+        people with dementia in the UK and numbers are set to rise to over 1 million
+        by 2025. Position: Volunteering Support Administrator (Tower Hill, London)
+        Location: Tower Hill, London Contract type: Permanent Hours: 28 per week Salary:
+        \u00a317,960 actual per annum Closing Date: 16 Aug 2015 Interview date: To
+        be confirmed About the\u2026","created":"2015-07-29T15:25:32Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223083?v=23C3DEB91596D6483EF85FEBD77E7D7701CFCEA3&se=cciYkFD2RgmtBpxemLYVRQ&utm_medium=api&utm_source=63a598e7","title":"Volunteering
+        Support Administrator (Charity / Adult Care)"},{"salary_min":32000,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","The City"],"display_name":"The City, Central London"},"salary_is_predicted":"0","description":"An
+        exciting opportunity is available for an experienced Management Accountant
+        within a friendly and creative design consultancy business based in London.
+        This role is perfect for a candidate who is keen to join a supportive and
+        creative environment, working alongside experienced and passionate people.
+        Working closely with the Business Partner and reporting into the Head of Finance,
+        you will be required to fulfil the following duties: Prepare and review the
+        monthly management accounts pack with \u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:25:24Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223019?v=B95D1581EA88A0795A2EE06DB333B7E10F94B682&se=cciYkFD2RgmtBpxemLYVRQ&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Accounting
+        & Finance Jobs","tag":"accounting-finance-jobs"},"id":"299223019","title":"Management
+        Accountant - Design Consultancy","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"HANDLE
+        RECRUITMENT"},"salary_max":36000},{"latitude":51.51985,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Creative
+        & Design Jobs","tag":"creative-design-jobs"},"id":"299222987","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"ATWOOD
+        TATE"},"salary_max":28591.47,"salary_min":28591.47,"longitude":-0.11126,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London"],"display_name":"Central London, London"},"salary_is_predicted":"1","description":"We
+        have an excellent opportunity for a Subscriptions Marketing Manager to join
+        a leading trade publisher in Central London. This role will oversee all aspects
+        of selling and marketing a new digital educational platform. Part time working
+        (4 days a week) will be considered. Key duties: Develop and implement the
+        marketing plan for the digital platform Commission and produce online and
+        print marketing materials Work with marketing, sales and editorial colleagues
+        to drive sales Implement subscripti\u2026","created":"2015-07-29T15:25:23Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299222987?v=ACBE0EFE36A11C08C06F757AB5F8209B9ABFAAEA&se=cciYkFD2RgmtBpxemLYVRQ&utm_medium=api&utm_source=63a598e7","title":"Subscriptions
+        Marketing Manager (6 month contract)"},{"latitude":51.51985,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"HR
+        & Recruitment Jobs","tag":"hr-jobs"},"id":"299223007","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"RULE
+        RECRUITMENT"},"salary_max":32000,"salary_min":28000,"longitude":-0.11126,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London"],"display_name":"Central London, London"},"salary_is_predicted":"0","description":"-HAVE
+        YOU JOINED THE WRONG RECRUITMENT FIRM AND NOT BEEN GIVEN THE TRAINING OR EARNING
+        POTENTIAL YOU WERE PROMISED? We help secure new jobs for many recruitment
+        consultants looking to move on and they are always amazed how many great opportunities
+        are in the market. When you have a year\u2019s experience as a recruitment
+        consultant there are huge amount of opportunities open to you that were not
+        previously. We will also most likely be able to get you a considerably higher
+        basic salary with many of t\u2026","created":"2015-07-29T15:25:23Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223007?v=BE691394111C6278B7950A92B5C6DD5F3731319F&se=cciYkFD2RgmtBpxemLYVRQ&utm_medium=api&utm_source=63a598e7","title":"Financial
+        Recruitment Consultant - 12 months  experience wanted- New offices based in
+        ''THE SHARD''"},{"salary_min":30000,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","The City"],"display_name":"The City, Central London"},"salary_is_predicted":"0","description":"Background
+        to vacancy/technical skills/business skills required A great opportunity has
+        arisen for a Personal Assistant role to support the Director of Finance This
+        role will attract a self starting, highly organized individual who is looking
+        to broaden their skill base with involvement in a wide reaching range of responsibilities.
+        Excellent technical and communication skills are essential. Core Job Description  To
+        provide a comprehensive secretarial and administration service for the Director
+        \u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:23:35Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299222549?v=07819780453B48277EFFF5054E8ED604EBF38BDA&se=cciYkFD2RgmtBpxemLYVRQ&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Manufacturing
+        Jobs","tag":"manufacturing-jobs"},"id":"299222549","title":"PA to Director
+        Temporary ongoing","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":35000},{"salary_min":22000,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","The City"],"display_name":"The City, Central London"},"salary_is_predicted":"0","description":"WOW
+        FACTOR: Working for the UK''s leading association within the banking sector
+        JOB ROLE: Administration and Database Assistant JOB TYPE: Temp-Perm COMPANY:
+        Banking sector HOURS: 9:00am - 17:00pm SALARY: \u00a322,000 - \u00a324,000
+        LOCATION: London, City CULTURE: Friendly, professional and dynamic BENEFITS:
+        Pension contribution of 6-12% of salary depending on age Life assurance: 4x
+        salary Private Healthcare scheme Cycle to work scheme Childcare vouchers Season
+        ticket loan scheme Leisure benefit of \u00a3400 pe\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:23:32Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299222495?v=B50BF7909BE6A48266DCCF13E6BA758D32BDB740&se=cciYkFD2RgmtBpxemLYVRQ&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Manufacturing
+        Jobs","tag":"manufacturing-jobs"},"id":"299222495","title":"Administration
+        and Database Assistant","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":24000},{"salary_min":42618.12,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","The City"],"display_name":"The City, Central London"},"salary_is_predicted":"1","description":"I
+        am currently looking for a HR Director for a Global Media Agency based in
+        Central London. Responsibilties You will lead the way in uncovering ground-breaking
+        ways to embed HR into the business. The ideal candidate will be someone with
+        passion who is keen on introducing new initiative. You will have strong relationship
+        building skills as this is an incredilbly important part to the business.
+        You will be managing a team of 5 people including HR manager, talent manager
+        and a HR assistant. The id\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:20:43Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299221748?v=B116853C91E1882F2DFF5ABE6DF321E003A4D6BF&se=cciYkFD2RgmtBpxemLYVRQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299221748","title":"HR Director","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Premier
+        Group Recruitment"},"salary_max":42618.12},{"salary_min":35000,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","The City"],"display_name":"The City, Central London"},"salary_is_predicted":"0","description":"Joiner
+        Paying a competitive \u00a345,000 plus a company car and loyalty bonus At
+        Everest it is important to us that we always deliver exceptional service to
+        customers, so to achieve this it is vital that we have a team of talented
+        and experienced Joiners With exciting times ahead and great demand, we are
+        starting to expand the team in the area. We are looking for not one joiner
+        but a team of joiners. To be considered for this Joiner opportunity you will
+        need the following: - A proven ability working\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T14:58:01Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299218904?v=A68D8106398240A8D4A999EF83EB490CF8C72E1C&se=cciYkFD2RgmtBpxemLYVRQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs","tag":"engineering-jobs"},"id":"299218904","title":"Joiner","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","canonical_name":"Everest","display_name":"Everest"},"salary_max":45000},{"salary_min":39938.68,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London","The City"],"display_name":"The City, Central London"},"salary_is_predicted":"1","description":"We
+        are currently recruiting for an experienced P6 Project Scheduler to join our
+        busy and expanding water infrastructure group in our centrally located Glasgow
+        team. In February 2014, Scottish Water appointed Caledonia Water Alliance
+        (CWA), a partnership between AECOM and Morrison Utility Services to support
+        the delivery of their Water Infrastructure Capital Investment Programme, from
+        2015 to 2021. CWA will be responsible for delivering \u00a3360 million of
+        investment over the next six years. Our ser\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T14:57:34Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299218327?v=59A3CE4DE17CDA5BE8ACB13862BFEE6C3959DC3E&se=cciYkFD2RgmtBpxemLYVRQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs","tag":"engineering-jobs"},"id":"299218327","title":"P6 Project Scheduler","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Aecom
+        Infrastructure & Environment Uk Ltd"},"salary_max":39938.68}]}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['13297']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 14:47:30 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.80033']
+      X-Varnish: ['825127990']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/search/5?location0=UK&location1=London&location2=Central+London&sort_by=date&sort_direction=down
+  response:
+    body: {string: '{"count":32486,"results":[{"location":{"area":["UK","London","Central
+        London"],"display_name":"Central London, London","__CLASS__":"Adzuna::API::Response::Location"},"latitude":51.51985,"category":{"__CLASS__":"Adzuna::API::Response::Category","tag":"engineering-jobs","label":"Engineering
+        Jobs"},"title":"AutoCAD Technician","__CLASS__":"Adzuna::API::Response::Job","longitude":-0.11126,"salary_min":35000,"id":"299218139","salary_is_predicted":"0","contract_type":"permanent","created":"2015-07-29T14:57:27Z","salary_max":45000,"company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"PPR
+        LTD"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299218139?v=23A051BE3D7BB1F65F142D177FF3D3F4AEBEBB3A&se=EuX1bqZiSZ-_cHVde27JNw&utm_medium=api&utm_source=63a598e7","description":"This
+        is a fantastic opportunity to join a leading M&E contractor based in Central
+        London who are looking to recruit an AutoCAD Technician. The company has reported
+        year-on-year growth and profitability and are now at another stage of key
+        expansion. Experience required:  To utilise computer aided drafting skills
+        and knowledge to assist in the development and production of engineering documents.  Producing
+        approval, construction and record drawings with practical experience & site
+        co-ordination. \u2026"},{"title":"Electrical Engineer","longitude":-0.11126,"salary_min":40000,"__CLASS__":"Adzuna::API::Response::Job","latitude":51.51985,"location":{"display_name":"Central
+        London, London","__CLASS__":"Adzuna::API::Response::Location","area":["UK","London","Central
+        London"]},"category":{"tag":"engineering-jobs","__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs"},"company":{"display_name":"PPR LTD","__CLASS__":"Adzuna::API::Response::Company"},"description":"This
+        is a fantastic opportunity for an electrical engineer to join a leading M&E
+        contractor based in Central London who are looking to recruit an electrical
+        engineer. The company has reported year-on-year growth and profitability and
+        are now at another stage of key expansion. Duties: - To plan the development
+        of a power station, with the responsibility of operational engineering issues.
+        - To prepare of reports and front end studies including capital cost estimates,
+        project schedules, material t\u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299218146?v=075DDCBEF2413E943B016B4AA1EBA5E62026CFA5&se=EuX1bqZiSZ-_cHVde27JNw&utm_medium=api&utm_source=63a598e7","salary_is_predicted":"0","id":"299218146","created":"2015-07-29T14:57:27Z","salary_max":45000,"contract_type":"permanent"},{"category":{"tag":"engineering-jobs","__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs"},"latitude":51.51411,"location":{"__CLASS__":"Adzuna::API::Response::Location","display_name":"Aldgate,
+        Central London","area":["UK","London","Central London","Aldgate"]},"salary_min":40000,"longitude":-0.07594,"__CLASS__":"Adzuna::API::Response::Job","title":"Electrical
+        Engineer","created":"2015-07-29T14:57:27Z","salary_max":45000,"contract_type":"permanent","salary_is_predicted":"0","id":"299218156","description":"This
+        is a fantastic opportunity for an electrical engineer to join a leading M&E
+        contractor based in Central London who are looking to recruit an electrical
+        engineer. The company has reported year-on-year growth and profitability and
+        are now at another stage of key expansion. Duties: - To plan the development
+        of a power station, with the responsibility of operational engineering issues.
+        - To prepare of reports and front end studies including capital cost estimates,
+        project schedules, material t\u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299218156?v=E70E45B5509B28473CB4319E470E0E3A99806BF2&se=EuX1bqZiSZ-_cHVde27JNw&utm_medium=api&utm_source=63a598e7","company":{"display_name":"PPR
+        LTD","__CLASS__":"Adzuna::API::Response::Company"}},{"title":"Electrical Engineer","salary_min":40000,"__CLASS__":"Adzuna::API::Response::Job","location":{"area":["UK","London","Central
+        London","The City"],"__CLASS__":"Adzuna::API::Response::Location","display_name":"The
+        City, Central London"},"category":{"__CLASS__":"Adzuna::API::Response::Category","tag":"engineering-jobs","label":"Engineering
+        Jobs"},"company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"PPR
+        LTD"},"description":"This is a fantastic opportunity for an electrical engineer
+        to join a leading M&E contractor based in Central London who are looking to
+        recruit an electrical engineer. The company has reported year-on-year growth
+        and profitability and are now at another stage of key expansion. Duties: -
+        To plan the development of a power station, with the responsibility of operational
+        engineering issues. - To prepare of reports and front end studies including
+        capital cost estimates, project schedules, material t\u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299218112?v=42C76F17B9C51FC11AEF832D9EBF1E4ECB6C75C8&se=EuX1bqZiSZ-_cHVde27JNw&utm_medium=api&utm_source=63a598e7","salary_is_predicted":"0","id":"299218112","created":"2015-07-29T14:57:26Z","salary_max":45000,"contract_type":"permanent"},{"category":{"label":"Engineering
+        Jobs","tag":"engineering-jobs","__CLASS__":"Adzuna::API::Response::Category"},"location":{"area":["UK","London","Central
+        London","The City"],"__CLASS__":"Adzuna::API::Response::Location","display_name":"The
+        City, Central London"},"__CLASS__":"Adzuna::API::Response::Job","salary_min":35000,"title":"AutoCAD
+        Technician","contract_type":"permanent","created":"2015-07-29T14:57:26Z","salary_max":45000,"id":"299218135","salary_is_predicted":"0","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299218135?v=2189400B7B2DBAE2BBF97A50E77E6355A445EA4E&se=EuX1bqZiSZ-_cHVde27JNw&utm_medium=api&utm_source=63a598e7","description":"This
+        is a fantastic opportunity to join a leading M&E contractor based in Central
+        London who are looking to recruit an AutoCAD Technician. The company has reported
+        year-on-year growth and profitability and are now at another stage of key
+        expansion. Experience required:  To utilise computer aided drafting skills
+        and knowledge to assist in the development and production of engineering documents.  Producing
+        approval, construction and record drawings with practical experience & site
+        co-ordination. \u2026","company":{"display_name":"PPR LTD","__CLASS__":"Adzuna::API::Response::Company"}},{"location":{"area":["UK","London","Central
+        London","Aldgate"],"__CLASS__":"Adzuna::API::Response::Location","display_name":"Aldgate,
+        Central London"},"latitude":51.51411,"category":{"tag":"engineering-jobs","__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs"},"title":"AutoCAD Technician","__CLASS__":"Adzuna::API::Response::Job","salary_min":35000,"longitude":-0.07594,"id":"299218087","salary_is_predicted":"0","contract_type":"permanent","salary_max":45000,"created":"2015-07-29T14:57:25Z","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"PPR
+        LTD"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299218087?v=1E1D3D5AEED0282C2A6229657465A6B49BC9CA16&se=EuX1bqZiSZ-_cHVde27JNw&utm_medium=api&utm_source=63a598e7","description":"This
+        is a fantastic opportunity to join a leading M&E contractor based in Central
+        London who are looking to recruit an AutoCAD Technician. The company has reported
+        year-on-year growth and profitability and are now at another stage of key
+        expansion. Experience required:  To utilise computer aided drafting skills
+        and knowledge to assist in the development and production of engineering documents.  Producing
+        approval, construction and record drawings with practical experience & site
+        co-ordination. \u2026"},{"title":"Junior Geoscientist - UK","__CLASS__":"Adzuna::API::Response::Job","salary_min":30149,"location":{"area":["UK","London","Central
+        London","The City"],"__CLASS__":"Adzuna::API::Response::Location","display_name":"The
+        City, Central London"},"category":{"label":"Energy, Oil & Gas Jobs","__CLASS__":"Adzuna::API::Response::Category","tag":"energy-oil-gas-jobs"},"company":{"__CLASS__":"Adzuna::API::Response::Company"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299217690?v=35FEC38BDF7F824E203059FC51CD76D807DBE108&se=EuX1bqZiSZ-_cHVde27JNw&utm_medium=api&utm_source=63a598e7","description":"Geoscientist
+        (IRC97804) Permanent Appointment based in London \u00a330,149 - \u00a334,117
+        per annum. An additional pensionable pay enhancement of between \u00a39,000
+        and \u00a327,000 per annum is also payable depending on experience. On 1 April
+        2015, the new Oil and Gas Authority (OGA) became an Executive Agency of the
+        Department of Energy and Climate Change (DECC) with its new headquarters in
+        Aberdeen and by the autumn of 2016, it is expected that the OGA will become
+        a Government-owned company. Establishing the O\u2026","id":"299217690","salary_is_predicted":"0","created":"2015-07-29T14:52:47Z","salary_max":34117},{"description":"Our
+        client is a major, global insurance company operating out of 110 countries
+        worldwide. The organisation employs over 100,000 people and enjoys an exceptional
+        reputation for its services particularly within the high hazard sectors such
+        as marine, mass-transport, nuclear, petrochemicals and refining, oil and gas
+        and so on. The business is looking to strengthen its successful and highly
+        experienced City of London based risk control group through the appointment
+        of another senior chemical engine\u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299217657?v=EA3EFB601840F406A5577A4E29340D6022B0C65E&se=EuX1bqZiSZ-_cHVde27JNw&utm_medium=api&utm_source=63a598e7","company":{"__CLASS__":"Adzuna::API::Response::Company"},"created":"2015-07-29T14:52:46Z","salary_max":85000,"salary_is_predicted":"0","id":"299217657","salary_min":60000,"__CLASS__":"Adzuna::API::Response::Job","title":"Oil
+        & Chemical Risk Engineer - UK","category":{"__CLASS__":"Adzuna::API::Response::Category","tag":"energy-oil-gas-jobs","label":"Energy,
+        Oil & Gas Jobs"},"location":{"area":["UK","London","Central London","The City"],"display_name":"The
+        City, Central London","__CLASS__":"Adzuna::API::Response::Location"}},{"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299217679?v=8E1D00017ECFAD7B3E71E5993361C46B8876304D&se=EuX1bqZiSZ-_cHVde27JNw&utm_medium=api&utm_source=63a598e7","description":"Swift
+        Worldwide Resources are currently recruiting for a Major player in the oil
+        and gas industry. The role will be based in Central London, UKJOB PURPOSEEnsuring
+        that the Project Interface Management Procedure is implemented throughout
+        the project life cycle. This includes utilizing the Contractors Interface
+        Management module to engage with the Engineering contractors, Fabrication
+        yard and key stakeholders. Must have experience in EPC project execution and
+        FEED stage. Thorough knowledge of Eng\u2026","company":{"__CLASS__":"Adzuna::API::Response::Company"},"created":"2015-07-29T14:52:46Z","salary_max":59502.41,"id":"299217679","salary_is_predicted":"1","__CLASS__":"Adzuna::API::Response::Job","salary_min":59502.41,"title":"Interface
+        Engineer - UK","category":{"label":"Energy, Oil & Gas Jobs","__CLASS__":"Adzuna::API::Response::Category","tag":"energy-oil-gas-jobs"},"location":{"__CLASS__":"Adzuna::API::Response::Location","display_name":"The
+        City, Central London","area":["UK","London","Central London","The City"]}},{"title":"3rd
+        Line Infrastructure Engineer","__CLASS__":"Adzuna::API::Response::Job","salary_min":35000,"location":{"area":["UK","London","Central
+        London","The City"],"display_name":"The City, Central London","__CLASS__":"Adzuna::API::Response::Location"},"category":{"tag":"it-jobs","__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs"},"company":{"__CLASS__":"Adzuna::API::Response::Company"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299215737?v=C11866A742EF9672838144B519678845581D3E42&se=EuX1bqZiSZ-_cHVde27JNw&utm_medium=api&utm_source=63a598e7","description":"3rd
+        Line Infrastructure Engineer Job Due to growth, Capita, FTSE 100 and Leading
+        Business Process Outsourcer, is now seeking a 3rd line Technical Support Engineer
+        to join their team to provide telephone and hands-on, 3 rd Line operational
+        support for incidents and requests to their customers. This role will be primarily
+        owning and having responsibility of managing infrastructure incidents and
+        requests through to resolution. Working closely with their networking, database
+        and Application managem\u2026","id":"299215737","salary_is_predicted":"0","contract_type":"permanent","created":"2015-07-29T14:49:11Z","salary_max":38000}],"mean":45893.28,"__CLASS__":"Adzuna::API::Response::JobSearchResults"}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['12615']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 14:47:32 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.90053']
+      X-Varnish: ['825128023']
+    status: {code: 200, message: OK}
 version: 1

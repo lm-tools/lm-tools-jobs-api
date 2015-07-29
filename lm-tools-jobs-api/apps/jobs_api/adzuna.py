@@ -6,6 +6,7 @@ import requests
 
 from django.conf import settings
 
+
 class Adzuna(object):
     def __init__(self):
         self.APP_ID = getattr(settings, 'ADZUNA_APP_ID')
@@ -14,17 +15,15 @@ class Adzuna(object):
 
         assert all((self.APP_ID, self.APP_KEY))
 
-
     def base_request(self, endpoint, params, page=None):
         URL = "{0}{1}".format(self.BASE_URL, endpoint)
         if page:
-            URL = "{0}/{1}".format(URL, page)
+            URL = "{0}{1}".format(URL, page)
 
         params.update({
             "app_id": self.APP_ID,
             "app_key": self.APP_KEY,
         })
-
 
         req = requests.get(URL, params=params)
 
@@ -34,18 +33,21 @@ class Adzuna(object):
                 req.json()['display']))
         return req
 
-
     def unwrap_pagination(self, endpoint, params, count):
         num_results = 0
-        all_results = []
         page = 1
 
         while num_results <= count:
             results = self.base_request(endpoint, params, page)
-            all_results += results.json().get('results', [])
+            all_results = results.json().get('results', [])
+
+            for result in all_results:
+                if num_results < count:
+                    num_results += 1
+                    yield result
+                else:
+                    raise StopIteration
             page += 1
-            num_results = len(all_results)
-        return all_results[:count]
 
     def locations_for_postcode(self, postcode):
         from jobs.models import JobArea

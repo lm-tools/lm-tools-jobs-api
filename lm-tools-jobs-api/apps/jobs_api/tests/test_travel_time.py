@@ -6,7 +6,10 @@ from jobs.models import JobAdvert, JobArea
 class TestViews(TestCase):
 
     def test_travel_time(self):
-        area = JobArea(locations=["UK", "London", "West London"], job_centre_label="sutton")
+        area = JobArea(
+            locations=["UK", "London", "West London"],
+            job_centre_label="sutton"
+        )
         area.save()
         ja = JobAdvert(
             title="Test",

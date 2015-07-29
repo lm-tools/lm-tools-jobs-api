@@ -3,7 +3,8 @@ from django.conf import settings
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from jobs.models import JobAdvert, JobArea, UnknownJobCentreError, PostcodeNotFoundError
+from jobs.models import (JobAdvert, JobArea,
+                         UnknownJobCentreError, PostcodeNotFoundError)
 from .adzuna import Adzuna
 
 
@@ -18,11 +19,15 @@ class DummyDashboardView(APIView):
 
         return Response(dummy_data)
 
+
 class JobAdvertsView(APIView):
     def get(self, request):
         base_qs = JobAdvert.objects.all().order_by('-created')
         try:
-            job_area = JobArea.objects.import_area_and_jobs(request.GET.get('job_centre_label'), request.GET.get('postcode'))
+            job_area = JobArea.objects.import_area_and_jobs(
+                request.GET.get('job_centre_label'),
+                request.GET.get('postcode')
+            )
         except UnknownJobCentreError:
             return Response({"error": "Unknown job centre label"})
         except PostcodeNotFoundError:
@@ -47,7 +52,10 @@ class TopCategoriesView(APIView):
     def get(self, request):
         base_qs = JobAdvert.objects.all()
         try:
-            job_area = JobArea.objects.import_area_and_jobs(request.GET.get('job_centre_label'), request.GET.get('postcode'))
+            job_area = JobArea.objects.import_area_and_jobs(
+                request.GET.get('job_centre_label'),
+                request.GET.get('postcode')
+            )
         except UnknownJobCentreError:
             return Response({"error": "Unknown job centre label"})
         except PostcodeNotFoundError:
@@ -55,14 +63,18 @@ class TopCategoriesView(APIView):
         if job_area:
             base_qs = base_qs.filter(job_area=job_area)
         limit = int(request.GET.get('limit', 5))
-        ret = base_qs.values("category").annotate(count=Count("category")).order_by("-count")[:limit]
+        ret = base_qs.values("category").annotate(
+            count=Count("category")).order_by("-count")[:limit]
         return Response(ret)
 
 
 class TopCompaniesView(APIView):
-     def get(self, request):
+    def get(self, request):
         try:
-            job_area = JobArea.objects.import_area_and_jobs(request.GET.get('job_centre_label'), request.GET.get('postcode'))
+            job_area = JobArea.objects.import_area_and_jobs(
+                request.GET.get('job_centre_label'),
+                request.GET.get('postcode')
+            )
         except UnknownJobCentreError:
             return Response({"error": "Unknown job centre label"})
         except PostcodeNotFoundError:

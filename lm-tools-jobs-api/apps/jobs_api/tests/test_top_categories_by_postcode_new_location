@@ -1375,4 +1375,1299 @@ interactions:
       X-Catalyst: ['5.80033']
       X-Varnish: ['774684553']
     status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/search/1?location0=UK&location1=Scotland&location2=Edinburgh&sort_by=date&sort_direction=down
+  response:
+    body: {string: '{"__CLASS__":"Adzuna::API::Response::JobSearchResults","count":5553,"mean":35813.97,"results":[{"salary_min":61215,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"Our
+        vision is to make Lloyds Banking Group the best bank for customers. As the
+        UK''s largest retail and commercial bank, we have a footprint that touches
+        nearly every community and household in the UK. That gives us a big responsibility
+        to support the UK economy, and to put customers at the heart of everything
+        we do. To achieve this, we also need to be the best bank for our colleagues
+        and our communities - and we have a clear strategy in place to make this a
+        reality. We are building on our many \u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:31:25Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299225486?v=82E966453ED6F406DB91FE90F1A53F098B411FE4&se=An7990NGQYqLpmx40ydQPw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299225486","title":"Technical Specialist - Faster
+        Payments and BACS Payments Engine","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":61215},{"salary_min":61215,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"Our
+        vision is to make Lloyds Banking Group the best bank for customers. As the
+        UK''s largest retail and commercial bank, we have a footprint that touches
+        nearly every community and household in the UK. That gives us a big responsibility
+        to support the UK economy, and to put customers at the heart of everything
+        we do. To achieve this, we also need to be the best bank for our colleagues
+        and our communities - and we have a clear strategy in place to make this a
+        reality. We are building on our many \u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:31:25Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299225487?v=12CB51A5F200C91C0654DDCECFA80FC392E491FA&se=An7990NGQYqLpmx40ydQPw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299225487","title":"Technical Specialist - Websphere
+        Message Broker (Payments team)","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":61215},{"salary_min":32500,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"FINTEC
+        recruit is seeking a Systems Analyst for our client who is an education provider.
+        This is a permanent role based in Edinburgh. On offer is a salary range \u00a327,000
+        - \u00a332,500 dependent upon experience. Role and Responsibilities The role
+        sits within the Business Systems team and is responsible for the development
+        and maintenance of all business systems within the organisation. Key responsibilities,
+        mainly involving UnitE and Celcat, will include but not be limited to  Business
+        analysis - dev\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:31:06Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299225362?v=485D9CAE64820DD716E9DF876C2C01BAE17823EA&se=An7990NGQYqLpmx40ydQPw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299225362","title":"Systems Analyst","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":32500},{"salary_min":20000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"Structural
+        Engineer Edinburgh Ref MR00033 Salary up to \u00a320-30,000  Benefits This
+        is an excellent opportunity for an experienced Structural Engineer to join
+        a successful, well-established Civil and Structural Design Consultancy based
+        in Edinburgh on a permanent basis. The successful applicant will get the chance
+        to work on some unique and interesting projects throughout Residential, Commercial,
+        Leisure, Educational and Healthcare sectors. You will get full lifecycle project
+        experience from incep\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:31:04Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299225334?v=9D4AC26A53A420FF0D7993C190B90B5035DF4E61&se=An7990NGQYqLpmx40ydQPw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs","tag":"engineering-jobs"},"id":"299225334","title":"Structural Engineer","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Penguin
+        Recruitment"},"salary_max":30000},{"salary_min":38000,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"Our
+        client is seeking a chartered or near chartered structural engineer to join
+        the Edinburgh office of this busy and successful practice. It is essential
+        that you have a buildings structures background, having designed for a variety
+        of buildings schemes including residential alterations and extensions, visitor
+        and art centres, conservation work among others. Previous experience working
+        closely with architects and attending site and client meetings is a requirement,
+        as each discipline sector wi\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:31:04Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299225335?v=2BADF5EE65E9E77F8C6F510C610DC889222108F5&se=An7990NGQYqLpmx40ydQPw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs","tag":"engineering-jobs"},"id":"299225335","title":"Senior Structural
+        Engineer \u2013 Edinburgh","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Conrad
+        Consulting"},"salary_max":42000},{"salary_min":65000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"I
+        have been approached by a highly regarded surveying consultancy to help them
+        recruit an Associate/Director level Cost Consultant. My client is known throughout
+        the world for providing first class consultancy services to their clients
+        in various sectors. This is an opportunity for a QS to really make their mark
+        in the industry and progress their career to the top level. The ideal candidate
+        will have the following experience; - Currently working at an Associate or
+        Director level - Experience in\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:30:14Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299225019?v=1BDC4A8D92568138A7EE1E7F146AD6E129D74091&se=An7990NGQYqLpmx40ydQPw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Unknown","tag":"unknown"},"id":"299225019","title":"Associate/Director
+        - Cost Consultant/QS","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"HAYS"},"salary_max":73000},{"salary_min":36480,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"I
+        am currently recruiting for an Estates Surveyor for a public sector organisation
+        to work within a large estates management team. This is a part-time, temporary
+        job with an immediate start available. The role will involve the management
+        of the organisation''s non-housing property portfolio. Main duties will include
+        carrying out rent reviews, negotiating new leases and lease extensions, property
+        disposals when required and other associated duties. Previous experience working
+        within the public se\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:30:13Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299225000?v=4E45AED141811DC4920E1C4D7206D522D6CAEBF8&se=An7990NGQYqLpmx40ydQPw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Unknown","tag":"unknown"},"id":"299225000","title":"Estates
+        Surveyor","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"HAYS"},"salary_max":44160},{"salary_min":66801.92,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"Enigma
+        People Solutions is exclusively searching for a Head of Sales and Marketing
+        for our highly recognisable IT Managed Services client. This is a pivotal
+        position in the continued growth of the business, both in existing markets
+        and in developing new markets over the years ahead. The existing client base
+        combines oil and gas clients, government organisations and a host of private
+        companies throughout Scotland. Key to this role is \"great communication\"
+        as you will line manage a motivated sale\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:29:47Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299224797?v=08664A50B1C285135C16C906192B922217CA9D73&se=An7990NGQYqLpmx40ydQPw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299224797","title":"Head of Sales and Marketing
+        - Based Central or Eastern Scotland - c\u00a365,000","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":66801.92},{"salary_min":25149.31,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"Please
+        advise if you have a Disclosure Scotland, if not then please confirm you are
+        happy to start the process We are seeking an experienced IT Support Administrator
+        to assist in providing 2nd line technical support for our customers. The successful
+        candidate will resolve IT incidents and problems, and offer support and guidance
+        on technical matters to enable delivery of their business objectives. The
+        candidate will be required to use their technical and communication skills
+        to analyse problems\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:29:44Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299224755?v=6EEF2C230A4952F8F21C9751F6A37F4F98D591F5&se=An7990NGQYqLpmx40ydQPw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299224755","title":"Desktop Support Analyst","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":25149.31},{"salary_min":61768.23,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"Senior
+        Analog/Mixed Signal IC Design Engineer - Edinburgh A world leader in their
+        specialist area, our client develops high-precision, Analog and Mixed-Signal
+        ICs and currently has a new opportunity for a Senior Analog Mixed Signal IC
+        Design Engineer to join their design centre based in Edinburgh. This is an
+        opportunity for an Analog/Mixed Signal IC Design Engineer to be responsible
+        for the design of complex high performance Analog ICs for consumer applications.
+        You will be responsible for lead\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T15:29:38Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299224708?v=4CB4BFBDF99430D85F8D6A5749C916A238171298&se=An7990NGQYqLpmx40ydQPw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299224708","title":"Senior Analog/Mixed Signal
+        IC Design Engineer - Edinburgh","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":61768.23}]}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['12731']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 14:45:56 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.80033']
+      X-Varnish: ['1198586332']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/search/2?location0=UK&location1=Scotland&location2=Edinburgh&sort_by=date&sort_direction=down
+  response:
+    body: {string: '{"results":[{"id":"299223458","salary_is_predicted":"1","created":"2015-07-29T15:26:05Z","salary_max":50655.72,"company":{"display_name":"Meraki
+        Talent","__CLASS__":"Adzuna::API::Response::Company"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223458?v=7157A8D603B8EC45AEFB6B8BB433863103816AFD&se=XwboNOVqQjaJsNtvGWHu-w&utm_medium=api&utm_source=63a598e7","description":"Market
+        Leading Global Asset Management firm as currently seeking a Product Development
+        Manager to join with a responsibility for International markets. Our client
+        has been following a clear strategy which has resulted in increased client
+        acquisition, diversification of distribution channels and expansion into new
+        international markets. Due to this growth there is a continual need to develop
+        the business to ensure the needs of an evolving client base is met. Product
+        Development is a key driver f\u2026","latitude":55.950199,"location":{"__CLASS__":"Adzuna::API::Response::Location","display_name":"Edinburgh","area":["UK","Scotland","Edinburgh","Edinburgh"]},"category":{"label":"Accounting
+        & Finance Jobs","__CLASS__":"Adzuna::API::Response::Category","tag":"accounting-finance-jobs"},"title":"Product
+        Development Manager, International","__CLASS__":"Adzuna::API::Response::Job","longitude":-3.18754,"salary_min":50655.72},{"location":{"display_name":"Edinburgh","__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"]},"latitude":55.950199,"category":{"label":"Accounting
+        & Finance Jobs","__CLASS__":"Adzuna::API::Response::Category","tag":"accounting-finance-jobs"},"title":"European
+        Equity Product Strategist","__CLASS__":"Adzuna::API::Response::Job","longitude":-3.18754,"salary_min":44941.53,"id":"299223387","salary_is_predicted":"1","created":"2015-07-29T15:25:55Z","salary_max":44941.53,"company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Change
+        Recruitment Group"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223387?v=FFF1F0D217DF52D6710004BBA41D7EB0B840C09B&se=XwboNOVqQjaJsNtvGWHu-w&utm_medium=api&utm_source=63a598e7","description":"European
+        Equity Product Strategist | Edinburgh | Permanent | \u00a3highly competitive
+        Change Recruitment Groups Asset manager client is seeking a European Equity
+        Product Strategist to join their growing team in Edinburgh and be responsible
+        for communication of the the European Equity Teams products to both the external
+        client base and internal distribution network, including retail and institutional
+        channels. Product specialists are embedded within investment teams allowing
+        them to deliver the highe\u2026"},{"company":{"display_name":"Zed Recruitment","__CLASS__":"Adzuna::API::Response::Company"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299223159?v=ED3B32B1DBF6A6BB2352688787EF1CFAD92B06DB&se=XwboNOVqQjaJsNtvGWHu-w&utm_medium=api&utm_source=63a598e7","description":"The
+        Role This is a senior role within a large global asset manager with responsibilities
+        covering all aspects of security information together with project / change
+        management in this area. Responsibilities will include: Governance responsibility
+        for a framework of policies and standards to set and define minimum standards
+        for application by all employees. Working with Risk to conduct on-going training
+        and awareness to make sure that all staff are knowledgeable about the content
+        of policies and\u2026","id":"299223159","salary_is_predicted":"1","created":"2015-07-29T15:25:39Z","salary_max":65891.77,"title":"Information
+        Security Officer - Asset Management","__CLASS__":"Adzuna::API::Response::Job","salary_min":65891.77,"longitude":-3.18754,"location":{"area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh","__CLASS__":"Adzuna::API::Response::Location"},"latitude":55.950199,"category":{"tag":"it-jobs","__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs"}},{"salary_is_predicted":"1","id":"299222026","created":"2015-07-29T15:22:57Z","salary_max":17106.38,"company":{"display_name":"Online
+        Resourcing","__CLASS__":"Adzuna::API::Response::Company"},"description":"The
+        List are looking for a Media Sales Executive to join an award-winning operation
+        from September. Competitive salary and bonus scheme. Edinburgh","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299222026?v=061DE324D1CD5F220A1C68518FE5BFA51169BC68&se=XwboNOVqQjaJsNtvGWHu-w&utm_medium=api&utm_source=63a598e7","latitude":55.943116,"location":{"area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland","__CLASS__":"Adzuna::API::Response::Location"},"category":{"label":"Sales
+        Jobs","__CLASS__":"Adzuna::API::Response::Category","tag":"sales-jobs"},"title":"Media
+        Sales Executive","longitude":-3.327942,"salary_min":17106.38,"__CLASS__":"Adzuna::API::Response::Job"},{"location":{"__CLASS__":"Adzuna::API::Response::Location","display_name":"Edinburgh","area":["UK","Scotland","Edinburgh","Edinburgh"]},"latitude":55.950199,"category":{"__CLASS__":"Adzuna::API::Response::Category","tag":"unknown","label":"Unknown"},"title":"Media
+        Sales Executive","longitude":-3.18754,"salary_min":25317.27,"__CLASS__":"Adzuna::API::Response::Job","salary_is_predicted":"1","id":"299220755","salary_max":25317.27,"created":"2015-07-29T15:00:53Z","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Online
+        Resourcing"},"description":"The List is the UK\u2019s leading events and entertainment
+        guide. Working at the heart of the commercial team, this Media Sales Executive
+        position offers an incredible opportunity to join an award-winning operation
+        from September. The focus of this Media Sales Executive post is to increase
+        revenues from existing clients and acquire new business from advertising and
+        sponsorship. The candidate will be expected to source, negotiate and close
+        key transactions over the phone and through face to face meet\u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299220755?v=B7075F85ADF82B518519D28E343C81A47105C70A&se=XwboNOVqQjaJsNtvGWHu-w&utm_medium=api&utm_source=63a598e7"},{"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299219947?v=ED9342383815995D90427BBDA1A8527981D86E9A&se=XwboNOVqQjaJsNtvGWHu-w&utm_medium=api&utm_source=63a598e7","description":"Structural
+        Engineer Edinburgh Ref MR00033 Salary up to \u00a320-30,000  Benefits This
+        is an excellent opportunity for an experienced Structural Engineer to join
+        a successful, well-established Civil and Structural Design Consultancy based
+        in Edinburgh on a permanent basis. The successful applicant will get the chance
+        to work on some unique and interesting projects throughout Residential, Commercial,
+        Leisure, Educational and Healthcare sectors. You will get full lifecycle project
+        experience from incep\u2026","company":{"display_name":"Penguin Recruitment","__CLASS__":"Adzuna::API::Response::Company"},"contract_type":"permanent","salary_max":30000,"created":"2015-07-29T14:58:47Z","id":"299219947","salary_is_predicted":"0","__CLASS__":"Adzuna::API::Response::Job","longitude":-3.18754,"salary_min":20000,"title":"Structural
+        Engineer","category":{"label":"Engineering Jobs","tag":"engineering-jobs","__CLASS__":"Adzuna::API::Response::Category"},"latitude":55.950199,"location":{"display_name":"Edinburgh","__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"]}},{"title":"Electrical
+        Engineer - Building Services","__CLASS__":"Adzuna::API::Response::Job","longitude":-3.18754,"salary_min":41222.3,"location":{"__CLASS__":"Adzuna::API::Response::Location","display_name":"Edinburgh","area":["UK","Scotland","Edinburgh","Edinburgh"]},"latitude":55.950199,"category":{"tag":"engineering-jobs","__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs"},"company":{"display_name":"Wilde Recruitment Ltd","__CLASS__":"Adzuna::API::Response::Company"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299219639?v=6BD488262BAAB0C96CDD40711754D8B1FE471367&se=XwboNOVqQjaJsNtvGWHu-w&utm_medium=api&utm_source=63a598e7","description":"ELECTRICAL
+        ENGINEER - BUILDING SERVICES - LONG TERM CONTRACT - WARRINGTON - WITH PARKING
+        Work for one of the worlds leading organisations within their Electrical Building
+        Services division. Our client is a Global Multi Disciplinary Award winning
+        Engineering firm who under the leadership of the Head of M&E are looking to
+        immediately recruit a number of ELECTRICAL ENGINEER BUILDING SERVICES Job
+        Title: ELECTRICAL ENGINEER - BUILDING SERVICES Location: Warrington, Manchester
+        & Leeds Job Type: Contr\u2026","id":"299219639","salary_is_predicted":"1","contract_type":"contract","created":"2015-07-29T14:58:33Z","salary_max":41222.3},{"description":"ELECTRICAL
+        ENGINEER BUILDING SERVICES Work for one of the worlds leading organisations
+        within their Electrical Building Services division. Our client is a Global
+        Multi Disciplinary Award winning Engineering firm who under the leadership
+        of the Head of M&E are looking to immediately recruit a number of ELECTRICAL
+        ENGINEER BUILDING SERVICES. Job Title: ELECTRICAL ENGINEER BUILDING SERVICES
+        Location: Glasgow Job Type: Contract Rate: \u00a3Competitive Duration: Minimum
+        6-12 months Key Skills: Building S\u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299219584?v=D2E5FD6E6371D2FBCCA69B182E85C4905055F401&se=XwboNOVqQjaJsNtvGWHu-w&utm_medium=api&utm_source=63a598e7","company":{"display_name":"Wilde
+        Recruitment Ltd","__CLASS__":"Adzuna::API::Response::Company"},"salary_max":52316.3,"created":"2015-07-29T14:58:31Z","contract_type":"contract","salary_is_predicted":"1","id":"299219584","salary_min":52316.3,"longitude":-3.18754,"__CLASS__":"Adzuna::API::Response::Job","title":"Electrical
+        Engineer - Building Services","category":{"tag":"engineering-jobs","__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs"},"latitude":55.950199,"location":{"__CLASS__":"Adzuna::API::Response::Location","display_name":"Edinburgh","area":["UK","Scotland","Edinburgh","Edinburgh"]}},{"company":{"display_name":"Wilde
+        Recruitment Ltd","__CLASS__":"Adzuna::API::Response::Company"},"description":"STRUCTURAL
+        TECHNICIAN - 6month CONTRACT - LEEDS - \u00a331/hr - EXCEPTIONAL OFFICES,
+        PARKING  GOOD VARIETY OF WORK ON REVIT Job Title: STRUCTURAL TECHNICIAN Location:
+        Leeds Job Type: Contract 6months Rate: \u00a331/hr Key Skills: CAD Technician,
+        Design, Structural, GA''s, Autocad, Revit, Education, Leisure, Industrial,
+        Commercial, Energy, Defence, Education, Health, Transport 2D, 3D, BIM. The
+        Role: To work on own initiative and as part of a team of engineers and technicians.
+        You will be responsible for de\u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299219517?v=A7D0BAE112A64392564CA78F4E69D3E9184B383F&se=XwboNOVqQjaJsNtvGWHu-w&utm_medium=api&utm_source=63a598e7","salary_is_predicted":"0","id":"299219517","created":"2015-07-29T14:58:29Z","salary_max":59520,"contract_type":"contract","title":"Structural
+        Technician","salary_min":59520,"longitude":-3.18754,"__CLASS__":"Adzuna::API::Response::Job","location":{"area":["UK","Scotland","Edinburgh","Edinburgh"],"__CLASS__":"Adzuna::API::Response::Location","display_name":"Edinburgh"},"latitude":55.950199,"category":{"tag":"engineering-jobs","__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs"}},{"title":"Electrical Field Service Engineer (17th Edition)","__CLASS__":"Adzuna::API::Response::Job","salary_min":28250,"longitude":-3.18754,"location":{"display_name":"Edinburgh","__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"]},"latitude":55.950199,"category":{"label":"Engineering
+        Jobs","__CLASS__":"Adzuna::API::Response::Category","tag":"engineering-jobs"},"company":{"display_name":"Bluefire
+        Consulting Limited","__CLASS__":"Adzuna::API::Response::Company"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299219102?v=5D291B5CA27CCEF97DB06F629AB9A51772AF01F6&se=XwboNOVqQjaJsNtvGWHu-w&utm_medium=api&utm_source=63a598e7","description":"This
+        is a fantastic opportunity for a customer focused skilled engineer to join
+        a unique company owned and run by its employees. If you have an electrical,
+        mechanical background, best in class customer service skills, and a can do
+        problem solving attitude please apply. We are recruiting an Electrical Service
+        Engineer (17th Edition) with a mixture of mechanical and some basic plumbing
+        skills for our client who are a growing multinational organisation. Job Description
+        Electrical Service Engineer \u2026","id":"299219102","salary_is_predicted":"0","contract_type":"permanent","created":"2015-07-29T14:58:11Z","salary_max":40000}],"mean":35813.97,"count":5553,"__CLASS__":"Adzuna::API::Response::JobSearchResults"}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['12661']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 14:45:58 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.90053']
+      X-Varnish: ['1198586353']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/search/3?location0=UK&location1=Scotland&location2=Edinburgh&sort_by=date&sort_direction=down
+  response:
+    body: {string: '{"__CLASS__":"Adzuna::API::Response::JobSearchResults","results":[{"category":{"label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs","__CLASS__":"Adzuna::API::Response::Category"},"location":{"__CLASS__":"Adzuna::API::Response::Location","display_name":"Edinburgh","area":["UK","Scotland","Edinburgh","Edinburgh"]},"__CLASS__":"Adzuna::API::Response::Job","salary_min":16000,"title":"Female
+        Support Workers","contract_type":"permanent","created":"2015-07-29T14:50:24Z","salary_max":16000,"id":"299215889","salary_is_predicted":"0","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299215889?v=F2475BFE10331DA5A50E7166E460E52627AC973B&se=6-W1_DFgQJale72Ceefdbw&utm_medium=api&utm_source=63a598e7","description":"Female
+        Support Workers Required \u2013 Ref R10.8 Roseburn Edinburgh (Various hours
+        per week) &nbsp;(\u00a316,000 pro rata) We are recruiting now for one of our
+        services that assist people with physical disabilities, learning difficulties
+        and acquired brain injuries to live as independently as possible within their
+        own homes. You will provide assistance to people and their individual support
+        teams to meet personal requirements and to provide physical and emotional
+        support. We believe in a person-centred a\u2026","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Freespace
+        Ltd"}},{"__CLASS__":"Adzuna::API::Response::Job","salary_min":58986.73,"longitude":-3.327942,"title":"Lead
+        Corporate Communications Consultant/Manager- Public Sector","category":{"label":"IT
+        Jobs","__CLASS__":"Adzuna::API::Response::Category","tag":"it-jobs"},"location":{"area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland","__CLASS__":"Adzuna::API::Response::Location"},"latitude":55.943116,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299209801?v=ACC26D84D26E4E324D2E4CCF96FFFCFCC437869E&se=6-W1_DFgQJale72Ceefdbw&utm_medium=api&utm_source=63a598e7","description":"Start
+        date: ASAP Duration: 3 months  Minimum salary: 30.00 GBP Maximum salary: 31.00
+        GBP Salary period: Hourly Interim Head of Corporate Communications/Corporate
+        Communications Consultant/Manager - Public Sector Contract. Edinburgh. 3 months
+        . \u00a330 - \u00a331 per hour. Must have public sector experience to apply
+        The Head of Corporate Communications leads on strategic and operational communications
+        and engagement. They will be the key adviser to the Director of Digital Transformation
+        on communications\u2026","company":{"display_name":"Arca24.com","__CLASS__":"Adzuna::API::Response::Company"},"created":"2015-07-29T14:41:43Z","salary_max":58986.73,"id":"299209801","salary_is_predicted":"1"},{"location":{"area":["UK","Scotland","Edinburgh"],"__CLASS__":"Adzuna::API::Response::Location","display_name":"Edinburgh,
+        Scotland"},"category":{"label":"Healthcare & Nursing Jobs","__CLASS__":"Adzuna::API::Response::Category","tag":"healthcare-nursing-jobs"},"title":"Registered
+        Nurse RGN or RMN","__CLASS__":"Adzuna::API::Response::Job","salary_min":26313.21,"id":"299209740","salary_is_predicted":"1","salary_max":26313.21,"created":"2015-07-29T14:41:41Z","company":{"display_name":"Arca24.com","__CLASS__":"Adzuna::API::Response::Company"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299209740?v=4AC0302CE01D4E058E8F46771FF7963B81565443&se=6-W1_DFgQJale72Ceefdbw&utm_medium=api&utm_source=63a598e7","description":"Start
+        date: ASAP Minimum salary: 29744.00 GBP Maximum salary: 29744.00 GBP Salary
+        period: Annual Job Title: RGN/RMN Hours Per Week: FT (Days/Night Shifts) Location:
+        Allander Court, 80 Denmark Street, Possilpark, Glasgow, G22 5SR Rate Of Pay:
+        Up To \u00a329,744pa / \u00a313.00ph Please Apply Online Reference: RGN/G22
+        At Allander Court in vibrant Glasgow we provide a holistic care package, involving
+        residents and carers in developing a plan of care that meets the individual
+        needs and wishes of people livin\u2026"},{"id":"299209634","salary_is_predicted":"1","salary_max":36259.82,"created":"2015-07-29T14:41:38Z","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Arca24.com"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299209634?v=7344FF08B63D56F83A3314D4B628760489312676&se=6-W1_DFgQJale72Ceefdbw&utm_medium=api&utm_source=63a598e7","description":"Start
+        date: ASAP Minimum salary: 45000.00 GBP Maximum salary: 45000.00 GBP Salary
+        period: Annual Role: Software Engineer - Ruby (UI) Location: Edinburgh Salary:
+        up to \u00a345,000 (DOE) Net Talent are currently working with a fantastic
+        Edinburgh based client, looking to expand their Development team following
+        fantastic growth. This is a fantastic opportunity for a talented, experienced
+        Software Engineer to join a dynamic tech company leading the way in their
+        market. Key Skills/Experience: Web and Mo\u2026","location":{"area":["UK","Scotland","Edinburgh"],"__CLASS__":"Adzuna::API::Response::Location","display_name":"Edinburgh,
+        Scotland"},"latitude":55.943116,"category":{"label":"IT Jobs","__CLASS__":"Adzuna::API::Response::Category","tag":"it-jobs"},"title":"Software
+        Engineer - Ruby (UI)","__CLASS__":"Adzuna::API::Response::Job","longitude":-3.327942,"salary_min":36259.82},{"longitude":-3.327942,"salary_min":31221.53,"__CLASS__":"Adzuna::API::Response::Job","title":"Analyst
+        (Credit Risk & Fraud)","category":{"__CLASS__":"Adzuna::API::Response::Category","tag":"it-jobs","label":"IT
+        Jobs"},"latitude":55.943116,"location":{"area":["UK","Scotland","Edinburgh"],"__CLASS__":"Adzuna::API::Response::Location","display_name":"Edinburgh,
+        Scotland"},"description":"Minimum salary: 30000.00 GBP Maximum salary: 40000.00
+        GBP Salary period: Annual Additional classifications: Accounting/Auditing
+        Looking for a junior - mid level Credit, Risk and Fraud Analyst who is keen
+        to use their technical expertise and move into a Business Analyst role working
+        for a reputable financial services consultancy based in Edinburgh. This position
+        is going to allow the successful candidate the opportunity to work on one
+        of Europe''s biggest transformation projects. The main functio\u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299209643?v=4D70ACD3854F051DC7AE65FB6DA0642366C74FD2&se=6-W1_DFgQJale72Ceefdbw&utm_medium=api&utm_source=63a598e7","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Arca24.com"},"created":"2015-07-29T14:41:38Z","salary_max":31221.53,"salary_is_predicted":"1","id":"299209643"},{"location":{"area":["UK","Scotland","Edinburgh"],"__CLASS__":"Adzuna::API::Response::Location","display_name":"Edinburgh,
+        Scotland"},"category":{"label":"Healthcare & Nursing Jobs","tag":"healthcare-nursing-jobs","__CLASS__":"Adzuna::API::Response::Category"},"title":"Care
+        Assistant","__CLASS__":"Adzuna::API::Response::Job","salary_min":13833.17,"id":"299209556","salary_is_predicted":"1","salary_max":13833.17,"created":"2015-07-29T14:41:36Z","company":{"display_name":"Arca24.com","__CLASS__":"Adzuna::API::Response::Company"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299209556?v=B316BFA2A51E45A950EFE894DB081EED557FED12&se=6-W1_DFgQJale72Ceefdbw&utm_medium=api&utm_source=63a598e7","description":"Start
+        date: ASAP Minimum salary: 7.00 GBP Maximum salary: 7.00 GBP Salary period:
+        Annual Job Title: Care Assistant Hours Per Week: F/T Location: Allander Court,
+        80 Denmark Street, Glasgow, G22 5SR Rate Of Pay: \u00a37 p/h Please Apply
+        Online Reference: CA / G22 As the UK''s largest Private Health Care organization
+        we at Four Seasons Health Care like to develop the team we have, however,
+        our business is growing at such a pace that we need to source external talent.
+        Benefits of working with us at Four \u2026"},{"salary_is_predicted":"1","id":"299209570","created":"2015-07-29T14:41:36Z","salary_max":40210.15,"company":{"display_name":"Arca24.com","__CLASS__":"Adzuna::API::Response::Company"},"description":"Minimum
+        salary: 40000.00 GBP Maximum salary: 40000.00 GBP Salary period: Annual BIG
+        4 firm is seeking to hire recently qualified and experienced Auditors for
+        its busy Audit Assurance function after winning a prestigious new client.
+        The clients you will be exposed to are very varied and across many sectors
+        from multi-million turnover limited companies and PLCs to large subsidiaries
+        of US listed companies. The role carries responsibility, and accountability,
+        seldom seen at this level. The Audit S\u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299209570?v=68320B1D314F23D8B0756685A961E1D2731B37A6&se=6-W1_DFgQJale72Ceefdbw&utm_medium=api&utm_source=63a598e7","location":{"display_name":"Edinburgh,
+        Scotland","__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"]},"latitude":55.943116,"category":{"tag":"accounting-finance-jobs","__CLASS__":"Adzuna::API::Response::Category","label":"Accounting
+        & Finance Jobs"},"title":"Newly / Recently Qualified Audit Senior","salary_min":40210.15,"longitude":-3.327942,"__CLASS__":"Adzuna::API::Response::Job"},{"salary_is_predicted":"1","id":"299209549","created":"2015-07-29T14:41:35Z","salary_max":26611.6,"company":{"display_name":"Arca24.com","__CLASS__":"Adzuna::API::Response::Company"},"description":"Start
+        date: ASAP Minimum salary: 30030.00 GBP Maximum salary: 30030.00 GBP Salary
+        period: Annual Job Title: Registered Nurse (RGN or RMN) Hours Per Week: 38.5hrs
+        (Night Shift) Location: North Merchiston Care Home, 34 Watson Crescent, Edinburgh,
+        EH11 1NF Rate Of Pay: \u00a330,030pa / \u00a315.00ph Please Apply Online Reference:
+        RGN/EH11 As an RMN/RGN you have responsibility for leading your shift to ensure
+        we deliver excellent standards of care; promoting independence and dignity
+        and positively enhancing \u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299209549?v=869B1A3102C0621015B86CBD080E9FB79635774D&se=6-W1_DFgQJale72Ceefdbw&utm_medium=api&utm_source=63a598e7","location":{"area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland","__CLASS__":"Adzuna::API::Response::Location"},"category":{"label":"Healthcare
+        & Nursing Jobs","__CLASS__":"Adzuna::API::Response::Category","tag":"healthcare-nursing-jobs"},"title":"Registered
+        Nurse RGN or RMN","salary_min":26611.6,"__CLASS__":"Adzuna::API::Response::Job"},{"salary_min":50000,"longitude":-3.18754,"__CLASS__":"Adzuna::API::Response::Job","title":"Peripatetic
+        Manager","category":{"label":"Healthcare & Nursing Jobs","__CLASS__":"Adzuna::API::Response::Category","tag":"healthcare-nursing-jobs"},"latitude":55.950199,"location":{"area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh","__CLASS__":"Adzuna::API::Response::Location"},"description":"R
+        elief Manager Edinburgh c\u00a348,000  Company Car  Bonus Compass Associates
+        are proud to be representing a leading care provider looking to recruit a
+        Relief Manager to work in a portfolio of homes across Edinburgh. This is a
+        great opportunity to join one of the leaders in the sector. You will be responsible
+        for liaising with Home Managers to comply with CQC regulations and assist
+        homes without a manager. Ideally for this role you will be registered with
+        the NMC however this isn''t essential. The R\u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299208566?v=B07594A63B69A1AF3B09448BE78CCCECCA124197&se=6-W1_DFgQJale72Ceefdbw&utm_medium=api&utm_source=63a598e7","company":{"display_name":"Compass
+        Associates Ltd","__CLASS__":"Adzuna::API::Response::Company"},"created":"2015-07-29T14:39:16Z","salary_max":50000,"contract_type":"contract","salary_is_predicted":"0","id":"299208566"},{"id":"299208059","salary_is_predicted":"1","contract_type":"permanent","created":"2015-07-29T14:38:18Z","location":{"area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh","__CLASS__":"Adzuna::API::Response::Location"},"contract_time":"full_time","__CLASS__":"Adzuna::API::Response::Job","longitude":-3.18754,"salary_max":42475.4,"company":{"canonical_name":"Lloyds
+        Banking Group","__CLASS__":"Adzuna::API::Response::Company","display_name":"Lloyds
+        Banking Group"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299208059?v=4A85C0D35AE1088BCBBAD43CFDC0D9CF01AED0D2&se=6-W1_DFgQJale72Ceefdbw&utm_medium=api&utm_source=63a598e7","description":"Our
+        vision is to make Lloyds Banking Group the best bank for customers. As the
+        UK''s largest retail and commercial bank, we have a footprint that touches
+        nearly every community and household in the UK. That gives us a big responsibility
+        to support the UK economy, and to put customers at the heart of everything
+        we do. To achieve this, we also need to be the best bank for our colleagues
+        and our communities - and we have a clear strategy in place to make this a
+        reality. We are building on our many \u2026","latitude":55.950199,"category":{"__CLASS__":"Adzuna::API::Response::Category","tag":"it-jobs","label":"IT
+        Jobs"},"title":"Technical Specialist - Websphere Message Broker (Payments
+        team)","salary_min":42475.4}],"mean":35813.97,"count":5553}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['12859']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 14:46:00 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.90053']
+      X-Varnish: ['1198586379']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/search/4?location0=UK&location1=Scotland&location2=Edinburgh&sort_by=date&sort_direction=down
+  response:
+    body: {string: '{"results":[{"id":"299208058","salary_is_predicted":"1","contract_type":"permanent","created":"2015-07-29T14:38:18Z","__CLASS__":"Adzuna::API::Response::Job","longitude":-3.18754,"location":{"area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh","__CLASS__":"Adzuna::API::Response::Location"},"contract_time":"full_time","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Lloyds
+        Banking Group","canonical_name":"Lloyds Banking Group"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299208058?v=9A8BCE3E98265A25AD9C78D2F699315AE79A6093&se=WSUMhQx6RN-6fq5-IvPokA&utm_medium=api&utm_source=63a598e7","description":"Our
+        vision is to make Lloyds Banking Group the best bank for customers. As the
+        UK''s largest retail and commercial bank, we have a footprint that touches
+        nearly every community and household in the UK. That gives us a big responsibility
+        to support the UK economy, and to put customers at the heart of everything
+        we do. To achieve this, we also need to be the best bank for our colleagues
+        and our communities - and we have a clear strategy in place to make this a
+        reality. We are building on our many \u2026","salary_max":43280.8,"title":"Technical
+        Specialist - Faster Payments and BACS Payments Engine","salary_min":43280.8,"latitude":55.950199,"category":{"label":"IT
+        Jobs","tag":"it-jobs","__CLASS__":"Adzuna::API::Response::Category"}},{"created":"2015-07-29T14:38:18Z","contract_type":"permanent","salary_is_predicted":"1","id":"299208061","longitude":-3.18754,"__CLASS__":"Adzuna::API::Response::Job","contract_time":"full_time","location":{"display_name":"Edinburgh","__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"]},"description":"Our
+        vision is to make Lloyds Banking Group the best bank for customers. As the
+        UK''s largest retail and commercial bank, we have a footprint that touches
+        nearly every community and household in the UK. That gives us a big responsibility
+        to support the UK economy, and to put customers at the heart of everything
+        we do. To achieve this, we also need to be the best bank for our colleagues
+        and our communities - and we have a clear strategy in place to make this a
+        reality. We are building on our many \u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299208061?v=70D84FB239FE8E9F98E8B548CAF79BF7BE4B88B0&se=WSUMhQx6RN-6fq5-IvPokA&utm_medium=api&utm_source=63a598e7","company":{"canonical_name":"Lloyds
+        Banking Group","display_name":"Lloyds Banking Group","__CLASS__":"Adzuna::API::Response::Company"},"salary_max":38623.08,"salary_min":38623.08,"title":"Senior
+        Firewall Engineer - 24/7","category":{"label":"IT Jobs","tag":"it-jobs","__CLASS__":"Adzuna::API::Response::Category"},"latitude":55.950199},{"salary_min":28000,"__CLASS__":"Adzuna::API::Response::Job","title":"Systems
+        Analyst","category":{"__CLASS__":"Adzuna::API::Response::Category","tag":"it-jobs","label":"IT
+        Jobs"},"location":{"area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland","__CLASS__":"Adzuna::API::Response::Location"},"description":"Send
+        Resourcing Ltd are excited to be supporting our client in the appointment
+        of a Systems Analyst for their prestigious organisation in Edinburgh. Our
+        client are unique, leading innovators in the development within the agricultural
+        and rural sectors. Due to their continuous involvement, they are looking to
+        recruit a Systems Analyst to join the Business Systems team which is overall
+        responsible for the development and maintenance of all business systems within
+        the organisation. The key respons\u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299204692?v=6A4F546D83342914C9737606BA25BEF265A2EE4E&se=WSUMhQx6RN-6fq5-IvPokA&utm_medium=api&utm_source=63a598e7","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Send","canonical_name":"Pack
+        & Send"},"salary_max":32000,"created":"2015-07-29T14:13:03Z","contract_type":"permanent","salary_is_predicted":"0","id":"299204692"},{"company":{"display_name":"ANSON
+        MCCADE","__CLASS__":"Adzuna::API::Response::Company"},"description":"SAP BI
+        Consultant (Data Warehouse, Business Objects, HANA, Analytics) Are you seeking
+        a tremendous career opportunity, with a fast track management route at the
+        forefront of BI technologies? Do you dream of working for one of the world\u2019s
+        leading management consultancies? If so there is no need to dream any longer.
+        SAP BI Consultant (Data Warehouse, Business Objects, HANA, Analytics) Company
+        My client, a highly-established, global market leader, Tier 1 Consultancy
+        (one of the world\u2019s largest) is\u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299204469?v=D20500BF96BB9AB7B00EA9E492420E7A3FA032D6&se=WSUMhQx6RN-6fq5-IvPokA&utm_medium=api&utm_source=63a598e7","salary_is_predicted":"0","id":"299204469","salary_max":60000,"created":"2015-07-29T14:12:56Z","contract_type":"permanent","title":"SAP
+        BI Consultant (Data Warehouse, Business Objects, HANA, Analytics)","salary_min":40000,"__CLASS__":"Adzuna::API::Response::Job","location":{"__CLASS__":"Adzuna::API::Response::Location","display_name":"Edinburgh,
+        Scotland","area":["UK","Scotland","Edinburgh"]},"category":{"label":"IT Jobs","tag":"it-jobs","__CLASS__":"Adzuna::API::Response::Category"}},{"id":"299204104","salary_is_predicted":"0","contract_type":"permanent","salary_max":84000,"created":"2015-07-29T14:12:44Z","company":{"display_name":"ANSON
+        MCCADE","__CLASS__":"Adzuna::API::Response::Company"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299204104?v=070439CBE87F2EEBD78B6BA490A14447530D3ADD&se=WSUMhQx6RN-6fq5-IvPokA&utm_medium=api&utm_source=63a598e7","description":"Project
+        Manager (Finance, Banking, Delivery, System, Implements) Dynamic Opportunities
+        to Join the UK\u2019s Leading FS Practice My client, a global innovator, requires
+        high performing Project Managers (Finance, Banking, Delivery, System, Implements)
+        with experience in full project and development lifecycles, and an understanding
+        of consulting within a commercial business environment; along with the ability
+        to articulate technology to a level which stakeholders can comprehend. The
+        successful candida\u2026","location":{"display_name":"Edinburgh, Scotland","__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"]},"category":{"tag":"it-jobs","__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs"},"title":"Project Manager (Finance, Banking, Delivery, System, Implements)","__CLASS__":"Adzuna::API::Response::Job","salary_min":0},{"company":{"display_name":"ANSON
+        MCCADE","__CLASS__":"Adzuna::API::Response::Company"},"description":"BI Consultant
+        (Data Warehouse, ETL, Integration, Analytics, Model) Are you seeking a tremendous
+        career opportunity, with a fast track management route at the forefront of
+        BI technologies? Do you dream of working for one of the world\u2019s leading
+        management consultancies? If so there is no need to dream any longer. Company
+        My client, a highly-established, global market leader, Tier 1 Consultancy
+        (one of the worlds largest) is urgently seeking ambitious BI Consultants (Data
+        Warehouse, ETL, Integrati\u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299203735?v=044553B82DDA1C79391655292F871A9EB6F2E7F9&se=WSUMhQx6RN-6fq5-IvPokA&utm_medium=api&utm_source=63a598e7","salary_is_predicted":"0","id":"299203735","salary_max":55000,"created":"2015-07-29T14:12:31Z","contract_type":"permanent","title":"BI
+        Consultant (Data Warehouse, ETL, Integration, Analytics, Model)","salary_min":40000,"__CLASS__":"Adzuna::API::Response::Job","location":{"__CLASS__":"Adzuna::API::Response::Location","display_name":"Edinburgh,
+        Scotland","area":["UK","Scotland","Edinburgh"]},"category":{"tag":"it-jobs","__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs"}},{"created":"2015-07-29T14:12:29Z","salary_max":60000,"contract_type":"permanent","salary_is_predicted":"0","id":"299203668","description":"Business
+        Change (Retail Baking, Systems Delivery, Financial Services) My client, a
+        highly-established, global market leader, Tier 1 Consultancy (one of the world\u2019s
+        largest) is urgently seeking Business Change Consultants to join their vibrant
+        team. With a passion to remain at the forefront of the industry, and working
+        with market leading companies there has been a high demand for respectable
+        Business Change Consultants to join their successful team. With over 300,000
+        employees worldwide, a grea\u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299203668?v=F6967A76D48E1D7A0C3012F5774CBA342F8BC5C7&se=WSUMhQx6RN-6fq5-IvPokA&utm_medium=api&utm_source=63a598e7","company":{"display_name":"ANSON
+        MCCADE","__CLASS__":"Adzuna::API::Response::Company"},"category":{"label":"IT
+        Jobs","tag":"it-jobs","__CLASS__":"Adzuna::API::Response::Category"},"location":{"area":["UK","Scotland","Edinburgh"],"__CLASS__":"Adzuna::API::Response::Location","display_name":"Edinburgh,
+        Scotland"},"salary_min":40000,"__CLASS__":"Adzuna::API::Response::Job","title":"Business
+        Change (Retail Baking, Systems Delivery, Financial Services)"},{"salary_min":14080.23,"__CLASS__":"Adzuna::API::Response::Job","title":"Domestic
+        Cleaner(s)","category":{"label":"Part time Jobs","__CLASS__":"Adzuna::API::Response::Category","tag":"part-time-jobs"},"location":{"__CLASS__":"Adzuna::API::Response::Location","display_name":"Edinburgh,
+        Scotland","area":["UK","Scotland","Edinburgh"]},"description":"Domestic cleaner(s)
+        required to work in private houses at various locations throughout Edinburgh.
+        The jobs are permanent, small, part time and range from 2 hours per week to
+        4 hours per week. WE currently have around 10 hours available. You must be
+        able to converse in English, work alone and have high standards. When applying
+        please state your location, contact number and desired number of hours and
+        transport if any. Thanks you","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299202229?v=CA3B7892442D52EE971DD5255597EE4AE9E79F47&se=WSUMhQx6RN-6fq5-IvPokA&utm_medium=api&utm_source=63a598e7","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":14080.23,"created":"2015-07-29T13:45:51Z","contract_type":"permanent","salary_is_predicted":"1","id":"299202229"},{"description":"Job
+        title: Housekeeper/Breakfast Cook/Kitchen hand Pleasant, honest, punctual,
+        reliable, energetic, self motivated person required for family guest house
+        on the east side of the city  Job description  The preparation of food and
+        in assisting in the kitchen for breakfast service, cook and store foodstuffs
+        to the correct temperature and serve breakfast to order and maintain kitchen
+        cleanliness. Commercial dishwasher operation and also hand washing.  Clean
+        bedrooms/bathrooms and public areas to ex\u2026","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299202130?v=3A24D098295569045296BCB42538E10FC383F6F3&se=WSUMhQx6RN-6fq5-IvPokA&utm_medium=api&utm_source=63a598e7","company":{"__CLASS__":"Adzuna::API::Response::Company"},"created":"2015-07-29T13:44:56Z","salary_max":17712.39,"contract_type":"contract","salary_is_predicted":"1","id":"299202130","salary_min":17712.39,"__CLASS__":"Adzuna::API::Response::Job","title":"Housekeeper/Breakfast
+        Cook for immediate start in B&B/Guest House","category":{"label":"Domestic
+        help & Cleaning Jobs","tag":"domestic-help-cleaning-jobs","__CLASS__":"Adzuna::API::Response::Category"},"location":{"area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland","__CLASS__":"Adzuna::API::Response::Location"}},{"id":"299202066","salary_is_predicted":"1","contract_type":"permanent","salary_max":16100.06,"created":"2015-07-29T13:44:52Z","company":{"__CLASS__":"Adzuna::API::Response::Company"},"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299202066?v=8C0DDEF0466F092256F5359E3A217AF4A02A515C&se=WSUMhQx6RN-6fq5-IvPokA&utm_medium=api&utm_source=63a598e7","description":"The
+        Bothy Restaurant & Drinkery is part of the well established Murrayfield Hotel
+        family. As an important member of bar and waiting staff, you will spend the
+        majority of your time front of house ensuring that customers receive the best
+        possible experience. You will be required to become involved in all aspects
+        of the day to day service, setting up, serving the customer, liaising with
+        the kitchen, clearing down after service. High standards are very important,
+        therefore you will be required to e\u2026","location":{"display_name":"Edinburgh","__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"]},"latitude":55.950199,"category":{"__CLASS__":"Adzuna::API::Response::Category","tag":"hospitality-catering-jobs","label":"Hospitality
+        & Catering Jobs"},"title":"Front of House Servers Required for The Bothy,
+        Murrayfield Hotel","__CLASS__":"Adzuna::API::Response::Job","salary_min":16100.06,"longitude":-3.18754}],"mean":35813.97,"count":5553,"__CLASS__":"Adzuna::API::Response::JobSearchResults"}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['12896']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 14:46:01 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.90053']
+      X-Varnish: ['1198586390']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/search/5?location0=UK&location1=Scotland&location2=Edinburgh&sort_by=date&sort_direction=down
+  response:
+    body: {string: '{"__CLASS__":"Adzuna::API::Response::JobSearchResults","count":5553,"mean":35813.97,"results":[{"salary_min":42103.25,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"Distributors
+        required in all areas of UK and Europe for the launch of a brand new Global
+        travel network. Would you like to travel at wholesale prices? or travel for
+        free by simply giving away discount vouchers? Long term stable opportunity
+        for enthusiastic individuals with a desire to succeed Experience the world
+        and live life to its fullest whilst getting paid to do it Apply now to register
+        your interest and watch a free video presentation. (6461)","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:44:51Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299202050?v=F7068A38EE6A02C4F4E4570F686AD0B521B3DE05&se=TV80buFnShCKiEEsqRc1pw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Part
+        time Jobs","tag":"part-time-jobs"},"id":"299202050","title":"Distributors
+        required in all areas of UK for the launch of a brand new Global travel network","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":42103.25},{"salary_min":17755.46,"longitude":-3.315466,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Currie","Riccarton"],"display_name":"Riccarton,
+        Currie"},"salary_is_predicted":"1","description":"Reliable, hardworking, presentable
+        and well spoken delivery driver required for fast paced Indian Takeaway located
+        in EH4 area of Edinburgh. Start date - Immediate start Permanent shift 5 days
+        a week - Monday, Tuesday, Wednesday, Friday and Sunday. Currently required
+        to cover driver on holiday on Saturday also (Temporary). Shift times : 5pm
+        to 10:30pm. Must speak good English, own a car with insurance, sat nav and
+        mobile phone, Must have awareness of local areas in Edinburgh. Base pay  \u00a320
+        per \u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:44:49Z","latitude":55.903995,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299202012?v=EF2E064453886A838D844AF0589A23CA96E1E172&se=TV80buFnShCKiEEsqRc1pw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Logistics
+        & Warehouse Jobs","tag":"logistics-warehouse-jobs"},"id":"299202012","title":"Delivery
+        Driver Required - Immediate Start","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":17755.46},{"salary_min":20327.78,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"CONTRACTOR
+        REQUIRES WITH IMMEDIATE START; EXPERIENCED LANDSCAPER TO JOIN TEAM CARRYING
+        OUT SOFT LANDSCAPING AROUND NEW BUILD DEVELOPMENTS IMMEDIATE START PERMANENT
+        POSITION EXCELLENT WAGE.","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:44:43Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299201901?v=807D3AA775F4F60C6F8CD8F85D71E12B9754BC7B&se=TV80buFnShCKiEEsqRc1pw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Other/General
+        Jobs","tag":"other-general-jobs"},"id":"299201901","title":"2 LANDSCAPER''S","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":20327.78},{"salary_min":35000,"longitude":-3.327942,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"0","description":"Our client, a leading
+        bank with offices located just outside of Edinburgh within commutable distance
+        of Glasgow with excellent transport links, are recruiting for two senior in
+        house commercial lawyers to work within the Legal Team, for a twelve month
+        contract, to provide effective and timely legal advice on a broad range of
+        commercial issues to support the New Bank Programme. You will be confident
+        and self-motivated with up to 3 years relevant commercial experience from
+        private practice or an \u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:44:12Z","latitude":55.943116,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299201768?v=B4556866A0EC9836B45FA998FD3CB663A038451E&se=TV80buFnShCKiEEsqRc1pw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Other/General
+        Jobs","tag":"other-general-jobs"},"id":"299201768","title":"In House Commercial
+        Solicitors ( X 2 Roles)","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Hays
+        Legal"},"salary_max":35000},{"salary_min":36503.44,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"Market
+        leaders are recruiting for a Commercial Property Solicitor to join&nbsp;their
+        Rural Business and Renewables team, part of the Property &amp; Infrastructure
+        division, in Edinburgh.&nbsp;&nbsp; The successful candidate will be newly
+        qualified or have up to 2 years PQE with a genuine interest in commercial
+        property. The Rural Business and Renewables team works across a broad range
+        of commercial property business, including onshore renewables, rural property,
+        mining, licensing and leisure, T\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:44:09Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299201681?v=9F5DD135114EC000B8722140C4F28849D81F7A67&se=TV80buFnShCKiEEsqRc1pw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Other/General
+        Jobs","tag":"other-general-jobs"},"id":"299201681","title":"Commercial Property
+        Solicitor","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"G2
+        Legal Limited"},"salary_max":36503.44},{"salary_min":40000,"longitude":-3.327942,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"0","description":"Are you an experienced
+        insurance litigation solicitor considering your next role in the Edinburgh
+        area and with at least three years post qualifying experience? If so, my client
+        has a requirement within their stellar insurance litigation team for an assistant
+        or potentially associate solicitor to take on a mixed caseload of insurance
+        litigation with a leaning towards medical negligence claims. You will have,
+        as previously mentioned, at least three years PQE and have demonstrable experience
+        of i\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:44:03Z","latitude":55.943116,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299201493?v=F5397BD914DDBD5F067BD6DF7C64E306FEB52B15&se=TV80buFnShCKiEEsqRc1pw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299201493","title":"Insurance/Clin
+        Neg Solicitor - Rare Edinburgh Opportunity NEW","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"QED
+        Legal"},"salary_max":55000},{"salary_min":23978.96,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"1","description":"Restaurant Manager The
+        Business: The Bread Street Brasserie, located within the DoubleTree by Hilton
+        Edinburgh City is currently recruiting for an experienced Restaurant Manager
+        (Assistant Food & Beverage Manager) to bolster the team and support the Food
+        & Beverage Manager. The hotel boasts 138 bedroom as well as a Conference Centre
+        and is situated in the heart of the city offering with one of the most spectacular
+        views onto the castle and beyond from the Penthouse Suite and front facing
+        bedroo\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:43:33Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299201080?v=12875BE7DC415C770B1353AD43ED35183ACB4BDF&se=TV80buFnShCKiEEsqRc1pw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Hospitality
+        & Catering Jobs","tag":"hospitality-catering-jobs"},"id":"299201080","title":"Restaurant
+        Manager (Assistant F&B Manager)","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":23978.96},{"salary_min":38481.1,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"I
+        am currently working for one of the leading names in Electronics looking for
+        a Senior CAD Systems Administrator to join their fabled team based in Edinburgh
+        The historical capital city of Scotland offers a wide range of things to do
+        and see. From visiting Edinburgh Castle and walking down the bustling Royal
+        Mile to having a picnic in the beautiful gardens in Princes Street. Alternatively,
+        you can visit the many shops and boutiques in the city or climb the famous
+        Arthurs Seat - there really is\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:42:19Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299200741?v=B2BD018F3798CB46D6892377850FA8C4EE94F90D&se=TV80buFnShCKiEEsqRc1pw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs","tag":"engineering-jobs"},"id":"299200741","title":"Senior CAD Systems
+        Administrator - Edinburgh","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Microtech
+        Global Ltd"},"salary_max":38481.1},{"salary_min":25000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"A
+        fantastic opportunity has arisen in Edinburgh for an experienced transport
+        planner to join the growing team at a long established and highly reputable
+        consultancy. Experiences / Qualifications:  3 years'' experience within transport
+        planning  Experience of managing transport projects  Experience of working
+        within private sector  Knowledge of LinSig, GIS, TRICS, PICADY & SATURN would
+        be advantageous  Excellent communication/presentation skills Key Responsibilities:  Transport
+        assessments  Trans\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:42:00Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299200369?v=74D18708E7934C7E88C2119BFE250F3FFDD96D30&se=TV80buFnShCKiEEsqRc1pw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs","tag":"engineering-jobs"},"id":"299200369","title":"Transport Planner","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Penguin
+        Recruitment"},"salary_max":35000},{"salary_min":50000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"Harvey
+        Nash''s client, a technology start up is looking for an ambitious and talented
+        individual to join their team in Edinburgh. In this role you will be part
+        of the first wave of Software Engineers responsible for shaping the future
+        of a unique product. In this role you will work closely with other software
+        engineers and key stakeholders to drive forward the technical innovation within
+        your allocated environment. You will be expected to support the design, development
+        and testing of all code. \u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:41:34Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299199971?v=DF27F92E678C1A9A7328336CED8FC00994BD1DE1&se=TV80buFnShCKiEEsqRc1pw&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs","tag":"engineering-jobs"},"id":"299199971","title":"Software Engineer
+        (C++)","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Harvey
+        Nash Consulting  Limited"},"salary_max":50000}]}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['12645']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 14:46:04 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.80033']
+      X-Varnish: ['1198586414']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/search/6?location0=UK&location1=Scotland&location2=Edinburgh&sort_by=date&sort_direction=down
+  response:
+    body: {string: '{"__CLASS__":"Adzuna::API::Response::JobSearchResults","count":5553,"mean":35813.97,"results":[{"salary_min":14747.33,"longitude":-3.30839,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Currie"],"display_name":"Currie,
+        Edinburgh"},"salary_is_predicted":"1","description":"Role: Telehandler Operator
+        Hourly Rate: Neg on experience Duration: Ongoing Linsco Ltd requires various
+        Telehandler Operators to work on construction sites in Currie, Edinburgh for
+        an immediate starts. To be considered for these roles all candidates must
+        have the following:  Valid CPCS/NPORS Card  PPE (Hard hat , Boots and high
+        Vis)  Previous experience in this role  At least one valid working reference
+        Please call Gemma at the Linsco office in Glasgow on 0141 447 0166 to apply.
+        Alternatively i\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:36:47Z","latitude":55.8965,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299198790?v=AC2C83B539B97B886CBF0F4EC85F3C2B9D78F867&se=GGqbI8fhTR2MOkqTMrdkVQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs","tag":"engineering-jobs"},"id":"299198790","title":"Telehandler Operator","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Linsco
+        Recruitment"},"salary_max":14747.33},{"salary_min":17395.33,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"1","description":"We have some fantastic
+        opportunities at the Multi Award Winning Twenty Princes Street\u2019. Since
+        opening just over 18 months ago, Twenty Princes Street has made a huge impact
+        on the restaurant scene in Edinburgh, leading the way in innovation, experimentation
+        and making the most from the famous Josper Grill. We source all our ingredients
+        locally and are passionate about delivering quality, hand-picked dishes to
+        our customers. At Twenty Princes Street, we are looking for chefs with a genuine
+        love o\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:29:51Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299198250?v=564D3E5E68B013B4D9554BB7377631D7BA792FF8&se=GGqbI8fhTR2MOkqTMrdkVQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Hospitality
+        & Catering Jobs","tag":"hospitality-catering-jobs"},"id":"299198250","title":"Chef
+        de Partie","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":17395.33},{"salary_min":20000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"Pensions
+        Data Analyst Capita HR Solutions Edinburgh Up to &pound;23,000 salary plus
+        excellent benefits Summary: Capita HR Solutions is our market leading outsourced
+        HR services provider. We work with large public and private sector clients
+        and specialise in the provision of Transformation management, HR Shared Services,
+        Payroll, insight, Advisory, Projects and Recruitment &amp; Resourcing. We''re
+        now seeking a Data Analyst to join the team in Edinburgh and assist with data
+        / reporting projects w\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:28:09Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299197917?v=08E6F51EA1ECA1959AEAB7515F0D9CC891108BCF&se=GGqbI8fhTR2MOkqTMrdkVQ&utm_medium=api&utm_source=63a598e7","contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Accounting
+        & Finance Jobs","tag":"accounting-finance-jobs"},"id":"299197917","title":"Pension
+        Data Analyst","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Capita"},"salary_max":23000},{"salary_min":48905.56,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"Whenever
+        you join, however long you stay, the exceptional EY experience lasts a lifetime
+        Are you good at seeing the big picture? Then join EY to gain experience that
+        will last a life time. We are looking for a Manager to join our team because
+        we are experiencing tremendous growth across our Assurance practice. About
+        Audit in Edinburgh &amp; Glasgow It''s an exciting time to be in Assurance
+        at EY: our business grew by 8.5% in the UK in 2014, and the work we do is
+        increasingly important and key in\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:28:04Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299197783?v=BB798EA9FD3DBF44860DB9C28C059F8E6AEEAD25&se=GGqbI8fhTR2MOkqTMrdkVQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Unknown","tag":"unknown"},"id":"299197783","title":"EY,
+        Manager, Assurance, UK&I, Edinburgh","company":{"__CLASS__":"Adzuna::API::Response::Company","canonical_name":"ey","display_name":"EY"},"salary_max":48905.56},{"salary_min":17392.36,"longitude":-3.39704,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","South
+        Queensferry"],"display_name":"South Queensferry, Edinburgh"},"salary_is_predicted":"1","description":"OSCARS
+        is a leading childcare provider in Edinburgh and The Lothian''s, operating
+        out of school childcare during school term time and holidays. OSCARS are opening
+        a Breakfast Club operating from Echline Primary School, South Queensferry
+        starting in August 2015. OSCARS is currently looking to recruit Breakfast
+        Club Workers to work within Echline Primary, Monday to Friday between 7.30am-9.00am
+        during term time Salary ranges from \u00a37.02-\u00a38.02 p/h. We are looking
+        for enthusiastic, motivated and respo\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:24:37Z","latitude":55.988098,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299196749?v=CBC40BEF7C37D6F45820C2FA5D51FC04CA6DB127&se=GGqbI8fhTR2MOkqTMrdkVQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"HR
+        & Recruitment Jobs","tag":"hr-jobs"},"id":"299196749","title":"Breakfast Club
+        Workers","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":17392.36},{"salary_min":16644.02,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"1","description":"We\u2019re looking for
+        a couple of staff to man a brand new morning and early afternoon takeaway
+        business in central Newcastle. Hours of work will be between 6am and 3pm Monday
+        to Friday only. Duties will include taking orders, simple and fast-paced food
+        preparation, cash handling, cleaning and stocking up. The ideal candidates
+        will have experience in a small kitchen, be an excellent communicator and
+        will hold the appropriate food hygiene qualifications. You\u2019ll need to
+        be flexible; the number of hou\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:23:20Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299196588?v=FBFE8DBC9BEC2583EBEAF76644BC7FC345DBC320&se=GGqbI8fhTR2MOkqTMrdkVQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Hospitality
+        & Catering Jobs","tag":"hospitality-catering-jobs"},"id":"299196588","title":"CHEFS
+        OR COOKS NEEDED FOR EARLY AM SHIFT MONDAY TO FRIDAY ONLY","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":16644.02},{"latitude":55.943116,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Accounting
+        & Finance Jobs","tag":"accounting-finance-jobs"},"id":"299196113","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Robert
+        Half"},"salary_max":15820,"salary_min":15820,"longitude":-3.327942,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"0","description":"The Role Robert Half in
+        Edinburgh is recruiting a Temporary Finance Assistant on behalf of a well-known
+        and respected business in Edinburgh. This varied and interesting Finance/Accounts
+        Assistant position will see you responsible for the day to day finance processing
+        for accounts payable invoicing as well as the raising of sales invoices. Along
+        with ledger processing you will be required to reconcile the bank accounts
+        and verify any statements and transactions. Reporting into the Financial Mana\u2026","created":"2015-07-29T13:07:58Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299196113?v=367C72DAA6434B306C0950B5622B96A46DA2D31F&se=GGqbI8fhTR2MOkqTMrdkVQ&utm_medium=api&utm_source=63a598e7","title":"Finance
+        Assistant"},{"salary_min":27524.53,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"All
+        regions of Scotland covered Door to Door Canvasser/Sales persons required
+        for immediate start at Green Deal Eco. Pre-payment Gas and Electric meter
+        selling only. \u00a311 for Single Fuel Sale. \u00a325 for Dual Fuel Sale Excellent
+        uncapped earning potential for self motivated individuals. Also Sales Teams
+        Required. Looking to switch company come talk to us. And bring your team.
+        Call Ian on 0131 440 8258 to arrange your interview. NO RECRUITMENT AGENCIES","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:01:40Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299194161?v=D07448CB46FFD9CEC3DC5BDF933F2206572D5507&se=GGqbI8fhTR2MOkqTMrdkVQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Sales
+        Jobs","tag":"sales-jobs"},"id":"299194161","title":"Energy Advisor Selling
+        Gas and Electric Weekly pay","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":27524.53},{"salary_min":17202.16,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"1","description":"We''re looking for full
+        time and part time bar staff with an immediate start at one of Edinburgh''s
+        finest craft beer specialists Contact us to become part of our, independent
+        and exciting group of bar/restaurants where we''ll value your contribution
+        of hard work and ideas. You''ll enjoy a fun, rewarding environment among talented
+        people. If you feel that you are an efficient, hard-working individuals who
+        can demonstrate to us: - Relevant experience dealing with the public in a
+        customer-service rol\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:01:33Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299194129?v=7F53A37A30FF7EE95A5DFA07A6D2C7AC538E2DB5&se=GGqbI8fhTR2MOkqTMrdkVQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Hospitality
+        & Catering Jobs","tag":"hospitality-catering-jobs"},"id":"299194129","title":"FT
+        & PT BAR STAFF REQUIRED FOR CITY CENTRE CRAFT BEER BAR","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":17202.16},{"salary_min":19907.36,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"1","description":"Ellee''s Hair Design Recruiting
+        Senior Stylists. Ellee''s Hair Design are recruiting for senior stylists to
+        expand our ever growing team. Joining Ellee''s Hair Design will mean you are
+        joining a team who work on shows, fashion shows, photo shoots, closely with
+        L''Oreal and within a busy salon enviroment. Our team work great together
+        & show great commitment to every client. The senior stylist posistion is based
+        on a full time or part time posistion with any candidate having more than
+        5 years salon e\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T13:01:11Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299194090?v=D3C6F729AF7C4423205DD965ADFE3365A1CBB00C&se=GGqbI8fhTR2MOkqTMrdkVQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299194090","title":"Ellee''s
+        Hair Design Recruiting Senior Stylists Today","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":19907.36}]}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['12843']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 14:46:07 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.80033']
+      X-Varnish: ['1198586449']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/search/7?location0=UK&location1=Scotland&location2=Edinburgh&sort_by=date&sort_direction=down
+  response:
+    body: {string: '{"__CLASS__":"Adzuna::API::Response::JobSearchResults","count":5553,"mean":35813.97,"results":[{"salary_min":18772.45,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"1","description":"Targets don\u2019t faze
+        you; neither does working in a fast-moving, constantly evolving environment.
+        In fact, that\u2019s just the sort of thing you thrive on. You love being
+        part of a team and aren\u2019t afraid to pitch in to ensure that goals and
+        targets are achieved. You get a real buzz from learning new things, so getting-up-to-speed
+        on our products wont be a problem. Ideal applicants will thrive in a fast
+        paced busy environment where you will demonstrate a sound under standing of
+        sales and customer serv\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:59:14Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299194078?v=8E77D0F2C084125ADB9DDB9A0D62844DAA5FBEAD&se=KK9MUHtHSaurJzNHB7sc3w&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Sales
+        Jobs","tag":"sales-jobs"},"id":"299194078","title":"Junior Sales Assistant","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":18772.45},{"salary_min":16174.84,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"OSCARS
+        is a leading childcare provider in Edinburgh and The Lothian''s, operating
+        out of school childcare during school term time and holidays. The hours of
+        work vary from club-to-club but usually are between 2pm-6pm Monday-Thursday
+        and 1130am-6pm on a Friday. We have a variety of locations based across the
+        city. OSCARS is currently looking to recruit Play Workers to work within our
+        network of clubs across Edinburgh to start in the new school year in August
+        until June 2016. Salary ranges from \u00a36\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:58:11Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299193983?v=B670B99384E6A780A2E054FA97A9472F990EC0D6&se=KK9MUHtHSaurJzNHB7sc3w&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Teaching
+        Jobs","tag":"teaching-jobs"},"id":"299193983","title":"Play Workers","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":16174.84},{"salary_min":20615.17,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"1","description":"Skene House HotelSuites
+        are looking to recruit a Part-Time Weekend Night Manager, responsible for
+        the smooth running of the night shift. We are a privately owned and run Company,
+        offering four star service in the overnight accommodation sector. We have
+        189 suites in three city centre locations, and we pride ourselves in excellent
+        customer service. The ideal candidate must have proven Supervisory experience
+        in the Hospitality industry, good customer service and communications skills
+        and has pref\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:58:09Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299193962?v=2CB5DE5EFFAE1867819BA25112D2B2B0385142D8&se=KK9MUHtHSaurJzNHB7sc3w&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Hospitality
+        & Catering Jobs","tag":"hospitality-catering-jobs"},"id":"299193962","title":"Part
+        Time Weekend Night Manager City Centre Hotels","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":20615.17},{"salary_min":37811.16,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"Carbomap
+        is an ambitious spin-out company from the University of Edinburgh\u2019s School
+        of GeoSciences. We aim to contribute to saving the world\u2019s forests by
+        providing state-of-the-art mapping services to accurately measure forests
+        and their ecosystem services. The pioneering approach that we are leading
+        is based on our pending patent and the novel use of existing technologies
+        such as UAVs. This is a fast growing area of interest and as such we see huge
+        opportunities for the company and its employe\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:57:14Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299192563?v=E355CAC448DA1638B3627D896FFD62725E9F2C59&se=KK9MUHtHSaurJzNHB7sc3w&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"PR,
+        Advertising & Marketing Jobs","tag":"pr-advertising-marketing-jobs"},"id":"299192563","title":"Hungry
+        marketeer wanted (Part-Time)","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":37811.16},{"salary_min":50000,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"0","description":"Interim Head of Corporate
+        Communications/Corporate Communications Consultant/Manager - Public SectorContract.
+        Edinburgh. 3 months . \u00a330 - \u00a331 per hour. Must have public sector
+        experience to applyThe Head of Corporate Communications leads on strategic
+        and operational communications and engagement. They will be the key adviser
+        to the Director of Digital Transformation on communications and engagement,
+        while overseeing and co-ordinating all communications and engagement activity.
+        The Interim post \u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:53:53Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299190953?v=48F1ED2F5A73C865BEEE67FFE543DA3E34E0D15F&se=KK9MUHtHSaurJzNHB7sc3w&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"PR,
+        Advertising & Marketing Jobs","tag":"pr-advertising-marketing-jobs"},"id":"299190953","title":"Lead
+        Corporate Communications Consultant/Manager- Public Sector","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":60000},{"salary_min":18744.6,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"1","description":"We are currently looking
+        for experienced Mobile Phone Technicians level 1 2 3. The ideal candidate
+        must be able to diagnose, repair and fully test the following products: Mobile
+        Phones - Apple iPhone, Blackberry, HTC, Nokia, Sony Ericsson, Samsung, LG,
+        Motorola and XDA ,Tablets The candidate must have previous experience in either
+        a shop or service centre repairing the above devices. You should have a solid
+        work history, be a self-starter with a passion for technology. The Mobile
+        Phone Repair T\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:53:19Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299190819?v=3FB18741198F225A6E2AE5EA32DB47ACB7F1D4EF&se=KK9MUHtHSaurJzNHB7sc3w&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299190819","title":" Mobile Phone Technician
+        Urgently Required ","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":18744.6},{"salary_min":19919.73,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"1","description":"Full time hairstylist
+        required for busy city centre salon, for more information contact kirstin
+        on 01382 221871.","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:52:58Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299190772?v=1DEC09666D03148415295B12A191F91B6412DEF0&se=KK9MUHtHSaurJzNHB7sc3w&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299190772","title":"Full
+        time hairstylist required for busy city centre salon","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":19919.73},{"salary_min":28612.02,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"1","description":"This is a very unique
+        and flexible job opportunity for Students. Can do it with no any \"responsibilities\",
+        Pay \u00a322/Hour. Starting immediately, Must Reply With Resume.","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:52:56Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299190766?v=408225EDB6A12159523F4D6B37BA7D68E0FE6897&se=KK9MUHtHSaurJzNHB7sc3w&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Domestic
+        help & Cleaning Jobs","tag":"domestic-help-cleaning-jobs"},"id":"299190766","title":"CASH
+        In Hand Positions, Immediate Start","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":28612.02},{"salary_min":9600,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"The
+        Social Care Community Partnership are a fast growing company looking for people
+        with care experience in care home settings for immediate start. In this role
+        you will need to undertake duties such as, working as part of a team taking
+        care of residents with dementia and low mobility and ensuring a high level
+        of care. You need to have a PVG or be willing to enter the PVG scheme. We
+        would also require a recent Moving and Handling certificate and at least one
+        reference relevant to care work and \u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:52:54Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299190758?v=F20A85FE52F5BDC951971D956A16EC49C51A5739&se=KK9MUHtHSaurJzNHB7sc3w&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299190758","title":"Care
+        Assistant - Edinburgh","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":19200},{"latitude":55.943116,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Creative
+        & Design Jobs","tag":"creative-design-jobs"},"id":"299190528","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":62435.48,"salary_min":62435.48,"longitude":-3.327942,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"1","description":"Business Architect required
+        to join this growing Change Team based in Edinburgh. This organisation is
+        a multi-national financial services organisation with change teams across
+        the global. The business architect role is a far reaching one, with strategic
+        and operational input into the development of processes. To that end, we are
+        looking for someone with a strong background in change management within the
+        asset management / third party administration environment. Key responsibilities
+        will includ\u2026","created":"2015-07-29T12:52:26Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299190528?v=D561DCB870364DD60145C65F0E8AF4B453A5BE4E&se=KK9MUHtHSaurJzNHB7sc3w&utm_medium=api&utm_source=63a598e7","title":"Business
+        Architect"}]}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['11999']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 14:46:08 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.80033']
+      X-Varnish: ['1198586461']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/search/8?location0=UK&location1=Scotland&location2=Edinburgh&sort_by=date&sort_direction=down
+  response:
+    body: {string: '{"__CLASS__":"Adzuna::API::Response::JobSearchResults","count":5553,"mean":35813.97,"results":[{"salary_min":27000,"longitude":-3.327942,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"0","description":"FINTEC recruit is seeking
+        a Systems Analyst for our client who is an education provider. This is a permanent
+        role based in Edinburgh. On offer is a salary range \u00a327,000 - \u00a332,500
+        dependent upon experience. Role and ResponsibilitiesThe role sits within the","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:52:20Z","latitude":55.943116,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299190370?v=C3A9D0D59B18A4DA638EC32ABDE1B756D4891F06&se=5kGIGF4PRNO08I9xCn2NPg&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299190370","title":"Systems Analyst","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"FINTEC
+        Recruit Ltd"},"salary_max":32500},{"latitude":55.943116,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Creative
+        & Design Jobs","tag":"creative-design-jobs"},"id":"299190263","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":34560,"salary_min":28800,"longitude":-3.327942,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"0","description":"Badenoch & Clark''s client,
+        a global Asset Management Organisation is looking to recruit an Asset Reconciliation
+        Analyst to join their team in Edinburgh on a contract basis. The role holder
+        will proactively maintain their understanding of all financial instruments
+        utilised within their portfolio group, identify all reconciliation items and
+        work towards resolution of discrepancies. You will also ensure your Team Leader/Manager
+        is notified of all material service issues and risk in a timely manner\u2026","created":"2015-07-29T12:52:15Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299190263?v=A57D72F55617CCACBD2737626CCD58A438CE45D0&se=5kGIGF4PRNO08I9xCn2NPg&utm_medium=api&utm_source=63a598e7","title":"Asset
+        Reconciliations"},{"salary_min":31931.98,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"Senior
+        Clinical Research Associate / SCRA Field Based - NW England, Scotland or Northern
+        Ireland; Full Time; Ref. DS/4029 inVentiv Health -Transforming Promising Ideas
+        into Commercial Reality inVentiv Health are currently recruiting for a home
+        based CRA or Senior CRA to be fully dedicated to the sponsor, a large global
+        pharmaceutical company. As a CRA/ Senior CRA you will be working across a
+        number of therapeutic areas and managing the full study cycle from set-up,
+        feasibility, study conduct pl\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:49:38Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299189858?v=5B73F5D2028A662B347AE8417107E104D6F25359&se=5kGIGF4PRNO08I9xCn2NPg&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299189858","title":"Senior
+        Clinical Research Associate / SCRA","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"inVentiv
+        Health Clinical"},"salary_max":31931.98},{"salary_min":28973.35,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"Medical
+        Sales Representative, Territory Manager - Diabetes - Southern Scotland Are
+        you looking to further your career with a fresh challenge? Are you looking
+        for a specialist position within a leading healthcare company with a diverse
+        and interesting portfolio? If so read on An opportunity currently exists with
+        the Diabetes Team for a Territory Manager to account manage key Hospitals,
+        Community and CCG''s across South East Scotland including Glasgow, Edinburgh,
+        Forth Valley, the Borders. Your re\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:49:37Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299189827?v=5E2C0B4A21913830DD76E9FB3188B598F0A9B987&se=5kGIGF4PRNO08I9xCn2NPg&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299189827","title":"Medical
+        Sales Representative - Diabetes - Southern Scotland","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"20
+        20 Selection Ltd"},"salary_max":28973.35},{"salary_min":32383.16,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"Senior
+        Clinical Research Associate / SCRA Field Based - North, ideally NE Pharmaceutical
+        Company Ref.AB/3863 inVentiv Health - Transforming Promising Ideas into Commercial
+        Reality Job description: This is a Field-based CRA position to join an expanding
+        clinical team. It offers the opportunity to work across a wide range of therapeutic
+        fields and phases long-term. You will be responsible for study sites in and
+        around the North East and West of the UK with potentially some sites further
+        afield, m\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:49:36Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299189805?v=1465149085555C0AC7420B173176AACB2E4B99E4&se=5kGIGF4PRNO08I9xCn2NPg&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299189805","title":"Senior
+        Clinical Research Associate / SCRA","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"inVentiv
+        Health Clinical"},"salary_max":32383.16},{"salary_min":30000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"My
+        client is one of the fastest growing Diagnostics companies in the UK. They
+        are seeking a highly motivated and driven professional to join their established
+        team of Diabetes Specialists. As a Diabetes Support Specialist you will be
+        responsible for the development of sales through primary and secondary care
+        organisation channels. If you are a tenacious and highly organised individual
+        with the ability to be creative in your sales approach, then this may be the
+        role for you A proven track record\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:49:19Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299189275?v=7B8321B6583514C7929C1C7D08EC7CBEFDA685AB&se=5kGIGF4PRNO08I9xCn2NPg&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299189275","title":"Diabetes
+        Support Specialist - Scotland","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Remtec
+        Search and Selection"},"salary_max":35000},{"salary_min":35000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"Presented
+        is the opportunity is for one of the world''s largest international CROs currently
+        seeking to bring on board a Project Leading Data Manager to continue the expansion
+        of their Biometrics team. The key aspects of this role include: being experienced
+        in client account holding and the management of multiple data management projects.
+        The role is permanent and OFFICE BASED, however it has home based flexibility
+        for experienced candidates. ROLE: As the project lead Data Manager, you will
+        be a\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:48:40Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299189021?v=30720BA0B8EB88C81EE322603998A70903656FA4&se=5kGIGF4PRNO08I9xCn2NPg&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299189021","title":"Lead
+        Project DATA MANAGER | CRO, OFFICE BASED, UK","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"RBW
+        Consulting Solutions Ltd"},"salary_max":50000},{"salary_min":14959.38,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"1","description":"Full time Receptionist
+        position available at 4 City Center Hotel. All receptionist duties applicable.
+        5/7 days and shift work are required for this position. Part time Maintenance
+        position available at 4 City Center Hotel. General maintenance and painting/
+        decorating skills required. Hours are flexible and to be confirmed with applicant","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:47:29Z","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299188511?v=74D718581F3463F2E236FB7DEB4E2D8DEBBE413F&se=5kGIGF4PRNO08I9xCn2NPg&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Hospitality
+        & Catering Jobs","tag":"hospitality-catering-jobs"},"id":"299188511","title":"F/T
+        Receptionist and P/T Maintenance positions available at 4 City Centre hotel","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":14959.38},{"salary_min":18239.08,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"The
+        Company SSP is a world-wide retail catering company with operations in 29
+        countries and employing over 30,000 people. We operate well known branded
+        restaurants, bars, caf\u00e9s, food courts and convenience stores in airports,
+        train stations, motorway service stations, retail parks and other leisure
+        locations across the globe. In the UK, we employ c 10,000 and have around
+        700 units. The Role We have recently opened a new Starbucks franchise store
+        in Edinburgh Airport and are recruiting an Assist\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:46:50Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299188253?v=530E9E6B1F996AB2EF6A37B3675CFD2E54D19CAF&se=5kGIGF4PRNO08I9xCn2NPg&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Sales
+        Jobs","tag":"sales-jobs"},"id":"299188253","title":"Assistant Manager - licenced
+        Starbucks - Edinburgh Airport","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":18239.08},{"salary_min":45000,"longitude":-3.327942,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"0","description":"Based in Edinburgh this
+        is a fantastic opportunity to join an expanding team focused on the development
+        of Test Solutions for the Semiconductor market.","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:46:47Z","latitude":55.943116,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299188212?v=99277496744D26CBFF5DE0963D0B330D6B0BDF6E&se=5kGIGF4PRNO08I9xCn2NPg&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs","tag":"engineering-jobs"},"id":"299188212","title":"Senior Hardware
+        Engineer - Edinburgh","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"IC
+        Resources"},"salary_max":50000}]}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['12399']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 14:46:09 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.80033']
+      X-Varnish: ['1198586475']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/search/9?location0=UK&location1=Scotland&location2=Edinburgh&sort_by=date&sort_direction=down
+  response:
+    body: {string: '{"__CLASS__":"Adzuna::API::Response::JobSearchResults","count":5553,"mean":35813.97,"results":[{"salary_min":18082.31,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"German
+        speaking Customer Advisor \u00a315,100 per annum Interviews Immediately Our
+        client is a worldwide leader in customer services providing support for multinational
+        computer software technology corporation. You will be working in a multilingual
+        fun environment, where most speak at multiple languages, and communicate daily
+        with customers in countries all across Europe To cover  40 hours contact -
+        Monday to Friday between 8am - 5pm  Inbound and Outbound calls and emails  Perkz:
+        employee benefits s\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:46:45Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299188205?v=183A71F0D62095FB48527AE9A7667D987CBB350E&se=VI3s3pZOQKO-HOFVKEQb0w&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Sales
+        Jobs","tag":"sales-jobs"},"id":"299188205","title":"German Speaking Customer
+        Advisor - Ideal for graduates","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":18082.31},{"salary_min":144000,"longitude":-3.336581,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","South
+        Queensferry","Craigiehall"],"display_name":"Craigiehall, South Queensferry"},"salary_is_predicted":"0","description":"Our
+        rapidly growing Edinburgh based financial service client urgently requires
+        a Programme level Risk Consultant to join their team. The successful candidate
+        will be responsible for providing delivery oversight, programme direction
+        and have the ability to challenge senior programme leadership over risk mitigation.
+        You will have experience in:  Identifying the relevant programme risk by analysing
+        the relevance, scope and scale of project risks identified by delivery teams  Analysing
+        the organisa\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:45:36Z","latitude":55.950929,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299188092?v=DFD5D82F7413D15ECB544227D85A8AE94A86A464&se=VI3s3pZOQKO-HOFVKEQb0w&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Accounting
+        & Finance Jobs","tag":"accounting-finance-jobs"},"id":"299188092","title":"Programme
+        Risk Consultant","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Head
+        Resourcing Ltd"},"salary_max":168000},{"latitude":55.950929,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Energy,
+        Oil & Gas Jobs","tag":"energy-oil-gas-jobs"},"id":"299188098","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Cathcart
+        Associates Energy Ltd"},"salary_max":48000,"salary_min":35000,"longitude":-3.336581,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","South
+        Queensferry","Craigiehall"],"display_name":"Craigiehall, South Queensferry"},"salary_is_predicted":"0","description":"Cathcart
+        Energy are currently recruiting for a Geotechnical Engineer for our client
+        - a major player in the wind industry in Europe. The role will be based in
+        Edinburgh in Scotland and you will be involved with assessment and design
+        support for Geotechnical and Foundation Engineering for onshore wind turbines
+        across the UK and Ireland. You will work closely with Engineering teams, Project
+        Managers and Construction Managers supporting the work from design to build.
+        You will need to have a degree\u2026","created":"2015-07-29T12:45:36Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299188098?v=50A37CC9F065F31F3B8908EE9A265044335AF833&se=VI3s3pZOQKO-HOFVKEQb0w&utm_medium=api&utm_source=63a598e7","title":"Geotechnical
+        Engineer, Wind Turbine Foundations, Edinburgh"},{"salary_min":144000,"longitude":-3.336581,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","South
+        Queensferry","Craigiehall"],"display_name":"Craigiehall, South Queensferry"},"salary_is_predicted":"0","description":"Solution
+        Design Manager - Process Transformation - 6 months - Edinburgh A top retail
+        bank based in Edinburgh currently requires a Solution Design Manager to join
+        a Banking Transformation Programme for an initial 6 month period. Role Outline
+        To support the delivery of E2E design for bank wide initiatives required to
+        realise the Bank''s strategic objectives and influence and Bank''s future
+        direction and market position Undertake the Solution Design for own independent
+        projects, with Stakeholder man\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:45:32Z","latitude":55.950929,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299188010?v=B8322223DF79E0098F149D637D7B17BB093C0884&se=VI3s3pZOQKO-HOFVKEQb0w&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Accounting
+        & Finance Jobs","tag":"accounting-finance-jobs"},"id":"299188010","title":"Solution
+        Design Manager - Process Transformation - 6 months - Edinburg","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Campion
+        Willcocks Limited"},"salary_max":144000},{"latitude":55.943116,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Healthcare
+        & Nursing Jobs","tag":"healthcare-nursing-jobs"},"id":"299187614","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Mediplacements"},"salary_max":53760,"salary_min":42240,"longitude":-3.327942,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"0","description":"Mediplacements are looking
+        for an Audiologist to work with our client based in Edinburgh To be successful
+        for this role, you must have at least 12 months clinical experience and HCPC
+        registration is essential, All applicants must also be BSc / MSc qualified.
+        Duties will include, Audiology service, ENT clinics and Repairs and fittings.
+        This role will be to start asap Working Monday - Friday, usual hours being
+        9am - 5pm. Jobs Paying around \u00a322.00 - \u00a328.00 p/h. Newly qualified
+        Audiologists will be\u2026","created":"2015-07-29T12:37:39Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299187614?v=2C82B9797590684F77819723A38CAFAF791DBF8B&se=VI3s3pZOQKO-HOFVKEQb0w&utm_medium=api&utm_source=63a598e7","title":"Audiologist
+        job available - Edinburgh"},{"latitude":55.943116,"contract_time":"full_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Accounting
+        & Finance Jobs","tag":"accounting-finance-jobs"},"id":"299187491","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Lane
+        Personnel"},"salary_max":52000,"salary_min":48000,"longitude":-3.327942,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh"],"display_name":"Edinburgh,
+        Scotland"},"salary_is_predicted":"0","description":"Client Services Fund Accountant
+        An exciting opportunity has arisen for Client Services Fund Accountant within
+        a dynamic and busy financial services company Our client, with landmark offices
+        across the nation, provides excellent study support for their employees and
+        is known for promoting from within If you are ready to work hard in a busy
+        environment then look no further This role can offer you an incredibly high
+        salary (depending on experience)  company incentives Our client works across
+        the U\u2026","created":"2015-07-29T12:35:24Z","__CLASS__":"Adzuna::API::Response::Job","redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299187491?v=F2BAA82CC2132631048DFF3D7FE39678066EE256&se=VI3s3pZOQKO-HOFVKEQb0w&utm_medium=api&utm_source=63a598e7","title":"Client
+        Services Fund Accountant"},{"salary_min":49669.16,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"Background
+        intelligentpos\u00ae provides an innovative, easy to use, tablet based point
+        of sale solution to small businesses. A low cost, powerful software as a service
+        solution that brings the power and insight of a full scale Point of Sale solution
+        to small and medium businesses for a fraction of the cost. We have enjoyed
+        rapid growth in our first two years, and having secured significant recent
+        investment we are ready to take that growth to the next stage. We are focussed
+        on international expansi\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T12:28:08Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299187363?v=D1089BEBA9B7177993BB84B8515ED4F6C8B59D9C&se=VI3s3pZOQKO-HOFVKEQb0w&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"PR,
+        Advertising & Marketing Jobs","tag":"pr-advertising-marketing-jobs"},"id":"299187363","title":"CMO","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"intelligentpos\u00ae"},"salary_max":49669.16},{"salary_min":16028.98,"longitude":-3.14055,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"One
+        or two afternoons or evening whilst holidaying in Grassmere on 5th 6th August
+        Requirements: Looking for:Babysitter ;Desired languages:English ;Age groups:6
+        Months - 2 Years","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T11:27:48Z","latitude":55.951796,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299178955?v=364C9016D5FFA8E163C90568BA0B41C204844ADF&se=VI3s3pZOQKO-HOFVKEQb0w&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Domestic
+        help & Cleaning Jobs","tag":"domestic-help-cleaning-jobs"},"id":"299178955","title":"Holiday
+        babysitting in Meadowbank - Grassmere","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":16028.98},{"salary_min":33017.07,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"Title:
+        Scotland Correspondent ID: JREQ047253 Description We are the leading source
+        of intelligent information for the world''s businesses and professionals,
+        providing customers with competitive advantage. Intelligent information is
+        a unique synthesis of human intelligence, industry expertise and innovative
+        technology that provides decision-makers with the knowledge to act, enabling
+        them to make better decisions faster. We deliver this must-have insight to
+        the financial and risk, legal, tax and a\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:44:19Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299166532?v=2248A4194CABFED5572EA3499995DA97394DC859&se=VI3s3pZOQKO-HOFVKEQb0w&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Unknown","tag":"unknown"},"id":"299166532","title":"Scotland
+        Correspondent Job","company":{"__CLASS__":"Adzuna::API::Response::Company","canonical_name":"Thomson
+        Reuters","display_name":"Thomson Reuters"},"salary_max":33017.07},{"salary_min":7680,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"EXCITING
+        NEW PART-TIME SALES EXECUTIVE OPPORTUNITY WITH CPM We have a part time sales
+        advisor role available, working for CPM on our confectionery account and we
+        would really like to tell you a bit more about this opportunity. What does
+        the role entail? Part-time sales advisor position within the Independent Sector
+        Improving display and distribution of our clients\u2019 products maximizing
+        all sales opportunities Advising retailers of new products and promotions
+        Ensuring existing and new displays me\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:43:42Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299166266?v=40DCD94FA1C914766DE8E4122CB2874B4AD9B594&se=VI3s3pZOQKO-HOFVKEQb0w&utm_medium=api&utm_source=63a598e7","contract_time":"part_time","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Sales
+        Jobs","tag":"sales-jobs"},"id":"299166266","title":"Part Time Field Sales
+        Executive - Edinburgh - BJYMCH3019","company":{"__CLASS__":"Adzuna::API::Response::Company"},"salary_max":14246}]}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['13043']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 14:46:10 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.80033']
+      X-Varnish: ['1198586482']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/search/10?location0=UK&location1=Scotland&location2=Edinburgh&sort_by=date&sort_direction=down
+  response:
+    body: {string: '{"__CLASS__":"Adzuna::API::Response::JobSearchResults","count":5553,"mean":35813.97,"results":[{"salary_min":25000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"We
+        are as an employment agency acting on behalf of our client, join the UK''s
+        no.1 breakdown assistance provider as a Venue Sales Direct Sales Agent (self
+        employed). You will be promoting and selling our clients products at venues
+        such as shopping centres, supermarkets, service station etc. As a self employed
+        Direct Sales Agent; You will receive; Full training and support All point
+        of sale material Uniform Mobile phone OTE will be circa \u00a325k - 60k per
+        annum (REALISTIC) Excellent commissions paid\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:34:29Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299162748?v=14BD1AACB1E9DFE6A7A82877FE85044C106F200F&se=xox41TChSUGbqEXceR4_OQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Sales
+        Jobs","tag":"sales-jobs"},"id":"299162748","title":"Direct Sales Agent - Venue
+        Sales","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Citrus
+        Connect"},"salary_max":60000},{"salary_min":30000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"Major
+        Manufacturer Holding Excellent Market Share Construction Sales Required The
+        Role: This area sales manager role is to sell flat roofing insulation for
+        commercial buildings into roofing sub-contractors, gain new specifications
+        and backsell via builders merchants. You will be talking to roofing contractors,
+        branch managers, purchasers and architects in a largely account management
+        position. Full product training awaits the successful area sales manager here.
+        The Company: This company has a s\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:34:25Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299162617?v=B28C2313AB0B9924876A8EF6CC2FF3FDC3993141&se=xox41TChSUGbqEXceR4_OQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Sales
+        Jobs","tag":"sales-jobs"},"id":"299162617","title":"Area Sales Manager - Insulation","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"BMS
+        Sales Specialists"},"salary_max":38000},{"salary_min":25000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"Our
+        client, an exciting British eyewear lens manufacturer are creating waves in
+        their fast passed industry and recruiting several Sales Jobs throughout the
+        UK. In particular they require a New Sales Business Development Manager (
+        Field Sales , B2B ) to manage and develop their Scottish client base. This
+        is a home based role where you will be given the tools ( laptop, mobile, expense
+        account etc. ) to track leads, generate appointments, and close sales after
+        developing key relationships. We\u2019re l\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:34:24Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299162599?v=653FF754E3CD8AAC1001C4077F456A8DCB5D8DB6&se=xox41TChSUGbqEXceR4_OQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Sales
+        Jobs","tag":"sales-jobs"},"id":"299162599","title":"Regional Sales Manager","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"FlexiRec
+        Ltd"},"salary_max":40000},{"salary_min":96000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"C#
+        Developer - Edinburgh - 3 month contract This is an imediate requirement for
+        a C# engineer to work with a leading finnancial organisation. Working alongside
+        a team of analysts and developers you will work on a multithreading project.
+        Essential Skills/Experience  C#, .NET and WinForms  OOP  Multithreading &
+        data structures  SOLID Design patterns  MS SQL Server, SQL, simple DBA and
+        troubleshooting skills  Agile, TDD (Unit Testing)  Highly complex platform
+        experience  DevExpress, CodeSmith Init\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:33:59Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299162253?v=7A2D1B153520380C89412B58E2D9079FB8CA329D&se=xox41TChSUGbqEXceR4_OQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299162253","title":"C# Developer - Edinburgh
+        - 3 month contract","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Vivid
+        Resourcing Ltd"},"salary_max":120000},{"salary_min":30000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"COBOL
+        Analyst Developer - COBOL - Agile - Unit Test - Edinburgh - \u00a330,000 An
+        exciting role with a well known company, who are leaders within their field.
+        They are currently looking for a COBOL Analyst Developer to join their IT
+        and Software personnel based in Edinburgh and support all projects being undertaken
+        globally, throughout their various locations. The role involves the analysis,
+        design, development and an overall knowledge to maintain the COBOL based system,
+        which is one of many systems\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:33:55Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299162124?v=62398CEC3CD1A6C49B42F88A5F8998497B95478A&se=xox41TChSUGbqEXceR4_OQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299162124","title":"COBOL Analyst Developer","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"ComputerWorld
+        Personnel Ltd "},"salary_max":30000},{"salary_min":30000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"I
+        am keen to discuss opportunities with any skilled Software Developers who
+        are keen to relocate to Edinburgh in Scotland, or who already live and work
+        in Edinburgh and are looking for a change. Edinburgh is the perfect sized
+        city to live and work in - it''s not too big, but it has everything you could
+        want for a strong work/life balance, including having one of the most vibrant
+        and envied technical hubs in the world The city produces technology with a
+        global scope and the city continues to attr\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:33:54Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299162089?v=74AFCABF910F95D8B6BCA23259BC6666AF880774&se=xox41TChSUGbqEXceR4_OQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299162089","title":"Opportunities for skilled
+        Software Developers in Edinburgh","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Cathcart
+        Associates"},"salary_max":50000},{"salary_min":30000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"SOFTWARE
+        ACCOUNT MANAGER - ACCOUNTANCY SOFTWARE - EDINBURGH BASIC: \u00a335k  OTE \u00a355
+        Uncapped - BENEFITS: Pension, Health and Life Assurance We are currently recruiting
+        on behalf of rapidly growing accountancy software vendor an experienced Account
+        Manager in Edinburgh. The role will be targeted to attain new licence sales
+        into existing business and new businesses. You will be targeting Accountancy
+        and Umbrella practices and be working with them on a sell though type deal
+        to their end user clients.\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:33:52Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299162046?v=3DD21677DF38C1D5604895B2E3D66BB18199347E&se=xox41TChSUGbqEXceR4_OQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299162046","title":"Account Manager - Finance
+        Software Vendor - Edinburgh","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Ataris
+        Executive Search LLP"},"salary_max":35000},{"salary_min":40000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"Abrecco
+        wish to recruit a Senior Infrastructure Architect on behalf of our well established
+        Edinburgh based Client. This is a rare and exciting opportunity to join an
+        organisation at senior level who invests heavily in cutting edge technology
+        as well as their employee`s career development. Preferably coming from an
+        enterprise scale environment, the ideal candidate will have excellent communication
+        skills and proven hands on commercial experience in the following technologies;
+        Essential: - High \u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:33:52Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299162047?v=D586DDC3A2349171DAE03F1A813A23B75FE4AEF4&se=xox41TChSUGbqEXceR4_OQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299162047","title":"IT Technical Architect :
+        Windows Server, Cisco - Permanent : Edinburgh","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Abrecco"},"salary_max":45000},{"salary_min":31200,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"GIS
+        Data Specialist Triad has an urgent requirement in Edinburgh for a GIS Data
+        Specialist. The role will be an initial 10 month contract to cover a secondment.
+        We can pay \u00a3130 per day for this role and the client is looking to get
+        someone in place urgently. Job purpose: To be responsible for the accurate,
+        complete and timely maintenance of spatial and attribute records of assets
+        held by my clients Corporate GIS, and to provide a high quality and efficient
+        service to external and internal custo\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:33:52Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299162029?v=FCFF136C8BAE74C9677D4586AB083A40B11A380E&se=xox41TChSUGbqEXceR4_OQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299162029","title":"GIS Data Specialist (ArcGIS
+        / ESRI)","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company","canonical_name":"Triad
+        Group","display_name":"Triad"},"salary_max":31200},{"salary_min":78000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"PL/SQL
+        Developer - Oracle - Edinburgh - Contract PL/SQL Developer, Oracle Developer,
+        Database Development, Tuning, Batch Procedures PL/SQL developer required for
+        our client in Edinburgh for an initial 6 month contract position. We are looking
+        for an Oracle developer with excellent PL/SQL coding skills, rather than a
+        DBA, so you must have demonstrable Oracle development experience to apply.
+        My client is a software house who develops a suite of niche applications that
+        are marketed to one of the m\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:33:50Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299161978?v=7386A865B8C90ED7BB593CBD7F547D9639A44FAA&se=xox41TChSUGbqEXceR4_OQ&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299161978","title":"PL/SQL Developer \u2013 Oracle
+        \u2013 Edinburgh \u2013 Contract","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Cathcart
+        Associates"},"salary_max":84000}]}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['13085']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 14:46:11 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.80033']
+      X-Varnish: ['1198586491']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Darwin/14.4.0]
+    method: GET
+    uri: http://api.adzuna.com/v1/api/jobs/gb/search/11?location0=UK&location1=Scotland&location2=Edinburgh&sort_by=date&sort_direction=down
+  response:
+    body: {string: '{"__CLASS__":"Adzuna::API::Response::JobSearchResults","count":5553,"mean":35813.97,"results":[{"salary_min":96000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"Project
+        Manager - WRAP - 6 Months contract - Edinburgh Abrecco wish to recruit, on
+        behalf of our client, a Project Manager with experience of delivering projects
+        within the financial investment / asset management sector, specifically with
+        the WRAP platform. Working within an Agile delivery environment you will have
+        experience of delivering software / web based projects with ownership of the
+        project through the full delivery lifecycle. To be considered for this role
+        you should possess the follow\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:33:48Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299161910?v=F50C89155F9941E5DF6D54B1801F913DB1113A33&se=dP-b0RtgTEOxFUplvbac3A&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299161910","title":"Project Manager : WRAP :
+        6 Months contract : Edinburgh - Market rates","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Abrecco"},"salary_max":108000},{"salary_min":20000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"QA
+        Test Engineer opportunity to join an established and growing Software team
+        based in Edinburgh city centre on a permanent basis. This is an opportunity
+        for a motivated Test Engineer still at the early stages of your career and
+        looking to take the next step within a Fortune 500 organisation. You will
+        be joining a still small team, that have been steadily growing, and will work
+        along one other QA Engineer and a team of 5 developers in an agile driven
+        environment. The team have recently moved to\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:33:45Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299161816?v=497F9F3034C2001D10D4F335FD5DC0C273DA36F6&se=dP-b0RtgTEOxFUplvbac3A&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299161816","title":"QA Test Engineer \u2013 Career
+        Progression Role","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Cathcart
+        Associates"},"salary_max":30000},{"salary_min":40000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"We
+        have a superb new role in central Edinburgh for a Senior User Experience Designer
+        to join a top financial services organisation. Our client is looking to appoint
+        a Senior UX Designer with 5 years plus experience to work on their major digital
+        projects which have customer insight at the centre of everything they do.
+        They are building an exceptional platform which utilises all the latest technologies
+        in innovative ways - and they want your talent to improve it. Duties will
+        include: Defining th\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:33:45Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299161823?v=26F13D2E008670B789852F6862C07BF193233DA7&se=dP-b0RtgTEOxFUplvbac3A&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"IT
+        Jobs","tag":"it-jobs"},"id":"299161823","title":"Senior User Experience Designer","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"NonStop
+        Recruitment"},"salary_max":50000},{"salary_min":25000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"A
+        fantastic opportunity has arisen in Edinburgh for an experienced transport
+        planner to join the growing team at a long established and highly reputable
+        consultancy. Experiences / Qualifications: 3 years'' experience within transport
+        planning Experience of managing transport projects Experience of working within
+        private sector Knowledge of LinSig, GIS, TRICS, PICADY & SATURN would be advantageous
+        Excellent communication/presentation skillsKey Responsibilities: Transport
+        assessments Transport pol\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:33:07Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299160908?v=53942B3197A855F2AF5502DEE35BCAD371A80FA1&se=dP-b0RtgTEOxFUplvbac3A&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs","tag":"engineering-jobs"},"id":"299160908","title":"Transport Planner","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Penguin
+        Recruitment"},"salary_max":35000},{"salary_min":20000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"Structural
+        Engineer Edinburgh Ref MR00033 Salary up to \u00a320-30,000  Benefits This
+        is an excellent opportunity for an experienced Structural Engineer to join
+        a successful, well-established Civil and Structural Design Consultancy based
+        in Edinburgh on a permanent basis. The successful applicant will get the chance
+        to work on some unique and interesting projects throughout Residential, Commercial,
+        Leisure, Educational and Healthcare sectors. You will get full lifecycle project
+        experience from incep\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:33:03Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299160800?v=44635F0B98071EC0030B27077961629C8081A687&se=dP-b0RtgTEOxFUplvbac3A&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs","tag":"engineering-jobs"},"id":"299160800","title":"Structural Engineer","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Penguin
+        Recruitment"},"salary_max":30000},{"salary_min":26880,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"Due
+        to recent lucrative contract awards, my client who are a leading HVAC services
+        provider to the built environment are currently recruiting for experienced
+        Electricians to carry out installations on a number of prestigious retail
+        contracts throughout Scotland on an on-going contract basis. Working on a
+        mobile basis throughout Scotland, you will be responsible for carrying out
+        installation, wiring and final connection of BMS controls and associated equipment
+        within retail and commercial contra\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:32:51Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299160402?v=E8947E29BE38D92B6DFE8955329EBD4533DEE0ED&se=dP-b0RtgTEOxFUplvbac3A&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs","tag":"engineering-jobs"},"id":"299160402","title":"Electrician","contract_type":"contract","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Murray
+        Recruitment ltd"},"salary_max":28800},{"salary_min":30000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"Manpower
+        are currently recruiting for an Electrical Maintenance Engineer, to work and
+        be a an integral part of the Engineering and Maintenance Team, carrying out
+        the following duties; Repair and Maintain all electrical and mechanical factory
+        equipment in a timely manner Minimise potential downtime in the production
+        process Ensure that equipment and the environment is operated and cared for,
+        meeting all current legislation and Company standards Continuously improve
+        process efficiency, eliminatin\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:32:37Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299159944?v=7F4E596737AC9DEA3FCBC5A470AC227B2B6BA03A&se=dP-b0RtgTEOxFUplvbac3A&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs","tag":"engineering-jobs"},"id":"299159944","title":"Electrical Maintenance
+        Engineer","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Manpower"},"salary_max":32000},{"salary_min":26000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"Job
+        Description Job Title: Catering Equipment (COMCAT) Field Service Engineer
+        Location: Edinburgh Basic Salary: \u00a326,000 - \u00a329,000 per annum  benefits
+        Us Concept Resourcing have over 10 years\u2019 experience working with Catering
+        Engineers across the UK matching them to their ideal job and company. Visit
+        our website for more vacancies within the Industry: It is essential that you
+        are already working within this sector and have a proven background of service
+        and repair equipment within the Commercial\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:32:34Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299159844?v=AC92F510E851BF61009EC46EBE51202506AF2D81&se=dP-b0RtgTEOxFUplvbac3A&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Engineering
+        Jobs","tag":"engineering-jobs"},"id":"299159844","title":"COMCAT Catering
+        Engineer","contract_type":"permanent","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Concept
+        Resourcing"},"salary_max":29000},{"salary_min":24325.17,"longitude":-3.16394,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"1","description":"I
+        need a childminder for my two year old daughter as I''m starting work very
+        soon not sure about my shifts yet","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T09:19:41Z","latitude":55.948955,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299151850?v=AFB12AC9E3A752F2EE6DBB5000A091526C1C1C1E&se=dP-b0RtgTEOxFUplvbac3A&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Domestic
+        help & Cleaning Jobs","tag":"domestic-help-cleaning-jobs"},"id":"299151850","title":"Edinburgh
+        - i am going to start a new job as support worker starting in mornings until
+        1 not sure of the days yet","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"top
+        childcare"},"salary_max":24325.17},{"salary_min":30000,"longitude":-3.18754,"location":{"__CLASS__":"Adzuna::API::Response::Location","area":["UK","Scotland","Edinburgh","Edinburgh"],"display_name":"Edinburgh"},"salary_is_predicted":"0","description":"My
+        client, a national brokerage has an exciting opportunity to join a progressive
+        and dynamic telephone based whole of market mortgage business opening a brand
+        new office located in Edinburgh The role will include, advising clients on
+        their mortgage and protection needs by telephone, providing excellent customer
+        service. All leads will be provided so no existing client base required The
+        role will be well suited to someone who has a proven mortgage sales track
+        record, is highly organised, adapta\u2026","__CLASS__":"Adzuna::API::Response::Job","created":"2015-07-29T08:53:59Z","latitude":55.950199,"redirect_url":"http://www.adzuna.co.uk/jobs/land/ad/299148297?v=1E6DC821E96E00CDC9C5D9989724F2120CD18238&se=dP-b0RtgTEOxFUplvbac3A&utm_medium=api&utm_source=63a598e7","category":{"__CLASS__":"Adzuna::API::Response::Category","label":"Accounting
+        & Finance Jobs","tag":"accounting-finance-jobs"},"id":"299148297","title":"Mortgage
+        Advisor - Edinburgh","company":{"__CLASS__":"Adzuna::API::Response::Company","display_name":"Reed
+        Insurance"},"salary_max":30000}]}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Headers: ['Origin, X-Requested-With, Content-Type, Accept']
+      Access-Control-Allow-Origin: ['*']
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['12693']
+      Content-Type: [application/json; charset=utf8]
+      Date: ['Wed, 29 Jul 2015 14:46:12 GMT']
+      Server: [Apache]
+      Vary: [Content-Type]
+      Via: [1.1 varnish]
+      X-Catalyst: ['5.80033']
+      X-Varnish: ['1198586502']
+    status: {code: 200, message: OK}
 version: 1
