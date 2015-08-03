@@ -37,17 +37,22 @@ class JobAdvertsView(APIView):
             job_area_sql_string = "WHERE job_area_id = {0}".format(job_area.id)
         limit = int(request.GET.get('limit', 5))
 
-        sql_string = ("SELECT * FROM ("
-                          "SELECT ROW_NUMBER() OVER ("
-                              "PARTITION BY category ORDER BY created DESC"
-                              ") AS j, t.* FROM jobs_jobadvert t {0}"
-                          ") x "
-                      "WHERE x.j <= (SELECT ({1} / (SELECT COUNT(*) FROM (SELECT DISTINCT category FROM jobs_jobadvert) AS temp) + 1))"
-                      "ORDER BY created DESC "
-                      "LIMIT {1};"
-        ).format(job_area_sql_string, limit)
+        params = {'limit':limit}
+        sql_string = """SELECT * FROM (
+                          SELECT ROW_NUMBER() OVER (
+                              PARTITION BY category ORDER BY created DESC
+                              ) AS j, t.* FROM jobs_jobadvert t {0}
+                          ) x
+                      WHERE x.j <= (
+                          SELECT (%(limit)s /
+                          (SELECT COUNT(*) FROM (
+                              SELECT DISTINCT category FROM jobs_jobadvert {0}
+                          ) AS temp) + 1)
+                      )
+                      ORDER BY created DESC
+                      LIMIT %(limit)s;""".format(job_area_sql_string)
 
-        ret = JobAdvert.objects.raw(sql_string)
+        ret = JobAdvert.objects.raw(sql_string, params)
 
         serialized_jobs = [{
             "title": job.title,
