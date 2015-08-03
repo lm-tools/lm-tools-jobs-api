@@ -22,7 +22,6 @@ class DummyDashboardView(APIView):
 
 class JobAdvertsView(APIView):
     def get(self, request):
-        base_qs = JobAdvert.objects.all().order_by('-created')
         try:
             job_area = JobArea.objects.import_area_and_jobs(
                 request.GET.get('job_centre_label'),
@@ -32,10 +31,9 @@ class JobAdvertsView(APIView):
             return Response({"error": "Unknown job centre label"})
         except PostcodeNotFoundError:
             return Response({"error": "Invalid postcode"})
-        if job_area:
-            base_qs = base_qs.filter(job_area=job_area)
+
         limit = int(request.GET.get('limit', 5))
-        ret = base_qs[:limit]
+        ret = JobAdvert.objects.jobs_for_even_category_range(job_area, limit)
 
         serialized_jobs = [{
             "title": job.title,
