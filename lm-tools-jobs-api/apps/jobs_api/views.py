@@ -32,27 +32,8 @@ class JobAdvertsView(APIView):
         except PostcodeNotFoundError:
             return Response({"error": "Invalid postcode"})
 
-        job_area_sql_string = ""
-        if job_area:
-            job_area_sql_string = "WHERE job_area_id = {0}".format(job_area.id)
         limit = int(request.GET.get('limit', 5))
-
-        params = {'limit':limit}
-        sql_string = """SELECT * FROM (
-                          SELECT ROW_NUMBER() OVER (
-                              PARTITION BY category ORDER BY created DESC
-                              ) AS j, t.* FROM jobs_jobadvert t {0}
-                          ) x
-                      WHERE x.j <= (
-                          SELECT (%(limit)s /
-                          (SELECT COUNT(*) FROM (
-                              SELECT DISTINCT category FROM jobs_jobadvert {0}
-                          ) AS temp) + 1)
-                      )
-                      ORDER BY created DESC
-                      LIMIT %(limit)s;""".format(job_area_sql_string)
-
-        ret = JobAdvert.objects.raw(sql_string, params)
+        ret = JobAdvert.objects.jobs_for_even_category_range(job_area, limit)
 
         serialized_jobs = [{
             "title": job.title,

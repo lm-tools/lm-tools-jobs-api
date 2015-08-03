@@ -99,6 +99,33 @@ class JobAdvertManager(models.Manager):
             if not created:
                 break
 
+    def jobs_for_even_category_range(self, job_area, count):
+        """
+        Method to query most recent job adverts, making sure that
+        each category is equally represented in the result
+        """
+        job_area_sql_string = ""
+        if job_area:
+            job_area_sql_string = "WHERE job_area_id = {0}".format(job_area.id)
+
+        params = {'limit':count}
+        sql_string = """SELECT * FROM (
+                          SELECT ROW_NUMBER() OVER (
+                              PARTITION BY category ORDER BY created DESC
+                              ) AS j, t.* FROM jobs_jobadvert t {0}
+                          ) x
+                      WHERE x.j <= (
+                          SELECT (%(limit)s /
+                          (SELECT COUNT(*) FROM (
+                              SELECT DISTINCT category FROM jobs_jobadvert {0}
+                          ) AS temp) + 1)
+                      )
+                      ORDER BY created DESC
+                      LIMIT %(limit)s;""".format(job_area_sql_string)
+
+        ret = self.raw(sql_string, params)
+        return ret
+
 
 class JobAdvert(models.Model):
     raw_data = models.TextField(blank=True, null=True)
