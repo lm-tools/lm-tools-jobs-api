@@ -1,4 +1,6 @@
-# Jobs API
+# Jobs API - deprecated
+
+*This project is no longer maintained*
 
 Imports jobs from Adzuna and stores them in a model with an API on top.
 
